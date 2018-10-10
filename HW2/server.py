@@ -12,30 +12,39 @@ class ServerSocket:
 		self.serversocket.listen(backlog)
 
 	def accept(self):
-		(socket, address) = self.serversocket.accept()
-		return (socket, address)
+		return self.serversocket.accept()
 
 	def close(self):
 		self.serversocket.close()
 
-	def doProtocol(self, socket=None) :
-		# read four bytes from the socket (1 padded int)
-		receivedMessage = socket.recv(4)
-
+	def receive(self, socket):
+		message = socket.recv(4)
 		# unpack and get the value from the received bytes
-		chunk = struct.unpack("i", receivedMessage) # TODO: error check here
+		chunk = struct.unpack("i", message)  # TODO: error check here
 		value = chunk[0]
-		self.log("server received: " + str(value))
-		
+		self.log("Received: " + str(value))
+		return value
+
+
+	def doProtocol(self, socket=None) :
+		value = self.receive(socket)
+		#this is the protocol
+		value+=1
+		#this is the protocol
+		self.send(socket, value)
+
+
+	def send(self, socket, value):
 		# pack and send a value one larger back
-		sendMessage = struct.pack("i", value + 1)
-		socket.send(sendMessage)
+		self.log("Sending: " + str(value))
+		message = struct.pack("i", value)
+		socket.send(message)
 
 	def log(self, msg=""):
 		#log function
 		timenow = datetime.datetime.now()
 		time = timenow.strftime("%Y-%m-%d %H:%M")
-		print "%s %s" %(time, msg)
+		print "%s [server] %s" %(time, msg)
 
 
 def main() :

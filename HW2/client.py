@@ -12,32 +12,36 @@ class ClientSocket:
 		self.host = host
 		self.port = port
 		self.clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		self.clientsocket.connect((self.host, self.port))
+		try:
+			self.clientsocket.connect((self.host, self.port))
+		except socket.error as e:
+			self.log(str(e))
+			self.clientsocket = None
 
 	def close(self):
 		self.clientsocket.close()
 
 	def log(self, msg=""):
-		#log function
 		timenow = datetime.datetime.now()
 		time = timenow.strftime("%Y-%m-%d %H:%M")
-		print "%s %s" %(time, msg)
+		print "%s [client] %s" %(time, msg)
 
-
-	def doProtocol(self) :
-		value = int(sys.argv[1])
-
-		# pack and send our argument
-		data = struct.pack("i", value)
-		self.clientsocket.send(data)
-
-		# get back a response and unpack it
-		receivedMessage = self.clientsocket.recv(4)
-		chunk = struct.unpack("i", receivedMessage)
+	def receive(self):
+		message = self.clientsocket.recv(4)
+		chunk = struct.unpack("i", message)
 		# take the first int only
 		message = chunk[0]
+		self.log("Received: " + str(message))
 
-		self.log("client received: " + str(message))
+	def send(self):
+		value = int(sys.argv[1])
+		data = struct.pack("i", value)
+		self.log("Sending: " + str(value))
+		self.clientsocket.send(data)
+
+	def doProtocol(self) :
+		self.send()
+		self.receive()
 
 
 def main() :
@@ -46,8 +50,10 @@ def main() :
 		exit(1)
 
 	clientsock = ClientSocket()
-	clientsock.doProtocol()
-	clientsock.close()
+	if clientsock.clientsocket:
+
+		clientsock.doProtocol()
+		clientsock.close()
 
 if __name__ == "__main__" :
 	main()
