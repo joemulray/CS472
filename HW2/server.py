@@ -4,9 +4,8 @@ import socket
 import struct
 import datetime
 
-
 class ServerSocket:
-	def __init__(self, host=socket.gethostname(), port=9223, backlog=5):
+	def __init__(self, host=socket.gethostname(), port=21, backlog=5):
 		self.serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		self.serversocket.bind((host, port))
 		self.serversocket.listen(backlog)
@@ -20,25 +19,33 @@ class ServerSocket:
 	def receive(self, socket):
 		message = socket.recv(4)
 		# unpack and get the value from the received bytes
-		chunk = struct.unpack("i", message)  # TODO: error check here
-		value = chunk[0]
-		self.log("Received: " + str(value))
+		try:
+			chunk = struct.unpack("i", message)  # TODO: error check here
+			value = chunk[0]
+			self.log("Received: " + str(value))
+		except struct.error as error:
+			self.log("ERROR" + str(error))
+			value=None
 		return value
 
 
 	def doProtocol(self, socket=None) :
 		value = self.receive(socket)
-		#this is the protocol
-		value+=1
-		#this is the protocol
-		self.send(socket, value)
-
+		if value:
+			#this is the protocol
+			value+=1
+			#this is the protocol
+			self.send(socket, value)
 
 	def send(self, socket, value):
 		# pack and send a value one larger back
 		self.log("Sending: " + str(value))
-		message = struct.pack("i", value)
-		socket.send(message)
+		try:
+			message = struct.pack("i", value)
+			socket.send(message)
+		except struct.error as error:
+			self.log("ERROR" + str(error))
+			pass
 
 	def log(self, msg=""):
 		#log function
@@ -47,7 +54,7 @@ class ServerSocket:
 		print "%s [server] %s" %(time, msg)
 
 
-def main() :
+def main():
 
 	serversocket = ServerSocket()
 
