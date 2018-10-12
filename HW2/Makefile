@@ -2,6 +2,7 @@ PYTHON = python
 VIEWER = more
 CLIENT = client.py
 SERVER = server.py
+SUDO = sudo
 
 .PHONY: run view clean
 
@@ -11,6 +12,13 @@ run:
 view:
 	$(VIEWER) $(CLIENT) $(SERVER) README
 
-clean:
-	@rm *.pyc
+client:
+	$(PYTHON) $(CLIENT)
 
+server:
+	$(SUDO) $(PYTHON) $(SERVER)
+
+clean:
+	@echo "Removing .pyc and log files"
+	@rm *.pyc
+	@rm *.log
