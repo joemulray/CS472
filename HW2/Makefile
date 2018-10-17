@@ -3,6 +3,7 @@ VIEWER = more
 CLIENT = client.py
 SERVER = server.py
 SUDO = sudo
+PYDOC = pydoc client
 
 .PHONY: run view clean
 
@@ -17,6 +18,9 @@ client:
 
 server:
 	$(SUDO) $(PYTHON) $(SERVER)
+
+docs:
+	$(PYDOC)
 
 clean:
 	@echo "Removing .pyc and log files"
