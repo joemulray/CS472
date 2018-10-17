@@ -30,7 +30,7 @@ class logger:
 		return timenow.strftime(self.format)
 
 	def sending(self, value):
-		self.debug("Sending " + str(value))
+		self.debug("Sent: " + str(value))
 
 	def received(self, value):
-		self.debug("Received " + str(value))
+		self.debug("Received: " + str(value))

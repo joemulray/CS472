@@ -2,6 +2,7 @@
 
 import socket 
 import struct
+import sys
 from logging import logger
 
 
@@ -26,9 +27,9 @@ class ServerSocket:
 		self.serversocket.close()
 
 	def receive(self, socket):
-		message = socket.recv(4)
 		# unpack and get the value from the received bytes
 		try:
+			message = socket.recv(4)
 			chunk = struct.unpack("i", message)
 			value = chunk[0]
 			self.log.received(value)
@@ -47,10 +48,11 @@ class ServerSocket:
 			#this is the protocol
 			self.send(socket, value)
 
+
 	def send(self, socket, value):
 		# pack and send a value one larger back
-		self.log.sending(value)
 		try:
+			self.log.sending(value)
 			message = struct.pack("i", value)
 			socket.send(message)
 		except struct.error as error:
