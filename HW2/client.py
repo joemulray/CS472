@@ -18,8 +18,7 @@ Homework Assignment #2
 
 """
 #TODO:
-	add structure to commands `USER {user}`
-	determine unathorized from authorized methhods
+	display full output from help message
 	handle invalid input
 	remove struct error handling
 	add pydoc comments
@@ -100,6 +99,14 @@ class logger:
 		"""
 		self.debug("Received: " + str(value))
 
+	
+	def close(self):
+		"""
+		Closes the logger file
+
+		:return: returns nothing
+		"""
+		self.file.close()
 
 
 class FTP:
@@ -109,33 +116,85 @@ class FTP:
 		self.username = username
 		self.password = password
 		self.__authorized = False
-		self.commands = ["user", "pass", "cwd", "quit", "pasv", "espv", "port", "eprt", "retr", \
-		"stor", "pwd", "syst", "list", "help"]
+		self.commands = {
+						"user" : "USER", "pasv" : "PASV", "quit" : "QUIT", \
+						"pasv" : "PASV", "epsv" : "EPSV", "port" : "PORT", \
+						"eprt" : "EPRT", "retry" : "RETR", "stor" : "STOR", \
+						"syst" : "SYST", "list" : "LIST", "pwd" : "PWD", \
+						"help" : "HELP", "pass" : "PASS"
+						}
+
 
 	def doProtocol(self):
-		message = self.socket.receive()
-		if message[:3] == "220":
-			self.login()
+		while True:
+			response = self.socket.receive()
+			self.evaulate(response[:3])()
 
+
+
+	def command(self):
+		cmd = raw_input("ftp> ").split()
+		if cmd:
+			if cmd[0] in self.commands:
+				command = self.buildcmd(cmd)
+				self.socket.send(command)
+
+			else:
+				self.command()
 		else:
-			self.ftplog.error(message)
+			self.command()
 
 
-	def login(self):
+	def promptusername(self):
 		user = "USER " + raw_input("ftp> Name: ") + "\r\n"
 		self.username = user
 		self.socket.send(self.username)
-		repsonse = self.socket.receive()
 
-		if repsonse[:3] == "331":
-			password = "PASS " + raw_input("ftp> Password: ") + "\r\n"
-			self.password = password
-			self.socket.send(self.password)
-			response = self.socket.receive()
 
-			if response[:3] == "230":
-				self.__authorized = True
+	def promptpassword(self):
+		password = "PASS " + raw_input("ftp> Password: ") + "\r\n"
+		self.password = password
+		self.socket.send(self.password)
 
+
+
+	def exit(self):
+		self.ftplog.close()
+		exit(0)
+
+
+	def buildcmd(self, cmd):
+		#cmd is an array
+		key = cmd[0]
+		cmd.pop(0)
+
+		msg = self.commands[key]
+		for param in cmd:
+			msg = msg + " " + param
+
+		msg = msg + "\r\n"
+		return msg
+
+
+	def evaulate(self, response):
+
+		return {
+			"220" : self.promptusername, #220 FTP Server ready.
+			"214" : self.command, #214 The following commands are recognized:
+			"221" : self.exit, #221 Goodbye.
+			"226" : self.command, #226 Transfer complete.
+			"230" : self.command, #230 Login successful.
+			"228" : self.command, #228 Entering Passive Mode
+			"230" : self.command, #230 Login Succesfuluthorized
+			"250" : self.command, #250 "/" is the current directory.
+			"257" : self.command, #257 "/" is the current directory.
+			"331" : self.promptpassword, #331 Username ok, send password.
+			"332" : self.command, #332 Need account for login.
+			"421" : self.exit, #421 Control connection timed out.
+			"501" : self.command, #501 Syntax error in parameters or arguments.
+			"530" : self.command, #530 Authentication failed.
+			"550" : self.command, #550 No such file or directory.
+			}.get(response, self.command) #default just reprompt for command
 
 
 
@@ -189,7 +248,7 @@ class ClientSocket:
 			return False
 
 def main():
-	if len(sys.argv) ==  3:
+	if len(sys.argv) == 3:
 		clientsock = ClientSocket(sys.argv[1], sys.argv[2])
 	elif len(sys.argv) == 4:
 		clientsock = ClientSocket(sys.argv[1], sys.argv[2], int(sys.argv[3]))
