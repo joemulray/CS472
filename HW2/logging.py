@@ -61,7 +61,11 @@ class logger:
 	def usage(self, msg):
 		log =  "Usage: %s" %msg
 		print log
-		self.file.write(log + "\n")
+
+	def log(self, msg):
+		log = "%s" %msg
+		print log.strip()
+		self.file.write(log)
 		self.file.flush()
 
 
