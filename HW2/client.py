@@ -2,9 +2,14 @@
 
 import socket
 import struct
-import sys
-import datetime
+import sys, os
+
+
+#
 from logging import logger
+
+
+
 """
 Joseph Mulray
 CS472 - Computer Networks
@@ -39,7 +44,7 @@ class FTP:
 		self.datasocket = None
 		self.port = 20
 		self.action = { "login" : self.username, "port" : self.buildport, "eprt" : self.buildeprt, \
-					"retr" : self.buildretr, "stor" : self.buildstor }
+					"retr" : self.buildretr, "stor" : self.buildstor, "list" : self.buildlist }
 		self.commands = {
 					"user" : "USER", "quit" : "QUIT", "pasv" : "PASV", \
 					"epsv" : "EPSV", "port" : "PORT",  "cd" : "CWD", \
@@ -89,11 +94,13 @@ class FTP:
 		self.socket.send(self.password)
 
 
-	def openconnection(self, response):
+	def openconnection(self, response=None):
 		print "\n** OPEN CONNECTION **\n"
 		if self.socket.datasocket:
-			respc = self.socket.datasocket.receive()
+			#respc = self.socket.datasocket.receive()
+			pass
 		else:
+			print "port %s" %self.port
 			self.datasocket = ClientSocket(sys.argv[1], sys.argv[2], self.port)
 			self.socket.datasocket = self.datasocket
 
@@ -130,6 +137,24 @@ class FTP:
 
 		msg = msg + "\r\n"
 		return msg
+
+
+	def buildlist(self, cmd):
+		try:
+			print "buildlist"
+			msg = "%s\r\n" %(self.commands["list"])
+			self.socket.send(msg)
+
+			if not self.socket.datasocket:
+				self.openconnection()
+
+			self.socket.receive()
+			self.datasocket.close()
+
+
+		except Exception as error:
+			self.ftplog.error(error)
+			return None
 
 
 	def buildport(self, cmd):
@@ -173,12 +198,11 @@ class FTP:
 			filepath = cmd[1]
 			msg = "%s %s\r\n" %(self.commands["retr"], filepath)
 			self.socket.send(msg)
-			self.socket.receive()
-			filedata = self.datasocket.receive()
-			with open(filepath, "w+") as openfile:
+			(response, filedata) = self.socket.receive()
+			file = os.path.basename(filepath)
+			with open(file, "w+") as openfile:
 				openfile.write(filedata)
 
-			self.socket.receive()
 			return None
 
 		except Exception as error:
@@ -204,10 +228,8 @@ class FTP:
 				print content
 
 			self.socket.send(msg)
-			self.socket.receive()
-			self.datasocket.send(content)
+			self.socket.receive(True, content)
 			self.datasocket.close()
-			self.socket.receive()
 
 		except Exception as error:
 			self.ftplog.error(error)
@@ -248,7 +270,7 @@ class ClientSocket:
 		self.port = port
 		self.clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		self.log = logger(filename, "[client]")
-		self.clientsocket.settimeout(5)
+		self.clientsocket.settimeout(1)
 		self.datasocket = None
 
 		try:
@@ -258,32 +280,87 @@ class ClientSocket:
 
 		except socket.error as e:
 			self.log.error(str(e))
+			exit(0)
 			pass
 
 	def close(self):
 		self.clientsocket.close()
 
 
-	def receive(self):
+	def receive(self, debug=True, senddata=None):
 		response = ""
+		dataconnection = False
 		try:
+			while True:
 
-			message = self.clientsocket.recv(BUFFER)
-			response += message
+				message = self.clientsocket.recv(BUFFER)
+				if message and debug:
+					self.log.received(message)
+				elif message and not debug:
+					self.log.log(message)
+
+				if message[:3] == "150" or message[:3] == "125":
+					dataconnection=True
+
+					#if there was no datasocket available ftp server not handling for this
+					if not self.datasocket:
+						msg = "425 Use PORT or PASV first."
+						self.log.received(msg)
+						return msg
+
+
+					if senddata:
+						data = self.datasocket.send(senddata)
+					else:
+						data = self.datasocket.datareceive()
+
+					self.datasocket.close()
+					self.datasocket = None
+
+				response += message
+
+				if not message:
+					break
 
 		except socket.error as error:
 			pass
-		if response:
-			self.log.received(response)
-		else:
-			print "did not recieve anything"
+		
+		if dataconnection:
+			return message, data
+
+		if not response: 
+			print "timeout occurred"
+
+
 		return response
+
+
+
+
+	def datareceive(self):
+		response = ""
+		try:
+			while True:
+
+				message = self.clientsocket.recv(BUFFER)
+				
+				if not message:
+					break
+				response += message
+				self.log.log(message)
+
+			return response
+
+
+		except socket.error as error:
+			pass
 
 
 	def send(self, command):
 		try:
 			self.log.sending(command)
 			self.clientsocket.sendall(command)
+			return True
 
 		except struct.error as error:
 			self.log.error(error)
