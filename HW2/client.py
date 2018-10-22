@@ -59,7 +59,7 @@ class FTP:
 					"user" : "USER", "quit" : "QUIT", "pasv" : "PASV", \
 					"epsv" : "EPSV", "port" : "PORT",  "cd" : "CWD", \
 					"eprt" : "EPRT", "retr" : "RETR", "stor" : "STOR", \
-					"syst" : "SYST", "list" : "LIST", "pwd" : "PWD", \
+					"syst" : "SYST", "ls" : "LIST", "pwd" : "PWD", \
 					"help" : "HELP", "pass" : "PASS" \
 					}
 
