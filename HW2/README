@@ -2,3 +2,46 @@ Joseph Mulray
 CS 472
 Homework 2
 10/10/18
+
+Files:
+client.py
+logging.py
+sample-client.log
+
+
+Makefile Commands:
+	run: run program on drexel ftp server
+		<python client.py 10.246.251.93 client.log>
+	view:
+		view source files
+	docs:
+		view pydoc documentation of source files
+	clean:
+		removes pyc and logfile
+
+
+CLI commands:
+user quit pasv
+epsv port cd
+eprt retr stor
+syst ls pwd
+help pass
+
+
+
+NOTES:
+The main file for the ftpclient is client.py. Inside client.py there is two classes (FTP, ClientSocket) that handle the whole program. I tried to architect the program in a way so that if someone wanted to have different sockets, or run multiple FTP clients. ClientSocket class handles the sending and receiving of data through the sockets. FTP class will evaluate the response from the sockets and return the handled event. I tried to document and structure the best I could. One thing I was not able to verify that was actually working was my port and eprt. On my application on my mac it was returning me a 425 and on the Drexel Server was returning me a 500. So those two commands I know are sending the correct message to the server just do not know if the valid handling on the client side is all there.
+
+
+QUESTIONS:
+1. Think about the conversation of FTP – how does each side validate the other (on the
+connection and data ports – think of each separately)? How do they trust that they’re getting
+a connection from the right person?
+
+Each side does there own validation. The client is going to establish a connection on a server with a specific port and close the connection after the transfer of data so that the port is not attempted to be opened or reused. Validation takes place with the server during the opposite of these events, when the client requests the server to send a port and is able to establish a connection and the client then does the handling of the data connection. Each being mapped to a specific port and a specifc transfer, once that transfer is complete the port is then closed where it can't be opened again by another <user/server>
+
+
+2. How does your client know that it’s sending the right commands in the right order? How
+does it know the sender is trustworthy?
+It checks the response from the server. If the messages are out of order the server will return the correct response for that given message, processing each request individually. user sends LIST before logging in the server will process that request first and return a 332 which needs to then be interpreted on the client. The server knows its trustworthy from the authentication process. Some commands require authentication and its the job of the server to keep track who is authorized and what IP (client) relates to which user.
+
