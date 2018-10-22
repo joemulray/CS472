@@ -31,7 +31,6 @@ class FTP:
 		username	The username of the ftp client
 		password 	The password of the ftp client
 		__authorized 	The status of authorization of the tcp connection
-		datasocket 		The data socket used to transport on the different port
 		action 		The commands that require action {input/parsing} before {sending/recieving}
 		commands 	The available commands and their ftp command
 
@@ -52,7 +51,6 @@ class FTP:
 		self.username = username
 		self.password = password
 		self.__authorized = False
-		self.datasocket = None
 		self.port = 20
 		self.action = { "login" : self.username, "port" : self.buildport, "eprt" : self.buildeprt, \
 					"retr" : self.buildretr, "stor" : self.buildstor, "list" : self.buildlist, \
@@ -91,17 +89,14 @@ class FTP:
 		cmd = raw_input("ftp> ").split()
 		if cmd:
 			if cmd[0] in self.commands:
-
 				if cmd[0] in self.action:
 					command = self.action[cmd[0]](cmd)
 				else:
 					command = self.buildcmd(cmd)
-
 				if command:
 					self.socket.send(command)
 				else:
 					self.command()
-
 			else:
 				self.command()
 		else:
@@ -139,12 +134,17 @@ class FTP:
 		:param response: the response from the clientsocket
 		:return: returns nothing
 		"""
-		if self.socket.datasocket:
-			pass
-		else:
+		if not self.socket.datasocket:
 			"""Creates a datasocket with definded port {default 20} if none exist"""
-			self.datasocket = ClientSocket(sys.argv[1], sys.argv[2], self.port)
-			self.socket.datasocket = self.datasocket
+			self.socket.datasocket = ClientSocket(sys.argv[1], sys.argv[2], self.port)
+
+
+	def dataconnection(self):
+		if not self.socket.datasocket:
+			self.ftplog.debug("Received: 425 Use PORT or PASV first.")
+			return False
+		else:
+			return True
 
 
 	def pasvmode(self, response):
@@ -167,8 +167,8 @@ class FTP:
 			self.ftplog.error(error)
 
 		#establish a new connection
-		self.datasocket = ClientSocket(sys.argv[1], sys.argv[2], self.port)
-		self.socket.datasocket = self.datasocket
+		self.socket.datasocket = None
+		self.openconnection()
 		self.command()
 
 	def exit(self, response):
@@ -226,30 +226,6 @@ class FTP:
 			self.ftplog.error(error)
 			return None
 
-	def buildlist(self, cmd):
-		"""
-		List command to send to ftp server checks if datasocket exists
-
-		:param cmd: the stdin input from user
-		:type cmd: array
-		:return: returns nothing
-		"""
-		try:
-			msg = "%s\r\n" %(self.commands["list"])
-			self.socket.send(msg)
-			self.socket.receive()
-
-
-			if not self.socket.datasocket:
-				msg = "425 Use PORT or PASV first."
-				return	
-
-			self.datasocket.close()
-
-		except Exception as error:
-			self.ftplog.error(error)
-			return None
-
 
 	def buildport(self, cmd):
 		"""
@@ -282,6 +258,7 @@ class FTP:
 
 		return msg
 
+
 	def buildeprt(self, cmd):
 		"""
 		EPRT command to send to the ftp server port from user and builds msg object
@@ -303,9 +280,34 @@ class FTP:
 			self.ftplog.usage("eprt <port>")
 			return None
 
+
+	def buildlist(self, cmd):
+		"""
+		List command to send to ftp server checks if datasocket exists
+
+		:param cmd: the stdin input from user
+		:type cmd: array
+		:return: returns nothing
+		"""
+		try:
+			if not self.dataconnection():
+				return
+
+			msg = "%s\r\n" %(self.commands["list"])
+			self.socket.send(msg)
+			self.socket.receive()
+
+			self.socket.datasocket.close()
+			self.socket.datasocket = None
+
+		except Exception as error:
+			self.ftplog.error(error)
+			return None
+
+
 	def buildretr(self, cmd):
 		"""
-		RETR command to retrieve file from the ftp server {retr <path to file> < (optional) path to filename>}
+		RETR command to retrieve file from the ftp server {retr <path to file> <(optional) path to filename>}
 
 		:param cmd: the stdin input from user
 		:type cmd: array
@@ -313,6 +315,10 @@ class FTP:
 		"""
 
 		try:
+
+			if not self.dataconnection():
+				return
+
 			filepath = cmd[1]
 			if len(cmd) > 2:
 				file = cmd[2]
@@ -322,10 +328,16 @@ class FTP:
 			msg = "%s %s\r\n" %(self.commands["retr"], filepath)
 			self.socket.send(msg)
 			(response, filedata) = self.socket.receive()
+
+			if not filedata:
+				filedata = ""
+
 			with open(file, "w+") as openfile:
 				openfile.write(filedata)
 
-			return None
+			#close the datasocket
+			self.socket.datasocket.close()
+			self.socket.datasocket = None
 
 		except Exception as error:
 			self.ftplog.error(error)
@@ -343,6 +355,10 @@ class FTP:
 		"""
 
 		try:
+
+			if not self.dataconnection():
+				return
+
 			filepath = cmd[1]
 			
 			#handle default input if path is not specified 
@@ -359,8 +375,9 @@ class FTP:
 				content = openfile.read()
 
 			self.socket.send(msg)
-			self.socket.receive(True, content)
-			self.datasocket.close()
+			repsonse = self.socket.receive(True, content)
+			self.socket.datasocket.close()
+			self.socket.datasocket = None
 
 		except Exception as error:
 			self.ftplog.error(error)
@@ -419,7 +436,7 @@ class ClientSocket:
 		self.port = port
 		self.clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		self.log = logger(filename, "[client]")
-		self.clientsocket.settimeout(1)
+		self.clientsocket.settimeout(2)
 		self.datasocket = None
 		
 		"""
@@ -482,9 +499,6 @@ class ClientSocket:
 						data = self.datasocket.send(senddata)
 					else:
 						data = self.datasocket.datareceive()
-
-					self.datasocket.close()
-					self.datasocket = None
 
 				response += message
 
