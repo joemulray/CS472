@@ -1,0 +1,174 @@
+2018-10-22 13:49 : [client] [debug] : Connected to 10.246.251.93:21
+2018-10-22 13:49 : [client] [debug] : Received: 220 Welcome to CS472 FTP Server
+2018-10-22 13:49 : [client] [debug] : Sent: USER cs472
+2018-10-22 13:49 : [client] [debug] : Received: 331 Please specify the password.
+2018-10-22 13:49 : [client] [debug] : Sent: PASS hw2ftp
+2018-10-22 13:49 : [client] [debug] : Received: 230 Login successful.
+2018-10-22 13:49 : [client] [debug] : Sent: PASV
+2018-10-22 13:49 : [client] [debug] : Received: 227 Entering Passive Mode (10,246,251,93,165,31).
+2018-10-22 13:50 : [client] [debug] : Connected to 10.246.251.93:42271
+2018-10-22 13:49 : [client] [debug] : Sent: LIST
+2018-10-22 13:49 : [client] [debug] : Received: 150 Here comes the directory listing.
+-rw-r--r--    1 1001     1001            0 Oct 21 19:11 "C:\Users\Cassidy\OneDrive - Drexel University\Schoolwork Fall 18-19\CS 472\cs472\HW2\test555x.txt"
+-rw-r--r--    1 1001     1001            0 Oct 21 19:12 "aybeecee.txt"
+drwxr-xr-x    2 1001     1001         4096 Oct 22 13:06 226
+-rw-r--r--    1 1001     1001            0 Oct 17 23:42 3
+-rw-r--r--    1 1001     1001        53731 Oct 21 17:31 AAH.txt
+-rw-r--r--    1 1001     1001            0 Oct 22 13:16 Apple.txt
+-rw-r--r--    1 1001     1001            0 Oct 21 13:19 C:\Users\Cassidy\OneDrive - Drexel University\Schoolwork Fall 18-19\CS 472\cs472\HW2	est555.txt
+-rw-r--r--    1 1001     1001            0 Oct 21 19:07 C:\Users\Cassidy\OneDrive - Drexel University\Schoolwork Fall 18-19\CS 472\cs472\HW2\test555x.txt
+-rw-r--r--    1 1001     1001            0 Oct 21 14:22 C:\Users\TinTin.TinTin-PC\home\donnieTest
+-rw-r--r--    1 1001     1001            0 Oct 21 14:17 C:\Users\TinTin.TinTin-PC\workspace\CS472 HW2\donnieTest.txt
+-rw-r--r--    1 1001     1001            0 Oct 17 11:36 DONNIE.TXT
+-rw-r--r--    1 1001     1001       128612 Oct 16 16:15 DS2.jpg
+-rw-r--r--    1 1001     1001           68 Oct 15 12:28 Lee.txt
+-rw-r--r--    1 1001     1001           54 Oct 17 19:24 Lee2.txt
+-rw-r--r--    1 1001     1001           66 Oct 22 12:27 LeeTest.txt
+-rw-r--r--    1 1001     1001            0 Oct 22 13:44 ON.txt
+-rw-r--r--    1 1001     1001            0 Oct 22 13:48 OOO.txt
+-rw-r--r--    1 1001     1001            0 Oct 22 13:39 PNTest1.txt
+-rw-r--r--    1 1001     1001           41 Oct 22 11:43 README
+-rw-r--r--    1 1001     1001        53731 Oct 15 22:33 README.txt
+-rw-r--r--    1 1001     1001            0 Oct 17 11:25 SAND.TXT
+-rw-r--r--    1 1001     1001            0 Oct 14 16:50 Select file to send to the server: 
+-rw-r--r--    1 1001     1001            0 Oct 15 11:24 Test.txt
+-rw-r--r--    1 1001     1001       321080 Oct 21 21:27 a.txt
+-rw-r--r--    1 1001     1001           14 Oct 22 10:38 aaa.txt
+-rw-r--r--    1 1001     1001            0 Oct 14 17:32 aaaa
+-rw-r--r--    1 1001     1001            0 Oct 21 14:24 abc.txt
+-rw-r--r--    1 1001     1001            0 Oct 21 14:08 apples.txt
+-rw-r--r--    1 1001     1001          190 Oct 15 00:00 appless.txt
+-rw-r--r--    1 1001     1001          190 Oct 15 00:02 applesss.txt
+-rw-r--r--    1 1001     1001            0 Oct 18 18:07 asdf
+-rw-r--r--    1 1001     1001            0 Oct 21 19:13 aybeecee.txt
+-rw-r--r--    1 1001     1001           21 Oct 21 15:22 bad.txt
+-rw-r--r--    1 1001     1001       128612 Oct 21 14:54 badgame.jpg
+-rw-r--r--    1 1001     1001          190 Oct 18 17:56 bananna.txt
+-rw-r--r--    1 1001     1001           55 Oct 22 12:22 block.py
+drwxr-xr-x    2 1001     1001         4096 Oct 21 09:01 chi
+-rw-r--r--    1 1001     1001          921 Oct 21 08:34 chi.txt
+-rw-r--r--    1 1001     1001            0 Oct 14 16:31 cmd.php
+-rw-r--r--    1 1001     1001           21 Oct 21 20:59 dad.txt
+-rw-r--r--    1 1001     1001            0 Oct 21 16:44 donnieTest.txt
+-rw-r--r--    1 1001     1001       128612 Oct 21 16:33 dumb.jpg
+-rw-r--r--    1 1001     1001           81 Oct 14 18:05 dummy.txt
+-rw-r--r--    1 1001     1001            0 Oct 22 13:20 fasf
+-rw-r--r--    1 1001     1001            0 Oct 21 15:04 fdsa
+-rw-r--r--    1 1001     1001           21 Oct 22 09:17 foo
+-rw-r--r--    1 1001     1001           21 Oct 20 01:28 foo.txt
+-rw-r--r--    1 1001     1001            7 Oct 22 08:38 foobar
+-rw-r--r--    1 1001     1001       321080 Oct 22 01:54 ftp-rfcs-2.txt
+-rw-r--r--    1 1001     1001       321080 Oct 22 02:21 ftp-rfcs.txt
+-rw-r--r--    1 1001     1001            0 Oct 19 16:25 gfdggh
+-rw-r--r--    1 1001     1001            0 Oct 19 16:29 gfggd
+-rw-r--r--    1 1001     1001            0 Oct 19 16:58 gfkkg
+-rw-r--r--    1 1001     1001            0 Oct 19 17:00 gkdfh
+-rw-r--r--    1 1001     1001          132 Oct 19 10:18 goats.txt
+drwxr-xr-x    2 1001     1001         4096 Oct 22 13:05 goats_hideout
+-rw-r--r--    1 1001     1001           60 Oct 19 10:46 goats_undercover.txt
+-rw-r--r--    1 1001     1001            0 Oct 22 09:51 google
+-rw-r--r--    1 1001     1001           14 Oct 22 12:45 hello.txt
+-rw-r--r--    1 1001     1001           14 Oct 22 04:52 hfeiwhf.txt
+-rw-r--r--    1 1001     1001           11 Oct 22 11:50 hfoieowiahf
+-rw-r--r--    1 1001     1001            0 Oct 21 21:52 hi
+-rw-r--r--    1 1001     1001           18 Oct 22 00:04 hihihi
+-rw-r--r--    1 1001     1001       128612 Oct 21 14:56 horriblegame.jpg
+-rw-r--r--    1 1001     1001           12 Oct 22 13:48 itworks.txt
+-rw-r--r--    1 1001     1001           16 Oct 21 23:10 jFile.txt
+-rw-r--r--    1 1001     1001           54 Oct 22 01:58 j_test.txt
+-rw-r--r--    1 1001     1001            0 Oct 22 01:57 j_text.txt
+drwxr-xr-x    2 1001     1001         4096 Oct 20 19:31 jau
+-rw-r--r--    1 1001     1001            0 Oct 21 23:09 jfile.txt
+-rw-r--r--    1 1001     1001            0 Oct 19 12:22 jhjgf
+-rw-r--r--    1 1001     1001            0 Oct 21 23:34 jjfile.txt
+-rw-r--r--    1 1001     1001            0 Oct 19 16:57 kfk
+-rw-r--r--    1 1001     1001            0 Oct 19 16:55 kfkgdkf
+-rw-r--r--    1 1001     1001       128612 Oct 21 15:23 lame.jpg
+-rw-r--r--    1 1001     1001       128612 Oct 21 14:50 lamegame.jpg
+-rw-r--r--    1 1001     1001        13720 Oct 22 13:49 log.txt
+-rw-r--r--    1 1001     1001            0 Oct 21 13:00 log1.txt
+-rw-r--r--    1 1001     1001            0 Oct 21 13:02 log112.txt
+-rw-r--r--    1 1001     1001         8062 Oct 22 06:22 log2.txt
+-rw-r--r--    1 1001     1001           41 Oct 22 11:44 newREADME
+-rw-r--r--    1 1001     1001           24 Oct 14 17:03 new_test.txt
+-rw-r--r--    1 1001     1001           24 Oct 22 00:52 ntn42test
+-rw-r--r--    1 1001     1001           24 Oct 22 01:03 ntn42test2
+-rw-r--r--    1 1001     1001           24 Oct 22 09:55 ntn42test3
+-rw-r--r--    1 1001     1001            0 Oct 21 20:48 onetwothree.txt
+-rw-r--r--    1 1001     1001            3 Oct 21 23:40 ooppoo.txt
+-rw-r--r--    1 1001     1001            0 Oct 21 21:34 poppycock.txt
+-rw-r--r--    1 1001     1001        19702 Oct 19 10:26 rfc.txt
+-rw-r--r--    1 1001     1001           85 Oct 14 19:03 sand.txt
+-rw-r--r--    1 1001     1001            0 Oct 21 16:07 santini.txt
+-rw-r--r--    1 1001     1001            0 Oct 21 16:10 santini2.txt
+-rw-r--r--    1 1001     1001            0 Oct 21 16:14 santini3.txt
+-rw-r--r--    1 1001     1001            0 Oct 21 16:16 santini4.txt
+-rw-r--r--    1 1001     1001            0 Oct 21 16:17 santini5.txt
+-rw-r--r--    1 1001     1001           22 Oct 19 17:25 store_txt_test.txt
+drwxr-xr-x    2 1001     1001         4096 Oct 21 22:08 svtest
+drwxr-xr-x    2 1001     1001         4096 Oct 13 19:33 test
+-rw-r--r--    1 1001     1001            0 Oct 22 13:21 test.tt
+-rw-r--r--    1 1001     1001            0 Oct 22 13:17 test.tx
+-rw-r--r--    1 1001     1001            0 Oct 22 13:29 test.txt
+-rw-r--r--    1 1001     1001        53731 Oct 21 17:26 test1.txt
+-rw-r--r--    1 1001     1001            6 Oct 20 17:31 test123.txt
+-rw-r--r--    1 1001     1001            5 Oct 22 08:29 test123999.txt
+-rw-r--r--    1 1001     1001           21 Oct 18 12:54 test2.txt
+-rw-r--r--    1 1001     1001            7 Oct 21 13:21 test234.txt
+-rw-r--r--    1 1001     1001           50 Oct 21 20:26 test3.txt
+-rw-r--r--    1 1001     1001           30 Oct 21 21:35 test4.txt
+-rw-r--r--    1 1001     1001           15 Oct 21 19:08 test555.txt
+-rw-r--r--    1 1001     1001            0 Oct 22 13:35 test_for_upload.txt
+-rw-r--r--    1 1001     1001            0 Oct 22 13:18 test_ttt.txt
+drwxr-xr-x    2 1001     1001         4096 Oct 20 17:34 testdir
+-rw-r--r--    1 1001     1001            0 Oct 22 13:41 testt.txt
+-rw-r--r--    1 1001     1001            0 Oct 22 13:27 testtt.txt
+-rw-r--r--    1 1001     1001       128612 Oct 21 14:57 thisgameisbad.jpg
+drwxr-xr-x    2 1001     1001         4096 Oct 06 14:03 x
+-rw-r--r--    1 1001     1001            0 Oct 21 23:30 xx
+-rw-r--r--    1 1001     1001          105 Oct 22 12:25 yourclientdoesntwork.txt
+-rw-r--r--    1 1001     1001       407561 Oct 22 12:59 yoursavior.jpg
+-rw-r--r--    1 1001     1001        14856 Oct 22 13:19 yuck.jpg
+2018-10-22 13:49 : [client] [debug] : Received: 226 Directory send OK.
+2018-10-22 13:49 : [client] [debug] : Sent: HELP
+2018-10-22 13:49 : [client] [debug] : Received: 214-The following commands are recognized.
+ ABOR ACCT ALLO APPE CDUP CWD  DELE EPRT EPSV FEAT HELP LIST MDTM MKD
+ MODE NLST NOOP OPTS PASS PASV PORT PWD  QUIT REIN REST RETR RMD  RNFR
+ RNTO SITE SIZE SMNT STAT STOR STOU STRU SYST TYPE USER XCUP XCWD XMKD
+2018-10-22 13:49 : [client] [debug] : Received:  XPWD XRMD
+214 Help OK.
+2018-10-22 13:49 : [client] [debug] : Sent: PWD
+2018-10-22 13:49 : [client] [debug] : Received: 257 "/home/cs472" is the current directory
+2018-10-22 13:49 : [client] [debug] : Sent: SYST
+2018-10-22 13:49 : [client] [debug] : Received: 215 UNIX Type: L8
+2018-10-22 13:49 : [client] [debug] : Sent: PASV
+2018-10-22 13:49 : [client] [debug] : Received: 227 Entering Passive Mode (10,246,251,93,62,142).
+2018-10-22 13:50 : [client] [debug] : Connected to 10.246.251.93:16014
+2018-10-22 13:49 : [client] [debug] : Sent: RETR test.txt
+2018-10-22 13:49 : [client] [debug] : Received: 150 Opening BINARY mode data connection for test.txt (0 bytes).
+2018-10-22 13:49 : [client] [debug] : Received: 226 Transfer complete.
+2018-10-22 13:49 : [client] [debug] : Sent: PWD
+2018-10-22 13:49 : [client] [debug] : Received: 257 "/home/cs472" is the current directory
+2018-10-22 13:49 : [client] [debug] : Sent: CWD testdir
+2018-10-22 13:49 : [client] [debug] : Received: 250 Directory successfully changed.
+2018-10-22 13:49 : [client] [debug] : Sent: PWD
+2018-10-22 13:49 : [client] [debug] : Received: 257 "/home/cs472/testdir" is the current directory
+2018-10-22 13:49 : [client] [debug] : Sent: EPSV
+2018-10-22 13:49 : [client] [debug] : Received: 229 Entering Extended Passive Mode (|||17420|)
+2018-10-22 13:51 : [client] [debug] : Connected to 10.246.251.93:17420
+2018-10-22 13:49 : [client] [debug] : Sent: STOR itworks.txt
+2018-10-22 13:49 : [client] [debug] : Received: 150 Ok to send data.
+2018-10-22 13:51 : [client] [debug] : Sent: it works :)
+2018-10-22 13:49 : [client] [debug] : Sent: PWD
+2018-10-22 13:49 : [client] [debug] : Received: 226 Transfer complete.
+2018-10-22 13:49 : [client] [debug] : Received: 257 "/home/cs472/testdir" is the current directory
+2018-10-22 13:49 : [client] [debug] : Sent: PORT 10,246,251,93,7,228
+2018-10-22 13:49 : [client] [debug] : Received: 500 Illegal PORT command.
+2018-10-22 13:49 : [client] [ERROR] : list index out of range
+2018-10-22 13:49 : [client] [debug] : Sent: EPRT |1|10.246.251.93|63425|
+2018-10-22 13:49 : [client] [debug] : Received: 500 Illegal EPRT command.
+2018-10-22 13:49 : [client] [debug] : Sent: PASV
+2018-10-22 13:49 : [client] [debug] : Received: 227 Entering Passive Mode (10,246,251,93,83,34).
+2018-10-22 13:52 : [client] [debug] : Connected to 10.246.251.93:21282
+2018-10-22 13:49 : [client] [debug] : Sent: QUIT
+2018-10-22 13:49 : [client] [debug] : Received: 221 Goodbye.
