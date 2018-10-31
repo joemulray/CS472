@@ -3,7 +3,7 @@ VIEWER = more
 SERVER = server.py
 SUDO = sudo
 PYDOC = pydoc server logging
-ARGS = n3-13-217.dhcp.drexel.edu server.log 2121
+ARGS = server.log 2121
 
 .PHONY: run view clean
 
