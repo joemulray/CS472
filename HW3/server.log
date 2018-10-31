@@ -1,8 +1,66 @@
-2018-10-24 18:36 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
-2018-10-24 20:14 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
-2018-10-24 20:14 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
-2018-10-24 20:14 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
-2018-10-24 20:15 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
-2018-10-24 20:15 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
-2018-10-24 20:15 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
-2018-10-24 20:24 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-10-30 20:02 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-10-30 20:03 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:9092
+2018-10-30 20:03 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-10-30 20:05 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:9092
+2018-10-30 20:05 : [server] [debug] : Sent: 220-Service ready for new user.
+2018-10-30 20:07 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:9092
+2018-10-30 20:07 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-10-30 20:07 : [server] [debug] : USER josephmulray
+2018-10-30 20:08 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:9093
+2018-10-30 20:09 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-10-30 20:09 : [server] [debug] : USER josephmulray
+2018-10-30 20:09 : [server] [debug] : Sent: 501 Syntax error in parameters or arguments.
+2018-10-30 20:20 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-10-30 20:20 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:9091
+2018-10-30 20:21 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-10-30 20:21 : [server] [debug] : USER josephmulray
+2018-10-30 20:21 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:9092
+2018-10-30 20:21 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-10-30 20:21 : [server] [debug] : USER josephmulray
+2018-10-30 20:21 : [server] [debug] : Sent: 501 Syntax error in parameters or arguments.
+2018-10-30 20:22 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:9093
+2018-10-30 20:22 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-10-30 20:22 : [server] [debug] : USER josephmulray
+2018-10-30 20:22 : [server] [debug] : Sent: 501 Syntax error in parameters or arguments.
+2018-10-30 20:24 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:9094
+2018-10-30 20:24 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-10-30 20:24 : [server] [debug] : USER josephmulray
+2018-10-30 20:24 : [server] [debug] : Sent: 331 Please specify the password.
+2018-10-30 20:24 : [server] [debug] : PASS murlay
+2018-10-30 20:41 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:9094
+2018-10-30 20:41 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-10-30 20:41 : [server] [debug] : USER josephmulray
+2018-10-30 20:41 : [server] [debug] : Sent: 331 Please specify the password.
+2018-10-30 20:41 : [server] [debug] : PASS root
+2018-10-30 20:41 : [server] [debug] : Sent: 530 Authentication Failed
+2018-10-30 20:41 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:9093
+2018-10-30 20:41 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-10-30 20:41 : [server] [debug] : USER root
+2018-10-30 20:41 : [server] [debug] : Sent: 331 Please specify the password.
+2018-10-30 20:41 : [server] [debug] : PASS root
+2018-10-30 20:41 : [server] [debug] : Sent: 530 Authentication Failed
+2018-10-30 20:47 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:9094
+2018-10-30 20:47 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-10-30 20:48 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:9092
+2018-10-30 20:48 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-10-30 20:48 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:9092
+2018-10-30 20:48 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-10-30 20:52 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:9092
+2018-10-30 20:52 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-10-30 20:52 : [server] [debug] : USER josephmulray
+2018-10-30 20:52 : [server] [debug] : Sent: 331 Please specify the password.
+2018-10-30 20:52 : [server] [debug] : PASS root
+2018-10-30 20:52 : [server] [debug] : Sent: 530 Authentication Failed
+2018-10-30 20:52 : [server] [debug] : PASV
+2018-10-30 20:57 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:9093
+2018-10-30 20:57 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-10-30 20:57 : [server] [debug] : USER josephmulray
+2018-10-30 20:57 : [server] [debug] : Sent: 331 Please specify the password.
+2018-10-30 20:57 : [server] [debug] : PASS root
+2018-10-30 20:57 : [server] [debug] : Sent: 530 Authentication Failed
+2018-10-30 20:59 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:9094
+2018-10-30 20:59 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-10-30 20:59 : [server] [debug] : USER josephmulray
+2018-10-30 20:59 : [server] [debug] : Sent: 331 Please specify the password.
+2018-10-30 20:59 : [server] [debug] : PASS root
+2018-10-30 20:59 : [server] [debug] : Sent: 530 Authentication Failed
