@@ -64,3 +64,818 @@
 2018-10-30 20:59 : [server] [debug] : Sent: 331 Please specify the password.
 2018-10-30 20:59 : [server] [debug] : PASS root
 2018-10-30 20:59 : [server] [debug] : Sent: 530 Authentication Failed
+2018-10-30 20:59 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:9095
+2018-10-30 21:00 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-10-30 21:00 : [server] [debug] : USER josephmulray
+2018-10-30 21:00 : [server] [debug] : Sent: 331 Please specify the password.
+2018-10-30 21:00 : [server] [debug] : PASS root
+2018-10-30 21:00 : [server] [debug] : Sent: 230 Login successful
+2018-10-31 14:56 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-10-31 14:56 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-11-01 21:18 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-11-01 21:19 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 21:22 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-11-01 21:23 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 21:23 : [server] [debug] : USER josephmulray
+2018-11-01 21:23 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 21:24 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-11-01 21:24 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 21:24 : [server] [debug] : USER josephmulray
+2018-11-01 21:24 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 21:24 : [server] [debug] : PASS root
+2018-11-01 21:24 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 21:39 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-11-01 21:40 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 21:40 : [server] [debug] : USER josephmulray
+2018-11-01 21:40 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 21:40 : [server] [debug] : PASS root
+2018-11-01 21:40 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 21:40 : [server] [debug] : PWD
+2018-11-01 21:42 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-11-01 21:42 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 21:42 : [server] [debug] : USER josephmulray
+2018-11-01 21:42 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 21:42 : [server] [debug] : PASS root
+2018-11-01 21:42 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 21:42 : [server] [debug] : PWD
+2018-11-01 21:42 : [server] [debug] : Sent: 257 /
+2018-11-01 21:42 : [server] [debug] : PWD
+2018-11-01 21:42 : [server] [debug] : Sent: 257 /
+2018-11-01 21:42 : [server] [debug] : PWD
+2018-11-01 21:42 : [server] [debug] : Sent: 257 /
+2018-11-01 21:42 : [server] [debug] : PWD
+2018-11-01 21:42 : [server] [debug] : Sent: 257 /
+2018-11-01 21:42 : [server] [debug] : PWD
+2018-11-01 21:42 : [server] [debug] : Sent: 257 /
+2018-11-01 21:42 : [server] [debug] : PWD
+2018-11-01 21:42 : [server] [debug] : Sent: 257 /
+2018-11-01 21:55 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-11-01 21:55 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 21:55 : [server] [debug] : USER josephmulray
+2018-11-01 21:55 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 21:55 : [server] [debug] : PASS root
+2018-11-01 21:55 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 21:55 : [server] [debug] : PORT 10,250,13,217,226,136
+2018-11-01 22:10 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-11-01 22:10 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 22:10 : [server] [debug] : USER josephmulray
+2018-11-01 22:10 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 22:10 : [server] [debug] : PASS root
+2018-11-01 22:10 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 22:10 : [server] [debug] : PORT 10,250,13,217,226,242
+2018-11-01 22:10 : [server] [ERROR] : portglobal name 'response' is not defined
+2018-11-01 22:10 : [server] [debug] : Sent: 501 Syntax error in parameters or arguments.
+2018-11-01 22:10 : [server] [debug] : LPRT 4,4,10,250,13,217,2,226,242
+2018-11-01 22:12 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-11-01 22:12 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 22:12 : [server] [debug] : USER josephmulray
+2018-11-01 22:12 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 22:12 : [server] [debug] : PASS root
+2018-11-01 22:12 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 22:12 : [server] [debug] : PORT 10,250,13,217,227,8
+2018-11-01 22:12 : [server] [ERROR] : portglobal name 'response' is not defined
+2018-11-01 22:12 : [server] [debug] : Sent: 501 Syntax error in parameters or arguments.
+2018-11-01 22:12 : [server] [debug] : LPRT 4,4,10,250,13,217,2,227,8
+2018-11-01 22:16 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-11-01 22:16 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 22:16 : [server] [debug] : USER josephmulray
+2018-11-01 22:16 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 22:16 : [server] [debug] : PASS root
+2018-11-01 22:16 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 22:16 : [server] [debug] : PORT 10,250,13,217,227,73
+2018-11-01 22:16 : [server] [debug] : Sent: PORT10,250,13,217,227,73
+2018-11-01 22:16 : [server] [debug] : LPRT 4,4,10,250,13,217,2,227,73
+2018-11-01 22:28 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2122
+2018-11-01 22:28 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 22:28 : [server] [debug] : USER josephmulray
+2018-11-01 22:28 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 22:28 : [server] [debug] : PASS root
+2018-11-01 22:28 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 22:28 : [server] [debug] : PWD
+2018-11-01 22:28 : [server] [debug] : Sent: 257 /
+2018-11-01 22:28 : [server] [debug] : PORT 10,250,13,217,227,196
+2018-11-01 22:28 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 22:28 : [server] [debug] : LIST
+2018-11-01 22:31 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-11-01 22:31 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 22:31 : [server] [debug] : USER josephmulray
+2018-11-01 22:31 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 22:31 : [server] [debug] : PASS root
+2018-11-01 22:31 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 22:31 : [server] [debug] : PWD
+2018-11-01 22:31 : [server] [debug] : Sent: 257 /
+2018-11-01 22:31 : [server] [debug] : PORT 10,250,13,217,227,241
+2018-11-01 22:31 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 22:31 : [server] [debug] : LIST
+2018-11-01 22:31 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-01 22:32 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2122
+2018-11-01 22:33 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 22:33 : [server] [debug] : USER josephmulray
+2018-11-01 22:33 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 22:33 : [server] [debug] : PASS root
+2018-11-01 22:33 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 22:33 : [server] [debug] : PWD
+2018-11-01 22:33 : [server] [debug] : Sent: 257 /
+2018-11-01 22:33 : [server] [debug] : PORT 10,250,13,217,228,1
+2018-11-01 22:33 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 22:33 : [server] [debug] : LIST
+2018-11-01 22:33 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-01 22:38 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-11-01 22:39 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 22:39 : [server] [debug] : USER josephmulray
+2018-11-01 22:39 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 22:39 : [server] [debug] : PASS root
+2018-11-01 22:39 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 22:39 : [server] [debug] : PWD
+2018-11-01 22:39 : [server] [debug] : Sent: 257 /
+2018-11-01 22:39 : [server] [debug] : PORT 10,250,13,217,228,48
+2018-11-01 22:39 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 22:39 : [server] [debug] : LIST
+2018-11-01 22:39 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-01 22:41 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2122
+2018-11-01 22:41 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 22:41 : [server] [debug] : USER josephmulray
+2018-11-01 22:41 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 22:41 : [server] [debug] : PASS ]root
+2018-11-01 22:41 : [server] [debug] : Sent: 530 Authentication Failed
+2018-11-01 22:41 : [server] [debug] : USER josephmulray
+2018-11-01 22:41 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 22:41 : [server] [debug] : PASS root
+2018-11-01 22:41 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 22:41 : [server] [debug] : PWD
+2018-11-01 22:41 : [server] [debug] : Sent: 257 /
+2018-11-01 22:41 : [server] [debug] : PORT 10,250,13,217,228,86
+2018-11-01 22:41 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 22:41 : [server] [debug] : LIST
+2018-11-01 22:41 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-01 22:42 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-11-01 22:43 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 22:43 : [server] [debug] : USER josephmulray
+2018-11-01 22:43 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 22:43 : [server] [debug] : PASS root
+2018-11-01 22:43 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 22:43 : [server] [debug] : PWD
+2018-11-01 22:43 : [server] [debug] : Sent: 257 /
+2018-11-01 22:43 : [server] [debug] : PORT 10,250,13,217,228,101
+2018-11-01 22:43 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 22:43 : [server] [debug] : LIST
+2018-11-01 22:43 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-01 22:55 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-11-01 22:56 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 22:56 : [server] [debug] : USER josephmulray
+2018-11-01 22:56 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 22:56 : [server] [debug] : PASS root
+2018-11-01 22:56 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 22:56 : [server] [debug] : PWD
+2018-11-01 22:56 : [server] [debug] : Sent: 257 /
+2018-11-01 22:56 : [server] [debug] : PORT 10,250,13,217,228,232
+2018-11-01 22:56 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 22:56 : [server] [debug] : LIST
+2018-11-01 22:56 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-01 23:25 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-01 23:25 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 23:25 : [server] [debug] : USER josephmulray
+2018-11-01 23:25 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 23:25 : [server] [debug] : PASS root
+2018-11-01 23:25 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 23:25 : [server] [debug] : PORT 127,0,0,1,229,87
+2018-11-01 23:25 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 23:25 : [server] [debug] : LIST
+2018-11-01 23:25 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-01 23:28 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-01 23:29 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 23:29 : [server] [debug] : USER josephmulray
+2018-11-01 23:29 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 23:29 : [server] [debug] : PASS root
+2018-11-01 23:29 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 23:29 : [server] [debug] : PORT 172,20,20,20,229,122
+2018-11-01 23:29 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 23:29 : [server] [debug] : LIST
+2018-11-01 23:29 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-01 23:30 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-01 23:30 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 23:30 : [server] [debug] : USER josephmulray
+2018-11-01 23:30 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 23:30 : [server] [debug] : PASS root
+2018-11-01 23:30 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 23:30 : [server] [debug] : PORT 172,20,20,20,229,137
+2018-11-01 23:30 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 23:30 : [server] [debug] : LIST
+2018-11-01 23:30 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-01 23:31 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-01 23:31 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 23:31 : [server] [debug] : USER josephmulray
+2018-11-01 23:31 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 23:31 : [server] [debug] : PASS root
+2018-11-01 23:31 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 23:31 : [server] [debug] : PWD
+2018-11-01 23:31 : [server] [debug] : Sent: 257 /
+2018-11-01 23:31 : [server] [debug] : PORT 172,20,20,20,229,165
+2018-11-01 23:31 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 23:31 : [server] [debug] : LIST
+2018-11-01 23:31 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-01 23:37 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-01 23:37 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 23:37 : [server] [debug] : USER josephmulray
+2018-11-01 23:37 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 23:37 : [server] [debug] : PASS root
+2018-11-01 23:37 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 23:37 : [server] [debug] : PORT 172,20,20,20,230,14
+2018-11-01 23:37 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 23:37 : [server] [debug] : LIST
+2018-11-01 23:37 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-01 23:40 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-01 23:40 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 23:40 : [server] [debug] : USER josephmulray
+2018-11-01 23:40 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 23:40 : [server] [debug] : PASS root
+2018-11-01 23:40 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 23:40 : [server] [debug] : PORT 172,20,20,20,230,38
+2018-11-01 23:40 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 23:40 : [server] [debug] : LIST
+2018-11-01 23:40 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-01 23:42 : [server] [debug] : Starting server on REX2.local:2122
+2018-11-01 23:42 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 23:42 : [server] [debug] : USER josephmuley
+2018-11-01 23:42 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 23:42 : [server] [debug] : PASS ROOT
+2018-11-01 23:42 : [server] [debug] : Sent: 530 Authentication Failed
+2018-11-01 23:42 : [server] [debug] : USER josephmulray
+2018-11-01 23:42 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 23:42 : [server] [debug] : PASS root
+2018-11-01 23:42 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 23:42 : [server] [debug] : PORT 172,20,20,20,230,70
+2018-11-01 23:42 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 23:42 : [server] [debug] : LIST
+2018-11-01 23:42 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-01 23:45 : [server] [debug] : Starting server on REX2.local:2122
+2018-11-01 23:45 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 23:45 : [server] [debug] : USER josephmulray
+2018-11-01 23:45 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 23:45 : [server] [debug] : PASS root
+2018-11-01 23:45 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 23:45 : [server] [debug] : PORT 172,20,20,20,230,101
+2018-11-01 23:45 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 23:45 : [server] [debug] : LIST
+2018-11-01 23:45 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-01 23:50 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-01 23:50 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 23:50 : [server] [debug] : USER josephmulray
+2018-11-01 23:50 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 23:50 : [server] [debug] : PASS root
+2018-11-01 23:50 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 23:50 : [server] [debug] : PORT 172,20,20,20,230,166
+2018-11-01 23:50 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 23:50 : [server] [debug] : LIST
+2018-11-01 23:50 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-01 23:52 : [server] [debug] : Starting server on REX2.local:2122
+2018-11-01 23:52 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 23:52 : [server] [debug] : USER josephmulray
+2018-11-01 23:52 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 23:52 : [server] [debug] : PASS root
+2018-11-01 23:52 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 23:52 : [server] [debug] : PORT 172,20,20,20,230,188
+2018-11-01 23:52 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 23:52 : [server] [debug] : LIST
+2018-11-01 23:52 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-01 23:54 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-01 23:54 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 23:54 : [server] [debug] : USER josephmulray
+2018-11-01 23:54 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 23:54 : [server] [debug] : PASS root
+2018-11-01 23:54 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 23:54 : [server] [debug] : PORT 172,20,20,20,230,208
+2018-11-01 23:54 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 23:54 : [server] [debug] : LIST
+2018-11-01 23:54 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-01 23:55 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-01 23:55 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-01 23:55 : [server] [debug] : USER josephmulray
+2018-11-01 23:55 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-01 23:55 : [server] [debug] : PASS root
+2018-11-01 23:55 : [server] [debug] : Sent: 230 Login successful
+2018-11-01 23:55 : [server] [debug] : PORT 172,20,20,20,230,238
+2018-11-01 23:55 : [server] [debug] : Sent: 200 Port okay.
+2018-11-01 23:55 : [server] [debug] : LIST
+2018-11-01 23:55 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:03 : [server] [debug] : Starting server on REX2.local:2122
+2018-11-02 00:03 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:03 : [server] [debug] : USER josephmulray
+2018-11-02 00:03 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:03 : [server] [debug] : PASS root
+2018-11-02 00:03 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 00:03 : [server] [debug] : PORT 172,20,20,20,231,82
+2018-11-02 00:03 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:03 : [server] [debug] : LIST
+2018-11-02 00:03 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:04 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-02 00:05 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:05 : [server] [debug] : USER josephmulray
+2018-11-02 00:05 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:05 : [server] [debug] : PASS root
+2018-11-02 00:05 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 00:05 : [server] [debug] : PORT 172,20,20,20,231,99
+2018-11-02 00:05 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:05 : [server] [debug] : LIST
+2018-11-02 00:05 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:07 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-02 00:07 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:07 : [server] [debug] : USER josephmulray
+2018-11-02 00:07 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:07 : [server] [debug] : PASS root
+2018-11-02 00:07 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 00:07 : [server] [debug] : PORT 172,20,20,20,231,167
+2018-11-02 00:07 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:07 : [server] [debug] : LIST
+2018-11-02 00:07 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:07 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:07 : [server] [debug] : QUIT
+2018-11-02 00:09 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-02 00:09 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:09 : [server] [debug] : USER josephmulray
+2018-11-02 00:09 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:09 : [server] [debug] : PASS root
+2018-11-02 00:09 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 00:09 : [server] [debug] : PORT 172,20,20,20,231,215
+2018-11-02 00:09 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:09 : [server] [debug] : LIST
+2018-11-02 00:09 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:09 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:09 : [server] [debug] : PORT 172,20,20,20,231,220
+2018-11-02 00:16 : [server] [debug] : Starting server on REX2.local:2122
+2018-11-02 00:16 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:16 : [server] [debug] : USER josephmulray
+2018-11-02 00:16 : [server] [debug] : Sent: 501 Syntax error in parameters or arguments.
+2018-11-02 00:16 : [server] [debug] : USER josephmulray
+2018-11-02 00:16 : [server] [debug] : Sent: 501 Syntax error in parameters or arguments.
+2018-11-02 00:16 : [server] [debug] : USER josephmulray
+2018-11-02 00:16 : [server] [debug] : Sent: 501 Syntax error in parameters or arguments.
+2018-11-02 00:16 : [server] [debug] : QUIT
+2018-11-02 00:17 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-02 00:17 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:17 : [server] [debug] : USER josephmulray
+2018-11-02 00:17 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:17 : [server] [debug] : PASS root
+2018-11-02 00:17 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 00:17 : [server] [debug] : PORT 172,20,20,20,232,158
+2018-11-02 00:17 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:17 : [server] [debug] : LIST
+2018-11-02 00:17 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:17 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:17 : [server] [debug] : PWD
+2018-11-02 00:17 : [server] [debug] : Sent: 257 /
+2018-11-02 00:17 : [server] [debug] : PORT 172,20,20,20,232,161
+2018-11-02 00:18 : [server] [debug] : Starting server on REX2.local:2122
+2018-11-02 00:18 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:18 : [server] [debug] : USER josephmulray
+2018-11-02 00:18 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:18 : [server] [debug] : PASS root
+2018-11-02 00:18 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 00:18 : [server] [debug] : PORT 172,20,20,20,232,199
+2018-11-02 00:18 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:18 : [server] [debug] : LIST
+2018-11-02 00:18 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:18 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:18 : [server] [debug] : PORT 172,20,20,20,232,203
+2018-11-02 00:23 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-02 00:23 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:23 : [server] [debug] : USER josephmulray
+2018-11-02 00:23 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:23 : [server] [debug] : PASS root
+2018-11-02 00:23 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 00:23 : [server] [debug] : PORT 172,20,20,20,233,56
+2018-11-02 00:23 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:23 : [server] [debug] : LIST
+2018-11-02 00:23 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:23 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:23 : [server] [debug] : PWD
+2018-11-02 00:23 : [server] [debug] : Sent: 257 /
+2018-11-02 00:23 : [server] [debug] : PORT 172,20,20,20,233,59
+2018-11-02 00:24 : [server] [debug] : Starting server on REX2.local:2122
+2018-11-02 00:24 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:24 : [server] [debug] : USER josephmulray
+2018-11-02 00:24 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:24 : [server] [debug] : PASS root
+2018-11-02 00:24 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 00:24 : [server] [debug] : PORT 172,20,20,20,233,112
+2018-11-02 00:24 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:24 : [server] [debug] : LIST
+2018-11-02 00:24 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:24 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:24 : [server] [debug] : PWD
+2018-11-02 00:24 : [server] [debug] : Sent: 257 /
+2018-11-02 00:24 : [server] [debug] : PORT 172,20,20,20,233,115
+2018-11-02 00:26 : [server] [debug] : Starting server on REX2.local:2122
+2018-11-02 00:26 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:26 : [server] [debug] : USER josephmulray
+2018-11-02 00:26 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:26 : [server] [debug] : PASS root
+2018-11-02 00:26 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 00:26 : [server] [debug] : PORT 172,20,20,20,233,186
+2018-11-02 00:26 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:26 : [server] [debug] : LIST
+2018-11-02 00:26 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:26 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:26 : [server] [debug] : PORT 172,20,20,20,233,189
+2018-11-02 00:26 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:26 : [server] [debug] : LIST
+2018-11-02 00:26 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:26 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:26 : [server] [debug] : PORT 172,20,20,20,233,191
+2018-11-02 00:26 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:26 : [server] [debug] : LIST
+2018-11-02 00:26 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:26 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:26 : [server] [debug] : PORT 172,20,20,20,233,193
+2018-11-02 00:26 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:26 : [server] [debug] : LIST
+2018-11-02 00:26 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:26 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:26 : [server] [debug] : PORT 172,20,20,20,233,196
+2018-11-02 00:26 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:26 : [server] [debug] : LIST
+2018-11-02 00:26 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:26 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:26 : [server] [debug] : PWD
+2018-11-02 00:26 : [server] [debug] : Sent: 257 /
+2018-11-02 00:26 : [server] [debug] : PORT 172,20,20,20,233,198
+2018-11-02 00:26 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:26 : [server] [debug] : LIST
+2018-11-02 00:26 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:26 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:26 : [server] [debug] : PORT 172,20,20,20,233,201
+2018-11-02 00:26 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:26 : [server] [debug] : LIST
+2018-11-02 00:26 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:26 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:26 : [server] [debug] : PORT 172,20,20,20,233,203
+2018-11-02 00:26 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:26 : [server] [debug] : LIST
+2018-11-02 00:26 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:26 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:34 : [server] [debug] : Starting server on REX2.local:2122
+2018-11-02 00:35 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:35 : [server] [debug] : USER josephmulray
+2018-11-02 00:35 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:35 : [server] [debug] : PASS root
+2018-11-02 00:35 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 00:35 : [server] [debug] : PORT 10,0,0,123,234,232
+2018-11-02 00:35 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:35 : [server] [debug] : LIST
+2018-11-02 00:35 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:35 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:35 : [server] [debug] : PORT 10,0,0,123,234,234
+2018-11-02 00:35 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:35 : [server] [debug] : LIST
+2018-11-02 00:35 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:35 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:45 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-02 00:45 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:45 : [server] [debug] : USER josephmulray
+2018-11-02 00:45 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:45 : [server] [debug] : PASS root
+2018-11-02 00:45 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 00:45 : [server] [debug] : PORT 10,0,0,123,235,102
+2018-11-02 00:45 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:45 : [server] [debug] : LIST
+2018-11-02 00:45 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:45 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:45 : [server] [debug] : PWD
+2018-11-02 00:45 : [server] [debug] : Sent: 257 /
+2018-11-02 00:45 : [server] [debug] : CWD Applications
+2018-11-02 00:45 : [server] [debug] : Sent: 550 Requested action not taken. File unavailable
+2018-11-02 00:45 : [server] [debug] : CWD Applications.
+2018-11-02 00:45 : [server] [debug] : Sent: 550 Requested action not taken. File unavailable
+2018-11-02 00:45 : [server] [debug] : CWD Applications/
+2018-11-02 00:45 : [server] [debug] : Sent: 550 Requested action not taken. File unavailable
+2018-11-02 00:45 : [server] [debug] : CWD Users
+2018-11-02 00:45 : [server] [debug] : Sent: 550 Requested action not taken. File unavailable
+2018-11-02 00:45 : [server] [debug] : CWD Users/
+2018-11-02 00:45 : [server] [debug] : Sent: 550 Requested action not taken. File unavailable
+2018-11-02 00:45 : [server] [debug] : PORT 10,0,0,123,235,114
+2018-11-02 00:45 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:45 : [server] [debug] : LIST
+2018-11-02 00:45 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:45 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:45 : [server] [debug] : PWD
+2018-11-02 00:45 : [server] [debug] : Sent: 257 /
+2018-11-02 00:45 : [server] [debug] : PORT 10,0,0,123,235,116
+2018-11-02 00:45 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:45 : [server] [debug] : LIST
+2018-11-02 00:45 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:45 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:47 : [server] [debug] : Starting server on REX2.local:2122
+2018-11-02 00:47 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:47 : [server] [debug] : Received: USER josephmulray
+2018-11-02 00:47 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:47 : [server] [debug] : Received: PASS asda
+2018-11-02 00:47 : [server] [debug] : Sent: 530 Authentication Failed
+2018-11-02 00:47 : [server] [debug] : Received: PORT 10,0,0,123,235,138
+2018-11-02 00:47 : [server] [debug] : Sent: 530 Login incorrect.
+2018-11-02 00:47 : [server] [debug] : Received: LPRT 4,4,10,0,0,123,2,235,138
+2018-11-02 00:50 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-02 00:50 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:50 : [server] [debug] : Received: USER josephmulray
+2018-11-02 00:50 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:50 : [server] [debug] : Received: PASS as
+2018-11-02 00:50 : [server] [debug] : Sent: 530 Authentication Failed
+2018-11-02 00:50 : [server] [debug] : Received: PORT 10,0,0,123,235,176
+2018-11-02 00:50 : [server] [debug] : Sent: 530 Login incorrect.
+2018-11-02 00:50 : [server] [debug] : Received: LPRT 4,4,10,0,0,123,2,235,176
+2018-11-02 00:50 : [server] [debug] : Sent: 400 The command was not accepted and the requested action did not take place
+2018-11-02 00:50 : [server] [debug] : Received: PORT 10,0,0,123,235,192
+2018-11-02 00:50 : [server] [debug] : Sent: 530 Login incorrect.
+2018-11-02 00:50 : [server] [debug] : Received: LPRT 4,4,10,0,0,123,2,235,192
+2018-11-02 00:50 : [server] [debug] : Sent: 400 The command was not accepted and the requested action did not take place
+2018-11-02 00:50 : [server] [debug] : Received: PORT 10,0,0,123,235,193
+2018-11-02 00:50 : [server] [debug] : Sent: 530 Login incorrect.
+2018-11-02 00:50 : [server] [debug] : Received: LPRT 4,4,10,0,0,123,2,235,193
+2018-11-02 00:50 : [server] [debug] : Sent: 400 The command was not accepted and the requested action did not take place
+2018-11-02 00:50 : [server] [debug] : Received: PWD
+2018-11-02 00:50 : [server] [debug] : Sent: 530 Login incorrect.
+2018-11-02 00:50 : [server] [debug] : Received: PWD
+2018-11-02 00:50 : [server] [debug] : Sent: 530 Login incorrect.
+2018-11-02 00:50 : [server] [debug] : Received: PORT 10,0,0,123,235,194
+2018-11-02 00:50 : [server] [debug] : Sent: 530 Login incorrect.
+2018-11-02 00:50 : [server] [debug] : Received: LPRT 4,4,10,0,0,123,2,235,194
+2018-11-02 00:50 : [server] [debug] : Sent: 400 The command was not accepted and the requested action did not take place
+2018-11-02 00:50 : [server] [debug] : Received: PORT 10,0,0,123,235,195
+2018-11-02 00:50 : [server] [debug] : Sent: 530 Login incorrect.
+2018-11-02 00:50 : [server] [debug] : Received: LPRT 4,4,10,0,0,123,2,235,195
+2018-11-02 00:50 : [server] [debug] : Sent: 400 The command was not accepted and the requested action did not take place
+2018-11-02 00:50 : [server] [debug] : Received: USER josephmulray
+2018-11-02 00:50 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:50 : [server] [debug] : Received: PASS root
+2018-11-02 00:50 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 00:50 : [server] [debug] : Received: PORT 10,0,0,123,235,196
+2018-11-02 00:50 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:50 : [server] [debug] : Received: LIST
+2018-11-02 00:50 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:50 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:50 : [server] [debug] : Received: PWD
+2018-11-02 00:50 : [server] [debug] : Sent: 257 /
+2018-11-02 00:50 : [server] [debug] : Received: PORT 10,0,0,123,235,198
+2018-11-02 00:50 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:50 : [server] [debug] : Received: LIST
+2018-11-02 00:50 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:50 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:50 : [server] [debug] : Received: CWD Volumes
+2018-11-02 00:50 : [server] [debug] : Sent: 550 Requested action not taken. File unavailable
+2018-11-02 00:50 : [server] [debug] : Received: QUIT
+2018-11-02 00:53 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-02 00:53 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:53 : [server] [debug] : Received: USER josephmulray
+2018-11-02 00:53 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:53 : [server] [debug] : Received: PASS root
+2018-11-02 00:53 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 00:53 : [server] [debug] : Received: PORT 10,0,0,123,235,232
+2018-11-02 00:53 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:53 : [server] [debug] : Received: LIST
+2018-11-02 00:53 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:53 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:53 : [server] [debug] : Received: CWD Volumes
+2018-11-02 00:53 : [server] [debug] : Sent: 550 Requested action not taken. File unavailable
+2018-11-02 00:53 : [server] [debug] : Received: CWD Volumes/
+2018-11-02 00:53 : [server] [debug] : Sent: 550 Requested action not taken. File unavailable
+2018-11-02 00:53 : [server] [debug] : Received: CWD /Volumes
+2018-11-02 00:53 : [server] [debug] : Sent: 250 Requested file action okay, completed.
+2018-11-02 00:53 : [server] [debug] : Received: PWD
+2018-11-02 00:53 : [server] [debug] : Sent: 257 /Volumes
+2018-11-02 00:53 : [server] [debug] : Received: PORT 10,0,0,123,235,234
+2018-11-02 00:53 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:53 : [server] [debug] : Received: LIST
+2018-11-02 00:53 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:53 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:53 : [server] [debug] : Received: CWD ..
+2018-11-02 00:53 : [server] [debug] : Sent: 250 Requested file action okay, completed.
+2018-11-02 00:53 : [server] [debug] : Received: PORT 10,0,0,123,235,236
+2018-11-02 00:53 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:53 : [server] [debug] : Received: LIST
+2018-11-02 00:53 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:53 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:53 : [server] [debug] : Received: CWD ~
+2018-11-02 00:53 : [server] [debug] : Sent: 550 Requested action not taken. File unavailable
+2018-11-02 00:53 : [server] [debug] : Received: CWD ~/
+2018-11-02 00:53 : [server] [debug] : Sent: 550 Requested action not taken. File unavailable
+2018-11-02 00:53 : [server] [debug] : Received: CWD /home/
+2018-11-02 00:53 : [server] [debug] : Sent: 250 Requested file action okay, completed.
+2018-11-02 00:53 : [server] [debug] : Received: PORT 10,0,0,123,235,238
+2018-11-02 00:53 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:53 : [server] [debug] : Received: LIST
+2018-11-02 00:53 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:53 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:53 : [server] [debug] : Received: PORT 10,0,0,123,235,240
+2018-11-02 00:53 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:53 : [server] [debug] : Received: LIST
+2018-11-02 00:53 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:53 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:53 : [server] [debug] : Received: PORT 10,0,0,123,235,242
+2018-11-02 00:53 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:53 : [server] [debug] : Received: LIST
+2018-11-02 00:53 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:53 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:53 : [server] [debug] : Received: PORT 10,0,0,123,235,244
+2018-11-02 00:53 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:53 : [server] [debug] : Received: LIST
+2018-11-02 00:53 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:53 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:53 : [server] [debug] : Received: PWD
+2018-11-02 00:53 : [server] [debug] : Sent: 257 /home/
+2018-11-02 00:53 : [server] [debug] : Received: CWD josephmulray/
+2018-11-02 00:53 : [server] [debug] : Sent: 550 Requested action not taken. File unavailable
+2018-11-02 00:53 : [server] [debug] : Received: CWD /josephmulray
+2018-11-02 00:53 : [server] [debug] : Sent: 550 Requested action not taken. File unavailable
+2018-11-02 00:53 : [server] [debug] : Received: QUIT
+2018-11-02 00:56 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-02 00:56 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:56 : [server] [debug] : Received: USER josephmulray
+2018-11-02 00:56 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:56 : [server] [debug] : Received: PASS root
+2018-11-02 00:56 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 00:56 : [server] [debug] : Received: PORT 10,0,0,123,236,28
+2018-11-02 00:56 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:56 : [server] [debug] : Received: LIST
+2018-11-02 00:56 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:56 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:56 : [server] [debug] : Received: CWD Volumes
+2018-11-02 00:56 : [server] [debug] : Sent: 250 Requested file action okay, completed.
+2018-11-02 00:56 : [server] [debug] : Received: PORT 10,0,0,123,236,30
+2018-11-02 00:56 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:56 : [server] [debug] : Received: LIST
+2018-11-02 00:56 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:56 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:56 : [server] [debug] : Received: PWD
+2018-11-02 00:56 : [server] [debug] : Sent: 257 /Volumes
+2018-11-02 00:56 : [server] [debug] : Received: CWD ls
+2018-11-02 00:56 : [server] [debug] : Sent: 550 Requested action not taken. File unavailable
+2018-11-02 00:56 : [server] [debug] : Received: CWD ..
+2018-11-02 00:56 : [server] [debug] : Sent: 550 Requested action not taken. File unavailable
+2018-11-02 00:56 : [server] [debug] : Received: PORT 10,0,0,123,236,32
+2018-11-02 00:56 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:56 : [server] [debug] : Received: LIST
+2018-11-02 00:56 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:56 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:56 : [server] [debug] : Received: CWD ..
+2018-11-02 00:56 : [server] [debug] : Sent: 550 Requested action not taken. File unavailable
+2018-11-02 00:56 : [server] [debug] : Received: PORT 10,0,0,123,236,36
+2018-11-02 00:56 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:56 : [server] [debug] : Received: LIST
+2018-11-02 00:56 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:56 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:56 : [server] [debug] : Received: CWD ..
+2018-11-02 00:56 : [server] [debug] : Sent: 550 Requested action not taken. File unavailable
+2018-11-02 00:56 : [server] [debug] : Received: PORT 10,0,0,123,236,38
+2018-11-02 00:56 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:56 : [server] [debug] : Received: LIST
+2018-11-02 00:56 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:56 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:56 : [server] [debug] : Received: CWD ..
+2018-11-02 00:56 : [server] [debug] : Sent: 550 Requested action not taken. File unavailable
+2018-11-02 00:56 : [server] [debug] : Received: PWD
+2018-11-02 00:56 : [server] [debug] : Sent: 257 /Volumes
+2018-11-02 00:56 : [server] [debug] : Received: CWD /
+2018-11-02 00:56 : [server] [debug] : Sent: 250 Requested file action okay, completed.
+2018-11-02 00:56 : [server] [debug] : Received: PORT 10,0,0,123,236,42
+2018-11-02 00:56 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:56 : [server] [debug] : Received: LIST
+2018-11-02 00:56 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:56 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:56 : [server] [debug] : Received: CWD Applications
+2018-11-02 00:56 : [server] [debug] : Sent: 250 Requested file action okay, completed.
+2018-11-02 00:56 : [server] [debug] : Received: PORT 10,0,0,123,236,44
+2018-11-02 00:56 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:56 : [server] [debug] : Received: LIST
+2018-11-02 00:56 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:56 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:56 : [server] [debug] : Received: CWD /
+2018-11-02 00:56 : [server] [debug] : Sent: 250 Requested file action okay, completed.
+2018-11-02 00:56 : [server] [debug] : Received: PORT 10,0,0,123,236,46
+2018-11-02 00:56 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:56 : [server] [debug] : Received: LIST
+2018-11-02 00:56 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:56 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:56 : [server] [debug] : Received: CWD Users/josephmulray/
+2018-11-02 00:56 : [server] [debug] : Sent: 250 Requested file action okay, completed.
+2018-11-02 00:56 : [server] [debug] : Received: PORT 10,0,0,123,236,48
+2018-11-02 00:56 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:56 : [server] [debug] : Received: LIST
+2018-11-02 00:56 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:56 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:56 : [server] [debug] : Received: CWD Documents
+2018-11-02 00:56 : [server] [debug] : Sent: 250 Requested file action okay, completed.
+2018-11-02 00:56 : [server] [debug] : Received: PORT 10,0,0,123,236,50
+2018-11-02 00:56 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 00:56 : [server] [debug] : Received: LIST
+2018-11-02 00:56 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 00:56 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 00:56 : [server] [debug] : Received: QUIT
+2018-11-02 00:58 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-02 00:58 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:58 : [server] [debug] : Received: USER josephmulray
+2018-11-02 00:58 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:58 : [server] [debug] : Received: PASS root
+2018-11-02 00:58 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 00:58 : [server] [debug] : Received: QUIT
+2018-11-02 00:58 : [server] [debug] : Sent: 221 Goodbye.
+2018-11-02 00:59 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-02 00:59 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 00:59 : [server] [debug] : Received: USER josephmulray
+2018-11-02 00:59 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 00:59 : [server] [debug] : Received: PASS root
+2018-11-02 00:59 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 00:59 : [server] [debug] : Received: QUIT
+2018-11-02 00:59 : [server] [debug] : Sent: 221 Goodbye.
+2018-11-02 01:03 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-02 01:03 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 01:03 : [server] [debug] : Received: USER josephmulray
+2018-11-02 01:03 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 01:03 : [server] [debug] : Received: PASS root
+2018-11-02 01:03 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 01:03 : [server] [debug] : Received: PORT 10,0,0,123,236,132
+2018-11-02 01:03 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 01:03 : [server] [debug] : Received: LIST
+2018-11-02 01:03 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 01:03 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 01:03 : [server] [debug] : Received: QUIT
+2018-11-02 01:03 : [server] [debug] : Sent: 221 Goodbye.
+2018-11-02 01:03 : [server] [ERROR] : [Errno 9] Bad file descriptor
+2018-11-02 01:04 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 01:04 : [server] [debug] : Received: USER josephmulray
+2018-11-02 01:04 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 01:14 : [server] [debug] : Starting server on REX2.local:2122
+2018-11-02 01:14 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 01:14 : [server] [debug] : Received: USER josephmulray
+2018-11-02 01:14 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 01:14 : [server] [debug] : Received: PASS root
+2018-11-02 01:14 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 01:14 : [server] [debug] : Received: QUIT
+2018-11-02 01:14 : [server] [debug] : Sent: 221 Goodbye.
+2018-11-02 01:15 : [server] [debug] : Starting server on REX2.local:2122
+2018-11-02 01:15 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 01:15 : [server] [debug] : Received: USER josephmulray
+2018-11-02 01:15 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 01:15 : [server] [debug] : Received: PASS root
+2018-11-02 01:15 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 01:15 : [server] [debug] : Received: QUIT
+2018-11-02 01:15 : [server] [debug] : Sent: 221 Goodbye.
+2018-11-02 01:15 : [server] [debug] : Starting server on REX2.local:2123
+2018-11-02 01:15 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 01:15 : [server] [debug] : Received: USER josephmulray
+2018-11-02 01:15 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 01:15 : [server] [debug] : Received: PASS root
+2018-11-02 01:15 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 01:15 : [server] [debug] : Received: QUIT
+2018-11-02 01:15 : [server] [debug] : Sent: 221 Goodbye.
+2018-11-02 01:15 : [server] [debug] : %s : Disconneted
+2018-11-02 01:17 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 01:17 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-02 01:17 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 01:17 : [server] [debug] : Received: USER josephmulray
+2018-11-02 01:17 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 01:17 : [server] [debug] : Received: PASS asd
+2018-11-02 01:17 : [server] [debug] : Sent: 530 Authentication Failed
+2018-11-02 01:17 : [server] [debug] : Received: QUIT
+2018-11-02 01:17 : [server] [debug] : Sent: 221 Goodbye.
+2018-11-02 01:18 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-02 01:18 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 01:18 : [server] [debug] : Received: USER josehpsdf
+2018-11-02 01:18 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 01:18 : [server] [debug] : Received: PASS sdf
+2018-11-02 01:18 : [server] [debug] : Sent: 530 Authentication Failed
+2018-11-02 01:18 : [server] [debug] : Received: QUIT
+2018-11-02 01:18 : [server] [debug] : Sent: 221 Goodbye.
+2018-11-02 01:18 : [server] [debug] : Starting server on REX2.local:2122
+2018-11-02 01:18 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 01:18 : [server] [debug] : Received: USER josepasd
+2018-11-02 01:18 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 01:18 : [server] [debug] : Received: PASS asasd
+2018-11-02 01:18 : [server] [debug] : Sent: 530 Authentication Failed
+2018-11-02 01:18 : [server] [debug] : Received: QUIT
+2018-11-02 01:18 : [server] [debug] : Sent: 221 Goodbye.
+2018-11-02 01:18 : [server] [debug] : ('10.0.0.123', 60837): Disconneted
+2018-11-02 01:19 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 01:19 : [server] [debug] : Received: USER josephmurlay
+2018-11-02 01:19 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 01:19 : [server] [debug] : Received: PASS root
+2018-11-02 01:19 : [server] [debug] : Sent: 530 Authentication Failed
+2018-11-02 01:19 : [server] [debug] : Received: USER root
+2018-11-02 01:19 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 01:19 : [server] [debug] : Received: PASS root
+2018-11-02 01:19 : [server] [debug] : Sent: 230 Login successful
+2018-11-02 01:19 : [server] [debug] : Received: PORT 10,0,0,123,237,171
+2018-11-02 01:19 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 01:19 : [server] [debug] : Received: LIST
+2018-11-02 01:19 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 01:19 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 01:19 : [server] [debug] : Received: PORT 10,0,0,123,237,174
+2018-11-02 01:19 : [server] [debug] : Sent: 200 Port okay.
+2018-11-02 01:19 : [server] [debug] : Received: LIST
+2018-11-02 01:19 : [server] [debug] : Sent: 150 File status okay; about to open data connection.
+2018-11-02 01:19 : [server] [debug] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-02 01:19 : [server] [debug] : Received: QUIT
+2018-11-02 01:19 : [server] [debug] : Sent: 221 Goodbye.
+2018-11-02 01:19 : [server] [debug] : ('10.0.0.123', 60838): Disconneted
+2018-11-02 01:19 : [server] [debug] : Sent: 220 Service ready for new user.
+2018-11-02 01:19 : [server] [debug] : Received: USER josephmulray
+2018-11-02 01:19 : [server] [debug] : Sent: 331 Please specify the password.
+2018-11-02 01:19 : [server] [debug] : ('10.0.0.123', 60845): Disconneted

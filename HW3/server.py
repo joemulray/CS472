@@ -1,24 +1,16 @@
 #!/usr/bin/env python
-
+# coding: utf-8
 import socket 
 import struct
 import sys
 from logging import logger
+from portmanager import PortManager
 import thread
+import os
+
 
 
 BUFFER = 1029
-
-class PortManager:
-	def __init__(self):
-		self.ports = []
-
-	def exists(self, port):
-		return True if port in self.ports else False
-
-	def addport(self, port):
-		self.ports.append(port)
-
 
 class FTPServer:
 	"""
@@ -38,17 +30,21 @@ class FTPServer:
 		self.password = None
 		self.__authenticated = False
 		self.users = { "root" : "root" , "josephmulray" : "root" }
+		self.dataport = 20 #default 20
 
 	def doProtocol(self):
 		self.start()
 		while True:
-			message = self.receive()
-			if message:
-				self.log.debug(message)
-				parsedmessage = message.split()
-				(function, cmd) = self.evaluation(parsedmessage[0], parsedmessage)
-				function(cmd)
-
+			try:
+				message = self.receive()
+				if message:
+					self.log.received(message)
+					parsedmessage = message.split()
+					(function, cmd) = self.evaluation(parsedmessage[0], parsedmessage)
+					function(cmd)
+			except socket.error as error:
+				self.log.debug(str(self.address) + ": Disconneted")
+				break
 
 	def receive(self):
 		response = ""
@@ -63,11 +59,31 @@ class FTPServer:
 
 	def send(self, command=None):
 		try:
+			command+="\r\n"
 			self.log.sending(command)
 			self.socket.sendall(command)
 
 		except socket.error as error:
 			self.log.error(error)
+
+
+
+	def datasocket(self, command=None):
+		response = "425 Can't open dataconnection"
+		try:
+			dsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			dsocket.connect((socket.gethostname(), self.dataport))
+
+			for value in command:
+				dsocket.send(str(value) + "\r\n")
+
+			dsocket.close()
+			response = "226 Closing data connection. Requested file action successful"
+
+		except socket.error as error:
+			self.log.error("datasocket" + str(error))
+
+		return response
 
 
 	def start(self):
@@ -98,21 +114,35 @@ class FTPServer:
 
 
 	def verifyauthentication(self):
-		print self.username
-		print self.users
 		if self.username in self.users:
-			print "IN USERNAMES"
 			if self.users[self.username] == self.password:
-				print "true"
 				return True
 			return False
 		return False
 
 
+
 	def changeworkingdirectory(self, cmd):
-		"print changeworkingdirectory"
-		#authroization
-		pass
+		command = "250 Requested file action okay, completed."
+		if not self.__authenticated:
+			command = "530 Login incorrect."
+			self.send(command)
+			return
+
+		if len(cmd) != 2:
+			command = "501 Syntax error in parameters or arguments."
+
+		newcd = cmd[1]
+		if newcd[0] != "/":
+			newcd = self.path + newcd
+
+		if os.path.isdir(newcd):
+			self.path = newcd
+		else:
+			command = "550 Requested action not taken. File unavailable"
+
+		self.send(command)
+
 
 	def cdup(self, cmd):
 		print "cdup"
@@ -120,9 +150,9 @@ class FTPServer:
 		pass
 
 	def quit(self, cmd):
-		print "quit"
-		pass
-
+		command = "221 Goodbye."
+		self.send(command)
+		self.socket.close()
 
 	def pasv(self, cmd):
 		#authorization
@@ -136,8 +166,29 @@ class FTPServer:
 
 	def port(self, cmd):
 		#authorization
-		print "port"
-		pass
+		command = "200 Port okay."
+
+		if not self.__authenticated:
+			command = "530 Login incorrect."
+			self.send(command)
+			return
+
+		try:
+
+			msg = ''.join(cmd)
+			pasv = msg[4:].translate(None, "().\r\n").split(",")
+			p1 = int(pasv[-2])
+			p2 = int(pasv[-1])
+
+			port = (p1 * 256) + p2
+			self.dataport = port
+
+		except Exception as error:
+			self.log.error("port" + str(error))
+			command = "501 Syntax error in parameters or arguments."
+
+		self.send(command)
+
 
 	def eprt(self, cmd):
 		#authorization
@@ -156,8 +207,14 @@ class FTPServer:
 
 	def pwd(self, cmd):
 		#authorization
-		print "pwd"
-		pass
+		if not self.__authenticated:
+			command = "530 Login incorrect."
+			self.send(command)
+			return
+
+		command = "257 %s" % (self.path)
+		self.send(command)
+
 
 	def syst(self, cmd):
 		#authentication
@@ -165,9 +222,18 @@ class FTPServer:
 		pass
 
 	def list(self, cmd):
-		#authentication
-		print "list"
-		pass
+		if not self.__authenticated:
+			command = "530 Login incorrect."
+			self.send(command)
+			return
+
+		arraylist = os.listdir(self.path)
+		command = "150 File status okay; about to open data connection."
+		self.send(command)
+
+		command = self.datasocket(arraylist)
+		self.send(command)
+
 
 	def help(self, cmd):
 		print "help"
@@ -175,8 +241,8 @@ class FTPServer:
 
 
 	def invalid(self, cmd):
-		print "invalid"
-		pass
+		command = "400 The command was not accepted and the requested action did not take place"
+		self.send(command)
 
 
 	def evaluation(self, command, parsedmessage):
@@ -201,6 +267,7 @@ class FTPServer:
 
 
 class ServerSocket:
+
 	def __init__(self, filename="server.log", port=2121, backlog = 5):
 		self.port = int(port)
 		self.backlog = backlog
