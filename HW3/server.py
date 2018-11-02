@@ -31,7 +31,7 @@ class FTPServer:
 		self.password = None
 		self.__authenticated = False
 		self.users = { "root" : "root" , "josephmulray" : "root" }
-		self.dataport = 23423 #default 20
+		self.dataport = 20 #default 20
 
 	def doProtocol(self):
 		self.start()
@@ -69,13 +69,11 @@ class FTPServer:
 			self.log.error(error)
 
 
-
 	def datasocket(self, command=None):
 		response = "425 Can't open dataconnection"
 		try:
 			dsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			dsocket.connect((socket.gethostname(), self.dataport))
-			print "port: %s host: %s" %(self.dataport, socket.gethostname())
 
 			for value in command:
 				dsocket.send(str(value) + "\r\n")
@@ -166,9 +164,7 @@ class FTPServer:
 			return
 
 		#generate port
-		# self.dataport = int(ManagePorts.getport())
-		self.dataport = 65278
-		print self.dataport
+		self.dataport = int(ManagePorts.getport())
 
 		hostname = socket.gethostname()
 		(hostname, _, hostip) = socket.gethostbyaddr(hostname)
@@ -180,9 +176,8 @@ class FTPServer:
 		p1 = (self.dataport - remainderport) / 256
 		p2 = remainderport
 
-		command = "Entering Passive Mode 227 (%s,%s,%s)." %(host, p1, p2)
+		command = "227 Entering Passive Mode (%s,%s,%s)." %(host, p1, p2)
 		self.send(command)
-
 
 	def epsv(self, cmd):
 		#authorization
@@ -294,7 +289,7 @@ class FTPServer:
 class ServerSocket:
 
 	def __init__(self, filename="server.log", port=2121, backlog = 5):
-		self.port = int(2123)
+		self.port = int(2121)
 		self.backlog = backlog
 		self.host = socket.gethostname()
 		self.serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
