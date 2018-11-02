@@ -9,8 +9,9 @@ import thread
 import os
 
 
-
+ManagePorts = PortManager()
 BUFFER = 1029
+
 
 class FTPServer:
 	"""
@@ -30,7 +31,7 @@ class FTPServer:
 		self.password = None
 		self.__authenticated = False
 		self.users = { "root" : "root" , "josephmulray" : "root" }
-		self.dataport = 20 #default 20
+		self.dataport = 23423 #default 20
 
 	def doProtocol(self):
 		self.start()
@@ -43,7 +44,8 @@ class FTPServer:
 					(function, cmd) = self.evaluation(parsedmessage[0], parsedmessage)
 					function(cmd)
 			except socket.error as error:
-				self.log.debug(str(self.address) + ": Disconneted")
+				self.log.debug(self.address[0] + ": Disconneted")
+				self.log.error(str(error))
 				break
 
 	def receive(self):
@@ -73,6 +75,7 @@ class FTPServer:
 		try:
 			dsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			dsocket.connect((socket.gethostname(), self.dataport))
+			print "port: %s host: %s" %(self.dataport, socket.gethostname())
 
 			for value in command:
 				dsocket.send(str(value) + "\r\n")
@@ -82,6 +85,7 @@ class FTPServer:
 
 		except socket.error as error:
 			self.log.error("datasocket" + str(error))
+			print "port: %s host: %s" %(self.dataport, socket.gethostname())
 
 		return response
 
@@ -155,9 +159,30 @@ class FTPServer:
 		self.socket.close()
 
 	def pasv(self, cmd):
-		#authorization
-		print "pasv"
-		pass
+
+		if not self.__authenticated:
+			command = "530 Login incorrect."
+			self.send(command)
+			return
+
+		#generate port
+		# self.dataport = int(ManagePorts.getport())
+		self.dataport = 65278
+		print self.dataport
+
+		hostname = socket.gethostname()
+		(hostname, _, hostip) = socket.gethostbyaddr(hostname)
+		host = hostip[0].replace(".", ",")
+
+		#convert port to hex
+		remainderport = self.dataport % 256
+
+		p1 = (self.dataport - remainderport) / 256
+		p2 = remainderport
+
+		command = "Entering Passive Mode 227 (%s,%s,%s)." %(host, p1, p2)
+		self.send(command)
+
 
 	def epsv(self, cmd):
 		#authorization
@@ -269,7 +294,7 @@ class FTPServer:
 class ServerSocket:
 
 	def __init__(self, filename="server.log", port=2121, backlog = 5):
-		self.port = int(port)
+		self.port = int(2123)
 		self.backlog = backlog
 		self.host = socket.gethostname()
 		self.serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
