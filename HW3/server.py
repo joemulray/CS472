@@ -13,6 +13,18 @@ ManagePorts = PortManager()
 BUFFER = 1029
 
 
+"""
+TODO:
+	Make logger global
+	display disconnect error
+	display client info in logger
+	pydoc comments
+	epsv command
+	stor command
+	retr command
+"""
+
+
 class FTPServer:
 	"""
 	FTPServer handles managing the connections and status response from the clients
@@ -26,12 +38,14 @@ class FTPServer:
 		self.socket = socket
 		self.address = address
 		self.log = logger(filename, "[server]")
-		self.path = "/"
+		self.path = os.getcwd()
 		self.username = None
 		self.password = None
 		self.__authenticated = False
 		self.users = { "root" : "root" , "josephmulray" : "root" }
 		self.dataport = 20 #default 20
+		self.passivemode = False
+		self.passivesocket = None
 
 	def doProtocol(self):
 		self.start()
@@ -73,12 +87,23 @@ class FTPServer:
 		response = "425 Can't open dataconnection"
 		try:
 			dsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-			dsocket.connect((socket.gethostname(), self.dataport))
+			print "Passivemode: %s" % self.passivemode
+
+			if self.passivemode:
+				(dsocket, self.address) = self.passivesocket.accept()
+			else:
+				dsocket.connect((socket.gethostname(), self.dataport))
 
 			for value in command:
 				dsocket.send(str(value) + "\r\n")
 
+			#close the datasocket
 			dsocket.close()
+
+			#if we were in passive mode close the passive socket
+			if self.passivemode:
+				self.passivesocket.close()
+
 			response = "226 Closing data connection. Requested file action successful"
 
 		except socket.error as error:
@@ -86,6 +111,7 @@ class FTPServer:
 			print "port: %s host: %s" %(self.dataport, socket.gethostname())
 
 		return response
+
 
 
 	def start(self):
@@ -124,7 +150,7 @@ class FTPServer:
 
 
 
-	def changeworkingdirectory(self, cmd):
+	def chdir(self, cmd):
 		command = "250 Requested file action okay, completed."
 		if not self.__authenticated:
 			command = "530 Login incorrect."
@@ -135,11 +161,16 @@ class FTPServer:
 			command = "501 Syntax error in parameters or arguments."
 
 		newcd = cmd[1]
+		#if not given a full path
 		if newcd[0] != "/":
-			newcd = self.path + newcd
+			newcd = self.path + "/" + newcd
+
+			print newcd
 
 		if os.path.isdir(newcd):
-			self.path = newcd
+			os.chdir(newcd)
+			self.path = os.getcwd()
+
 		else:
 			command = "550 Requested action not taken. File unavailable"
 
@@ -147,9 +178,21 @@ class FTPServer:
 
 
 	def cdup(self, cmd):
-		print "cdup"
-		#authorization
-		pass
+		command = "250 Requested file action okay, completed."
+		if not self.__authenticated:
+			command = "530 Login incorrect."
+			self.send(command)
+			return
+
+		if len(cmd) != 1:
+			command = "501 Syntax error in parameters or arguments."
+
+		newcd = self.path + "/.."
+		os.chdir(newcd)
+		self.path = os.getcwd()
+
+		self.send(command)
+
 
 	def quit(self, cmd):
 		command = "221 Goodbye."
@@ -176,8 +219,14 @@ class FTPServer:
 		p1 = (self.dataport - remainderport) / 256
 		p2 = remainderport
 
+		self.passivemode = True
+		self.passivesocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+		self.passivesocket.bind((hostname, self.dataport))
+		self.passivesocket.listen(5)
+
 		command = "227 Entering Passive Mode (%s,%s,%s)." %(host, p1, p2)
 		self.send(command)
+
 
 	def epsv(self, cmd):
 		#authorization
@@ -194,7 +243,6 @@ class FTPServer:
 			return
 
 		try:
-
 			msg = ''.join(cmd)
 			pasv = msg[4:].translate(None, "().\r\n").split(",")
 			p1 = int(pasv[-2])
@@ -202,6 +250,9 @@ class FTPServer:
 
 			port = (p1 * 256) + p2
 			self.dataport = port
+
+			#Turn off passive mode
+			self.passivemode = False
 
 		except Exception as error:
 			self.log.error("port" + str(error))
@@ -211,9 +262,30 @@ class FTPServer:
 
 
 	def eprt(self, cmd):
-		#authorization
-		print "eprt"
-		pass
+		command = "200 Port okay."
+
+		if not self.__authenticated:
+			command = "530 Login incorrect."
+			self.send(command)
+			return
+
+		try:
+			#EPRT |1|127.0.0.1|52540|
+
+			if len(cmd) != 2:
+				command = "501 Syntax error in parameters or arguments."
+			else:
+				eprtdata = cmd[1]
+				erptdata = eprtdata[1:-1] #remove pipe from front and back
+				af, network, port = eprtdata.split("|")
+
+				self.dataport = int(port)
+
+		except Exception as error:
+			self.log.error("EPRT " + str(error))
+			command = "501 Syntax error in parameters or arguments."
+
+		self.send(command)
 
 	def retr(self, cmd):
 		#authorization
@@ -238,8 +310,14 @@ class FTPServer:
 
 	def syst(self, cmd):
 		#authentication
-		print "syst"
-		pass
+		if len(cmd) != 1:
+			command = "501 Syntax error in parameters or arguments."
+			self.send(command)
+
+		system = sys.platform
+		command = "215 UNIX Type: %s" % system
+		self.send(command)
+
 
 	def list(self, cmd):
 		if not self.__authenticated:
@@ -256,8 +334,13 @@ class FTPServer:
 
 
 	def help(self, cmd):
-		print "help"
-		pass
+		command = "214 The following commands are recognized."
+		self.send(command)
+		commands = ["USER PASS CWD CDUP QUIT PASV EPSV PORT EPRT RETR STOR PWD \
+		SYST LIST HELP"]
+		self.datasocket(commands)
+
+
 
 
 	def invalid(self, cmd):
@@ -269,7 +352,7 @@ class FTPServer:
 			return {
 			"USER" : (self.user, parsedmessage),
 			"PASS" : (self.passwd, parsedmessage),
-			"CWD" : (self.changeworkingdirectory, parsedmessage),
+			"CWD" : (self.chdir, parsedmessage),
 			"CDUP" : (self.cdup, parsedmessage),
 			"QUIT" : (self.quit, parsedmessage),
 			"PASV" : (self.pasv, parsedmessage),
@@ -289,7 +372,7 @@ class FTPServer:
 class ServerSocket:
 
 	def __init__(self, filename="server.log", port=2121, backlog = 5):
-		self.port = int(2121)
+		self.port = int(port)
 		self.backlog = backlog
 		self.host = socket.gethostname()
 		self.serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -306,6 +389,7 @@ class ServerSocket:
 
 	def close(self):
 		self.serversocket.close()
+
 
 
 def main():
