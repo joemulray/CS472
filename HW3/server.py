@@ -50,14 +50,26 @@ class FTPServer:
 	"""
 	Decorator function to handle if user is authenticated or not
 	"""
-	def authenticate(function):
+	def _authentication(function):
 		def authwrapper(self, *args, **kwargs):
 			if not self.__authenticated:
 				command = "530 Login incorrect."
 				self.send(command)
 				return
-			return function(self, *args, **kwargs)
+			return function(self, *args)
 		return authwrapper
+
+
+
+	def _argumentrequired(function):
+		def argumentwrapper(self, *args):
+			#If I am exptecting an argument dont waste my time just return invalid syntax
+			if len(*args) != 2:
+				command = "501 Syntax error in parameters or arguments."
+				self.send(command)
+				return
+			return function(self, *args)
+		return argumentwrapper
 
 
 	def doProtocol(self):
@@ -131,25 +143,24 @@ class FTPServer:
 		command = "220 Service ready for new user."
 		self.send(command)
 
+	@_argumentrequired
 	def user(self, cmd):
-		command = "501 Syntax error in parameters or arguments."
-		if len(cmd) == 2:
-			self.username = cmd[1]
-			command = "331 Please specify the password."
+		self.username = cmd[1]
+		command = "331 Please specify the password."
 
 		self.send(command)
 
+	@_argumentrequired
 	def passwd(self, cmd):
-		command = "501 Syntax error in parameters or arguments."
-		if len(cmd) == 2:
-			password = cmd[1]
-			self.password = password
-			self.__authenticated = self.verifyauthentication()
 
-			if self.__authenticated:
-				command = "230 Login successful"
-			else:
-				command = "530 Authentication Failed"
+		password = cmd[1]
+		self.password = password
+		self.__authenticated = self.verifyauthentication()
+
+		if self.__authenticated:
+			command = "230 Login successful"
+		else:
+			command = "530 Authentication Failed"
 
 		self.send(command)
 
@@ -162,11 +173,10 @@ class FTPServer:
 		return False
 
 
-	@authenticate
+	@_argumentrequired
+	@_authentication
 	def chdir(self, cmd):
-		if len(cmd) != 2:
-			command = "501 Syntax error in parameters or arguments."
-
+		command = "250 Requested file action okay, completed"
 		newcd = cmd[1]
 		#if not given a full path
 		if newcd[0] != "/":
@@ -182,7 +192,7 @@ class FTPServer:
 		self.send(command)
 
 
-	@authenticate
+	@_authentication
 	def cdup(self, cmd):
 		command = "250 Requested file action okay, completed."
 		if len(cmd) != 1:
@@ -200,7 +210,7 @@ class FTPServer:
 		self.send(command)
 		self.socket.close()
 
-	@authenticate
+	@_authentication
 	def pasv(self, cmd):
 
 		#generate port
@@ -224,7 +234,7 @@ class FTPServer:
 		command = "227 Entering Passive Mode (%s,%s,%s)." %(host, p1, p2)
 		self.send(command)
 
-	@authenticate
+	@_authentication
 	def epsv(self, cmd):
 		#socket.inet_pton(socket.AF_INET6, some_string) iPv6
 
@@ -232,7 +242,6 @@ class FTPServer:
 
 		hostname = socket.gethostname()
 		(hostname, _, hostip) = socket.gethostbyaddr(hostname)
-
 
 		self.passivemode = True
 		self.passivesocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -243,9 +252,9 @@ class FTPServer:
 		self.send(command)
 
 		
-	@authenticate
+	@_argumentrequired
+	@_authentication
 	def port(self, cmd):
-		#authorization
 		command = "200 Port okay."
 		try:
 			msg = ''.join(cmd)
@@ -265,24 +274,20 @@ class FTPServer:
 
 		self.send(command)
 
-
-	@authenticate
+	@_argumentrequired
+	@_authentication
 	def eprt(self, cmd):
 		command = "200 Port okay."
 		try:
 			#EPRT |1|127.0.0.1|52540|
+			eprtdata = cmd[1]
+			eprtdata = eprtdata[1:-1] #remove pipe from front and back
+			af, network, port = eprtdata.split("|")
 
-			if len(cmd) != 2:
-				command = "501 Syntax error in parameters or arguments."
-			else:
-				eprtdata = cmd[1]
-				eprtdata = eprtdata[1:-1] #remove pipe from front and back
-				af, network, port = eprtdata.split("|")
+			self.dataport = int(port)
 
-				self.dataport = int(port)
-
-				#Turn off passive mode
-				self.passivemode = False
+			#Turn off passive mode
+			self.passivemode = False
 
 		except Exception as error:
 			self.log.error("EPRT " + str(error))
@@ -290,25 +295,44 @@ class FTPServer:
 
 		self.send(command)
 
-	@authenticate
+	@_argumentrequired
+	@_authentication
 	def retr(self, cmd):
-		#authorization
-		print "retr"
-		pass
 
-	@authenticate
+		filepath = cmd[1]
+		content = ""
+		try:
+			with open(filepath, 'r') as openfile:
+				content = openfile.read()
+
+		except IOError as error:
+			self.log.error("RETR " + str(error))
+			command = "550 Requested action not taken. File unavailable"
+			self.send(command)
+			return
+
+		command = "150 File status okay; about to open data connection."
+		self.send(command)
+
+		sockdata = []
+		sockdata.append(content)
+
+		command = self.datasocket(sockdata)
+		self.send(command)
+
+
+	@_argumentrequired
+	@_authentication
 	def stor(self, cmd):
-		#authorization
-		print "stor"
 		pass
 
-	@authenticate
+	@_authentication
 	def pwd(self, cmd):
 		command = "257 %s" % (self.path)
 		self.send(command)
 
 
-	@authenticate
+	@_authentication
 	def syst(self, cmd):
 		#authentication
 		if len(cmd) != 1:
@@ -320,7 +344,7 @@ class FTPServer:
 		self.send(command)
 
 
-	@authenticate
+	@_authentication
 	def list(self, cmd):
 
 		arraylist = os.listdir(self.path)
@@ -339,9 +363,8 @@ class FTPServer:
 		self.datasocket(commands)
 
 
-	@authenticate #dont let user if command is valid or not if not authorized
 	def invalid(self, cmd):
-		command = "400 The command was not accepted and the requested action did not take place"
+		command = "400 %s command was not accepted and the requested action did not take place" %(cmd[0])
 		self.send(command)
 
 	def evaluation(self, command, parsedmessage):
