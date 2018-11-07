@@ -47,6 +47,7 @@ class FTPServer:
 		self.passivemode = False
 		self.passivesocket = None
 
+
 	def doProtocol(self):
 		self.start()
 		while True:
@@ -61,6 +62,7 @@ class FTPServer:
 				self.log.debug(self.address[0] + ": Disconneted")
 				self.log.error(str(error))
 				break
+
 
 	def receive(self):
 		response = ""
@@ -87,7 +89,6 @@ class FTPServer:
 		response = "425 Can't open dataconnection"
 		try:
 			dsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-			print "Passivemode: %s" % self.passivemode
 
 			if self.passivemode:
 				(dsocket, self.address) = self.passivesocket.accept()
@@ -165,8 +166,6 @@ class FTPServer:
 		if newcd[0] != "/":
 			newcd = self.path + "/" + newcd
 
-			print newcd
-
 		if os.path.isdir(newcd):
 			os.chdir(newcd)
 			self.path = os.getcwd()
@@ -229,9 +228,28 @@ class FTPServer:
 
 
 	def epsv(self, cmd):
-		#authorization
-		print "epsv"
-		pass
+		if not self.__authenticated:
+			command = "530 Login incorrect."
+			self.send(command)
+			return
+
+		#socket.inet_pton(socket.AF_INET6, some_string) iPv6
+
+		self.dataport = int(ManagePorts.getport())
+
+		hostname = socket.gethostname()
+		(hostname, _, hostip) = socket.gethostbyaddr(hostname)
+
+
+		self.passivemode = True
+		self.passivesocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+		self.passivesocket.bind((hostname, self.dataport))
+		self.passivesocket.listen(5)
+
+		command = "229 Entering Passive Mode (|||%s)." %(self.dataport)
+		self.send(command)
+
+		
 
 	def port(self, cmd):
 		#authorization
@@ -276,10 +294,13 @@ class FTPServer:
 				command = "501 Syntax error in parameters or arguments."
 			else:
 				eprtdata = cmd[1]
-				erptdata = eprtdata[1:-1] #remove pipe from front and back
+				eprtdata = eprtdata[1:-1] #remove pipe from front and back
 				af, network, port = eprtdata.split("|")
 
 				self.dataport = int(port)
+
+				#Turn off passive mode
+				self.passivemode = False
 
 		except Exception as error:
 			self.log.error("EPRT " + str(error))
