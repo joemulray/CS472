@@ -3,14 +3,16 @@
 import socket 
 import struct
 import sys
-from logging import logger
-from portmanager import PortManager
 import thread
 import os
 
+#created classes
+from logging import logger
+from portmanager import PortManager
+
 
 ManagePorts = PortManager()
-BUFFER = 1029
+BUFFER = 1024
 
 
 """
@@ -60,16 +62,26 @@ class FTPServer:
 		return authwrapper
 
 
-
 	def _argumentrequired(function):
 		def argumentwrapper(self, *args):
-			#If I am exptecting an argument dont waste my time just return invalid syntax
+			#If I am exptecting an argument dont waste my time if not just return invalid syntax
 			if len(*args) != 2:
 				command = "501 Syntax error in parameters or arguments."
 				self.send(command)
 				return
 			return function(self, *args)
 		return argumentwrapper
+
+
+	def _noarguments(function):
+		def noargswrapper(self, *args):
+			#I am expecting only one argument if you send me other info, getting a 501
+			if len(*args) != 1:
+				command = "501 Syntax error in parameters or arguments."
+				self.send(command)
+				return
+			return function(self, *args)
+		return noargswrapper
 
 
 	def doProtocol(self):
@@ -132,10 +144,42 @@ class FTPServer:
 			response = "226 Closing data connection. Requested file action successful"
 
 		except socket.error as error:
-			self.log.error("datasocket" + str(error))
+			self.log.error("datasocket " + str(error))
 			print "port: %s host: %s" %(self.dataport, socket.gethostname())
 
 		return response
+
+
+
+	def datasocketrecv(self):
+		response = "425 Can't open dataconnection"
+		recvdata = ""
+		try:
+
+			dsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+			if self.passivemode:
+				(dsocket, self.address) = self.passivesocket.accept()
+			else:
+				dsocket.connect((socket.gethostname(), self.dataport))
+
+			while True:
+				message = dsocket.recv(BUFFER)
+				recvdata += message
+				if '\n' in message:
+					break
+
+			if self.passivemode:
+				self.passivesocket.close()
+
+			response = "226 Closing data connection. Requested file action successful"
+
+
+		except socket.error as error:
+			self.log.error("datasocketrecv " + str(error))
+			return response, recvdata
+
+		return (response, recvdata)
 
 
 
@@ -191,12 +235,10 @@ class FTPServer:
 
 		self.send(command)
 
-
+	@_noarguments
 	@_authentication
 	def cdup(self, cmd):
 		command = "250 Requested file action okay, completed."
-		if len(cmd) != 1:
-			command = "501 Syntax error in parameters or arguments."
 
 		newcd = self.path + "/.."
 		os.chdir(newcd)
@@ -210,6 +252,7 @@ class FTPServer:
 		self.send(command)
 		self.socket.close()
 
+	@_noarguments
 	@_authentication
 	def pasv(self, cmd):
 
@@ -234,6 +277,7 @@ class FTPServer:
 		command = "227 Entering Passive Mode (%s,%s,%s)." %(host, p1, p2)
 		self.send(command)
 
+	@_noarguments
 	@_authentication
 	def epsv(self, cmd):
 		#socket.inet_pton(socket.AF_INET6, some_string) iPv6
@@ -324,14 +368,33 @@ class FTPServer:
 	@_argumentrequired
 	@_authentication
 	def stor(self, cmd):
-		pass
+		filepath = cmd[1]
 
+		try:
+			file = open(filepath, "w+")
+			#file open now send 150
+			command = "150 File status okay; about to open data connection."
+			self.send(command)
+
+			command, data = self.datasocketrecv()
+			file.write(data)
+			file.close()
+
+			self.send(command)
+
+		except IOError as error:
+			self.log.error("stor " + str(error))
+			command = "550 Requested action not taken. File unavailable"
+			self.send(command)
+
+
+	@_noarguments
 	@_authentication
 	def pwd(self, cmd):
 		command = "257 %s" % (self.path)
 		self.send(command)
 
-
+	@_noarguments
 	@_authentication
 	def syst(self, cmd):
 		#authentication
