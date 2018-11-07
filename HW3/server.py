@@ -3,7 +3,7 @@
 import socket 
 import struct
 import sys
-import thread
+import threading
 import os
 
 #created classes
@@ -13,7 +13,6 @@ from portmanager import PortManager
 
 ManagePorts = PortManager()
 BUFFER = 1024
-
 
 """
 TODO:
@@ -27,7 +26,7 @@ TODO:
 """
 
 
-class FTPServer:
+class FTPServer(threading.Thread):
 	"""
 	FTPServer handles managing the connections and status response from the clients
 
@@ -48,12 +47,13 @@ class FTPServer:
 		self.dataport = 20 #default 20
 		self.passivemode = False
 		self.passivesocket = None
+		threading.Thread.__init__(self)
 
 	"""
 	Decorator function to handle if user is authenticated or not
 	"""
 	def _authentication(function):
-		def authwrapper(self, *args, **kwargs):
+		def authwrapper(self, *args):
 			if not self.__authenticated:
 				command = "530 Login incorrect."
 				self.send(command)
@@ -84,8 +84,15 @@ class FTPServer:
 		return noargswrapper
 
 
+	def _thread(function):
+		def threadwrapper(self, *args):
+			threading.Thread(target=function, args=(self, )).start()
+		return threadwrapper
+
+
+	@_thread
 	def doProtocol(self):
-		self.start()
+		self.welcome()
 		while True:
 			try:
 				message = self.receive()
@@ -125,7 +132,6 @@ class FTPServer:
 		response = "425 Can't open dataconnection"
 		try:
 			dsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
 			if self.passivemode:
 				(dsocket, self.address) = self.passivesocket.accept()
 			else:
@@ -155,9 +161,7 @@ class FTPServer:
 		response = "425 Can't open dataconnection"
 		recvdata = ""
 		try:
-
 			dsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
 			if self.passivemode:
 				(dsocket, self.address) = self.passivesocket.accept()
 			else:
@@ -174,7 +178,6 @@ class FTPServer:
 
 			response = "226 Closing data connection. Requested file action successful"
 
-
 		except socket.error as error:
 			self.log.error("datasocketrecv " + str(error))
 			return response, recvdata
@@ -183,7 +186,7 @@ class FTPServer:
 
 
 
-	def start(self):
+	def welcome(self):
 		command = "220 Service ready for new user."
 		self.send(command)
 
@@ -488,13 +491,10 @@ def main():
 		exit(0)
 
 	while True:
-		# accept connections from outside
 
 		(clientsocket, address) = serversocket.accept()
 		ftpserver = FTPServer(clientsocket, address, filename)
 		ftpserver.doProtocol()
-		# clientsocket.close()
-		# thread.start_new_thread(ftpserver.doProtocol(), )
 	
 if __name__ == "__main__" :
 	main()
