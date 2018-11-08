@@ -14,13 +14,13 @@ from portmanager import PortManager
 
 #Global Variables
 authorized_users_file = "users.ini"
-ManagePorts = PortManager()
+manageports = PortManager()
 config = ConfigParser()
 
 BUFFER = 1024
 AUTHORIZED_USERS = {}
 log = None
-
+lock = threading.Lock()
 
 
 """
@@ -262,8 +262,9 @@ class FTPServer(threading.Thread):
 	@_authentication
 	def pasv(self, cmd):
 
-		#generate port
-		self.dataport = int(ManagePorts.getport())
+		#stop threads from getting the same port
+		with lock:
+			self.dataport = int(manageports.getport())
 
 		hostname = socket.gethostname()
 		(hostname, _, hostip) = socket.gethostbyaddr(hostname)
@@ -288,7 +289,9 @@ class FTPServer(threading.Thread):
 	def epsv(self, cmd):
 		#socket.inet_pton(socket.AF_INET6, some_string) iPv6
 
-		self.dataport = int(ManagePorts.getport())
+		#stop threads from getting the same port
+		with lock:
+			self.dataport = int(manageports.getport())
 
 		hostname = socket.gethostname()
 		(hostname, _, hostip) = socket.gethostbyaddr(hostname)
