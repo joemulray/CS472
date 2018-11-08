@@ -1,28 +1,33 @@
 #!/usr/bin/env python
-# coding: utf-8
 import socket 
-import struct
 import sys
 import threading
 import os
+
+#import configparser to read from config file
+from configparser import ConfigParser, DuplicateOptionError, Error
 
 #created classes
 from logging import logger
 from portmanager import PortManager
 
 
+#Global Variables
+authorized_users_file = "users.ini"
 ManagePorts = PortManager()
+config = ConfigParser()
+
 BUFFER = 1024
+AUTHORIZED_USERS = {}
+log = None
+
+
 
 """
 TODO:
-	Make logger global
-	display disconnect error
-	display client info in logger
+	display client info in logger in logs
 	pydoc comments
-	epsv command
-	stor command
-	retr command
+	fix ls command
 """
 
 
@@ -35,15 +40,13 @@ class FTPServer(threading.Thread):
 
 	"""
 
-	def __init__(self, socket, address=None, filename="server.log"):
+	def __init__(self, socket, address=None):
 		self.socket = socket
 		self.address = address
-		self.log = logger(filename, "[server]")
 		self.path = os.getcwd()
 		self.username = None
 		self.password = None
 		self.__authenticated = False
-		self.users = { "root" : "root" , "josephmulray" : "root" }
 		self.dataport = 20 #default 20
 		self.passivemode = False
 		self.passivesocket = None
@@ -97,13 +100,13 @@ class FTPServer(threading.Thread):
 			try:
 				message = self.receive()
 				if message:
-					self.log.received(message)
+					log.received(message)
 					parsedmessage = message.split()
 					(function, cmd) = self.evaluation(parsedmessage[0], parsedmessage)
 					function(cmd)
 			except socket.error as error:
-				self.log.debug(self.address[0] + ": Disconneted")
-				self.log.error(str(error))
+				msg = "Client Disconneted %s:%s" %(self.address[0], self.address[1])
+				log.debug(msg)
 				break
 
 
@@ -121,11 +124,11 @@ class FTPServer(threading.Thread):
 	def send(self, command=None):
 		try:
 			command+="\r\n"
-			self.log.sending(command)
+			log.sending(command)
 			self.socket.sendall(command)
 
 		except socket.error as error:
-			self.log.error(error)
+			log.error(error)
 
 
 	def datasocket(self, command=None):
@@ -150,7 +153,7 @@ class FTPServer(threading.Thread):
 			response = "226 Closing data connection. Requested file action successful"
 
 		except socket.error as error:
-			self.log.error("datasocket " + str(error))
+			log.error("datasocket " + str(error))
 			print "port: %s host: %s" %(self.dataport, socket.gethostname())
 
 		return response
@@ -179,7 +182,7 @@ class FTPServer(threading.Thread):
 			response = "226 Closing data connection. Requested file action successful"
 
 		except socket.error as error:
-			self.log.error("datasocketrecv " + str(error))
+			log.error("datasocketrecv " + str(error))
 			return response, recvdata
 
 		return (response, recvdata)
@@ -213,8 +216,8 @@ class FTPServer(threading.Thread):
 
 
 	def verifyauthentication(self):
-		if self.username in self.users:
-			if self.users[self.username] == self.password:
+		if self.username in AUTHORIZED_USERS:
+			if AUTHORIZED_USERS[self.username] == self.password:
 				return True
 			return False
 		return False
@@ -316,7 +319,7 @@ class FTPServer(threading.Thread):
 			self.passivemode = False
 
 		except Exception as error:
-			self.log.error("port" + str(error))
+			log.error("port" + str(error))
 			command = "501 Syntax error in parameters or arguments."
 
 		self.send(command)
@@ -337,7 +340,7 @@ class FTPServer(threading.Thread):
 			self.passivemode = False
 
 		except Exception as error:
-			self.log.error("EPRT " + str(error))
+			log.error("EPRT " + str(error))
 			command = "501 Syntax error in parameters or arguments."
 
 		self.send(command)
@@ -353,7 +356,7 @@ class FTPServer(threading.Thread):
 				content = openfile.read()
 
 		except IOError as error:
-			self.log.error("RETR " + str(error))
+			log.error("RETR " + str(error))
 			command = "550 Requested action not taken. File unavailable"
 			self.send(command)
 			return
@@ -386,7 +389,7 @@ class FTPServer(threading.Thread):
 			self.send(command)
 
 		except IOError as error:
-			self.log.error("stor " + str(error))
+			log.error("stor " + str(error))
 			command = "550 Requested action not taken. File unavailable"
 			self.send(command)
 
@@ -463,11 +466,10 @@ class ServerSocket:
 		self.serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		self.serversocket.bind((self.host, self.port))
 		self.serversocket.listen(self.backlog)
-		self.log = logger(filename, "[server]")
 
 		#log init
 		msg = "Starting server on %s:%s" %(self.host, self.port)
-		self.log.debug(msg)
+		log.debug(msg)
 
 	def accept(self):
 		return self.serversocket.accept()
@@ -483,7 +485,21 @@ def main():
 
 		filename = sys.argv[1]
 		port = sys.argv[2]
-		
+
+		global log
+		log = logger(filename, "[server]")
+
+		try:
+			config.read(authorized_users_file)
+			for key in config["Authorized Users"]:
+				AUTHORIZED_USERS[key] = config["Authorized Users"][key]
+
+		except (DuplicateOptionError, Error) as error:
+			log.error("Error " + str(error.message))
+			msg = "Error in %s file, Fix before proceeding" %(authorized_users_file)
+			log.error(msg)
+			exit(1)
+
 		serversocket = ServerSocket(filename, port)
 
 	else:
@@ -493,8 +509,12 @@ def main():
 	while True:
 
 		(clientsocket, address) = serversocket.accept()
-		ftpserver = FTPServer(clientsocket, address, filename)
+		msg = "Client Connected at %s:%s" %(address[0], address[1])
+		log.debug(msg)
+		ftpserver = FTPServer(clientsocket, address)
 		ftpserver.doProtocol()
+
+
 	
 if __name__ == "__main__" :
 	main()
