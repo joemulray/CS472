@@ -50,6 +50,7 @@ class FTPServer(threading.Thread):
 		self.dataport = 20 #default 20
 		self.passivemode = False
 		self.passivesocket = None
+		self.client="[%s:%s]" %(address[0], address[1])
 		threading.Thread.__init__(self)
 
 	"""
@@ -100,12 +101,12 @@ class FTPServer(threading.Thread):
 			try:
 				message = self.receive()
 				if message:
-					log.received(message)
+					log.received(message, self.client)
 					parsedmessage = message.split()
 					(function, cmd) = self.evaluation(parsedmessage[0], parsedmessage)
 					function(cmd)
 			except socket.error as error:
-				msg = "Client Disconneted %s:%s" %(self.address[0], self.address[1])
+				msg = "Client Disconneted %s" %self.client
 				log.debug(msg)
 				break
 
@@ -124,11 +125,11 @@ class FTPServer(threading.Thread):
 	def send(self, command=None):
 		try:
 			command+="\r\n"
-			log.sending(command)
+			log.sending(command, self.client)
 			self.socket.sendall(command)
 
 		except socket.error as error:
-			log.error(error)
+			log.error(error, self.client)
 
 
 	def datasocket(self, command=None):
@@ -153,7 +154,7 @@ class FTPServer(threading.Thread):
 			response = "226 Closing data connection. Requested file action successful"
 
 		except socket.error as error:
-			log.error("datasocket " + str(error))
+			log.error("datasocket " + str(error), self.client)
 			print "port: %s host: %s" %(self.dataport, socket.gethostname())
 
 		return response
@@ -182,7 +183,7 @@ class FTPServer(threading.Thread):
 			response = "226 Closing data connection. Requested file action successful"
 
 		except socket.error as error:
-			log.error("datasocketrecv " + str(error))
+			log.error("datasocketrecv " + str(error), self.client)
 			return response, recvdata
 
 		return (response, recvdata)
@@ -322,7 +323,7 @@ class FTPServer(threading.Thread):
 			self.passivemode = False
 
 		except Exception as error:
-			log.error("port" + str(error))
+			log.error("port" + str(error), self.client)
 			command = "501 Syntax error in parameters or arguments."
 
 		self.send(command)
@@ -343,7 +344,7 @@ class FTPServer(threading.Thread):
 			self.passivemode = False
 
 		except Exception as error:
-			log.error("EPRT " + str(error))
+			log.error("EPRT " + str(error), self.client)
 			command = "501 Syntax error in parameters or arguments."
 
 		self.send(command)
@@ -359,7 +360,7 @@ class FTPServer(threading.Thread):
 				content = openfile.read()
 
 		except IOError as error:
-			log.error("RETR " + str(error))
+			log.error("RETR " + str(error), self.client)
 			command = "550 Requested action not taken. File unavailable"
 			self.send(command)
 			return
@@ -392,7 +393,7 @@ class FTPServer(threading.Thread):
 			self.send(command)
 
 		except IOError as error:
-			log.error("stor " + str(error))
+			log.error("stor " + str(error), self.client)
 			command = "550 Requested action not taken. File unavailable"
 			self.send(command)
 
@@ -498,9 +499,9 @@ def main():
 				AUTHORIZED_USERS[key] = config["Authorized Users"][key]
 
 		except (DuplicateOptionError, Error) as error:
-			log.error("Error " + str(error.message))
+			log.error("Error " + str(error.message), "[main]")
 			msg = "Error in %s file, Fix before proceeding" %(authorized_users_file)
-			log.error(msg)
+			log.error(msg, "[main]")
 			exit(1)
 
 		serversocket = ServerSocket(filename, port)

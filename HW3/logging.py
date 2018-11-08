@@ -45,14 +45,14 @@ class logger:
 		self.file.write(log + "\n")
 		self.file.flush()
 
-	def error(self,msg):
+	def error(self,msg, client="[]"):
 		"""
 		Display/write errors messages to file or stdout
 
 		:param msg: The message to be logged
 		:return: returns nothing
 		"""
-		log = "%s : %s %s : %s" %(self.timestamp, self.service, self.errormsg, str(msg).rstrip())
+		log = "%s : %s %s %s : %s" %(self.timestamp, self.service, client, self.errormsg, str(msg).rstrip())
 		print log
 		self.file.write(log + "\n")
 		self.file.flush()
@@ -92,23 +92,25 @@ class logger:
 		timenow = datetime.datetime.now()
 		return timenow.strftime(self.format)
 
-	def sending(self, value):
+	def sending(self, value, client="[]"):
 		"""
 		Constructs Sent message for debug
 
 		:param value: value being sent to server
 		:return: returns nothing
 		"""
-		self.debug("Sent: " + str(value))
+		msg = "%s : Sent: %s" %(client, str(value))
+		self.debug(msg)
 
-	def received(self, value):
+	def received(self, value, client="[]"):
 		"""
 		Constructs Recieved message for debug
 
 		:param value: value being recieved from server
 		:return: returns nothing
 		"""
-		self.debug("Received: " + str(value))
+		msg = "%s : Received: %s" %(client, str(value))
+		self.debug(msg)
 
 
 	def close(self):
