@@ -7,23 +7,23 @@ import os
 #import configparser to read from config file
 from configparser import ConfigParser, DuplicateOptionError, Error
 
-#created classes
+#logger class
 from logging import logger
 
 
-#Global Variables
+#read from config file
 authorized_users_file = "users.ini"
 config = ConfigParser()
 
+#Global Variables
 BUFFER = 1024
 AUTHORIZED_USERS = {}
 log = None
 lock = threading.Lock()
-
+connected = True
 
 """
 TODO:
-	display client info in logger in logs
 	pydoc comments
 	fix ls command
 """
@@ -56,8 +56,6 @@ class FTPServer(threading.Thread):
 		self.dataport = 20 #default 20
 		self.passivemode = False
 		self.passivesocket = None
-		self.connected = True
-		self.threads = []
 		self.client="[%s:%s]" %(address[0], address[1])
 		# threading.Thread.__init__(self)
 
@@ -99,7 +97,6 @@ class FTPServer(threading.Thread):
 	def _thread(function):
 		def threadwrapper(self, *args):
 			thread = threading.Thread(target=function, args=(self, ))
-			self.threads.append(thread)
 			thread.start()
 
 		return threadwrapper
@@ -108,7 +105,7 @@ class FTPServer(threading.Thread):
 	@_thread
 	def doProtocol(self):
 		self.welcome()
-		while self.connected:
+		while connected:
 			try:
 				message = self.receive()
 				if message:
@@ -125,9 +122,22 @@ class FTPServer(threading.Thread):
 	def receive(self):
 		response = ""
 		while True:
-			message = self.socket.recv(BUFFER)
-			response += message
-			if '\n' in message:
+			try:
+				if connected:
+					self.socket.settimeout(1)
+					message = self.socket.recv(BUFFER)
+					response += message
+					if '\n' in message:
+						break
+				else:
+					break
+
+			except socket.timeout:
+				#catch the timeout error
+				continue #continue reading from the socket until we get something
+
+			except Exception as error:
+				log.error("RECV " + str(error))
 				break
 
 		return response
@@ -201,16 +211,17 @@ class FTPServer(threading.Thread):
 
 
 	def welcome(self):
-		if self.connected:
-			command = "220 Service ready for new user."
-			self.send(command)
+		command = "220 Service ready for new user."
+		self.send(command)
+
 
 	def close(self):
 		command = "421 Service not available, remote server has closed connection"
 		self.send(command)
-		self.socket.close()
-		for thread in self.threads:
-			thread.connected = False
+		global connected
+		connected = False
+		self.socket.shutdown(socket.SHUT_WR)
+
 
 	@_argumentrequired
 	def user(self, cmd):
@@ -281,12 +292,13 @@ class FTPServer(threading.Thread):
 	@_authentication
 	def pasv(self, cmd):
 
-		#stop threads from getting the same port
 		hostname = socket.gethostname()
 		(hostname, _, hostip) = socket.gethostbyaddr(hostname)
 		host = hostip[0].replace(".", ",")
 
 		self.passivemode = True
+
+		#stop threads from getting the same port
 		with lock:
 			self.passivesocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			self.passivesocket.bind((hostname, 0))
@@ -485,6 +497,7 @@ class ServerSocket:
 		self.backlog = backlog
 		self.host = socket.gethostname()
 		self.serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+		self.serversocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 		self.serversocket.bind((self.host, self.port))
 		self.serversocket.listen(self.backlog)
 
@@ -528,7 +541,7 @@ def main():
 		ftpserver = None
 
 	else:
-		print "Usage: server.py <hostname> <filename> <port>"
+		log.usage("server.py <filename> <port>")
 		exit(0)
 
 	while True:
@@ -541,11 +554,12 @@ def main():
 			ftpserver.doProtocol()
 		except KeyboardInterrupt as error:
 			log.debug("Shutting down server")
+			#if we have client running
+			if ftpserver:
+				ftpserver.close()
 			serversocket.close()
-			print "got here"
-			ftpserver.close()
-			print "got here2"
-			sys.exit()
+			log.close()
+			exit()
 
 	
 if __name__ == "__main__" :
