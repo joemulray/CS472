@@ -9,12 +9,10 @@ from configparser import ConfigParser, DuplicateOptionError, Error
 
 #created classes
 from logging import logger
-from portmanager import PortManager
 
 
 #Global Variables
 authorized_users_file = "users.ini"
-manageports = PortManager()
 config = ConfigParser()
 
 BUFFER = 1024
@@ -36,7 +34,15 @@ class FTPServer(threading.Thread):
 	FTPServer handles managing the connections and status response from the clients
 
 	Attributes:
-		connections:
+		socket
+		address
+		path
+		username
+		password
+		__authenticated
+		dataport
+		passivemode
+		passivesocket
 
 	"""
 
@@ -50,8 +56,10 @@ class FTPServer(threading.Thread):
 		self.dataport = 20 #default 20
 		self.passivemode = False
 		self.passivesocket = None
+		self.connected = True
+		self.threads = []
 		self.client="[%s:%s]" %(address[0], address[1])
-		threading.Thread.__init__(self)
+		# threading.Thread.__init__(self)
 
 	"""
 	Decorator function to handle if user is authenticated or not
@@ -70,7 +78,7 @@ class FTPServer(threading.Thread):
 		def argumentwrapper(self, *args):
 			#If I am exptecting an argument dont waste my time if not just return invalid syntax
 			if len(*args) != 2:
-				command = "501 Syntax error in parameters or arguments."
+				command = "501 Syntax error in parameters or arguments. Need an argument"
 				self.send(command)
 				return
 			return function(self, *args)
@@ -81,7 +89,7 @@ class FTPServer(threading.Thread):
 		def noargswrapper(self, *args):
 			#I am expecting only one argument if you send me other info, getting a 501
 			if len(*args) != 1:
-				command = "501 Syntax error in parameters or arguments."
+				command = "501 Syntax error in parameters or arguments. No arguments in request"
 				self.send(command)
 				return
 			return function(self, *args)
@@ -90,14 +98,17 @@ class FTPServer(threading.Thread):
 
 	def _thread(function):
 		def threadwrapper(self, *args):
-			threading.Thread(target=function, args=(self, )).start()
+			thread = threading.Thread(target=function, args=(self, ))
+			self.threads.append(thread)
+			thread.start()
+
 		return threadwrapper
 
 
 	@_thread
 	def doProtocol(self):
 		self.welcome()
-		while True:
+		while self.connected:
 			try:
 				message = self.receive()
 				if message:
@@ -129,7 +140,7 @@ class FTPServer(threading.Thread):
 			self.socket.sendall(command)
 
 		except socket.error as error:
-			log.error(error, self.client)
+			log.error(str(error), self.client)
 
 
 	def datasocket(self, command=None):
@@ -183,16 +194,23 @@ class FTPServer(threading.Thread):
 			response = "226 Closing data connection. Requested file action successful"
 
 		except socket.error as error:
-			log.error("datasocketrecv " + str(error), self.client)
-			return response, recvdata
+			pass
 
 		return (response, recvdata)
 
 
 
 	def welcome(self):
-		command = "220 Service ready for new user."
+		if self.connected:
+			command = "220 Service ready for new user."
+			self.send(command)
+
+	def close(self):
+		command = "421 Service not available, remote server has closed connection"
 		self.send(command)
+		self.socket.close()
+		for thread in self.threads:
+			thread.connected = False
 
 	@_argumentrequired
 	def user(self, cmd):
@@ -264,23 +282,21 @@ class FTPServer(threading.Thread):
 	def pasv(self, cmd):
 
 		#stop threads from getting the same port
-		with lock:
-			self.dataport = int(manageports.getport())
-
 		hostname = socket.gethostname()
 		(hostname, _, hostip) = socket.gethostbyaddr(hostname)
 		host = hostip[0].replace(".", ",")
 
-		#convert port to hex
+		self.passivemode = True
+		with lock:
+			self.passivesocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			self.passivesocket.bind((hostname, 0))
+			self.passivesocket.listen(5)
+
+		self.dataport = self.passivesocket.getsockname()[1]
 		remainderport = self.dataport % 256
 
 		p1 = (self.dataport - remainderport) / 256
 		p2 = remainderport
-
-		self.passivemode = True
-		self.passivesocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		self.passivesocket.bind((hostname, self.dataport))
-		self.passivesocket.listen(5)
 
 		command = "227 Entering Passive Mode (%s,%s,%s)." %(host, p1, p2)
 		self.send(command)
@@ -288,19 +304,17 @@ class FTPServer(threading.Thread):
 	@_noarguments
 	@_authentication
 	def epsv(self, cmd):
-		#socket.inet_pton(socket.AF_INET6, some_string) iPv6
-
-		#stop threads from getting the same port
-		with lock:
-			self.dataport = int(manageports.getport())
-
 		hostname = socket.gethostname()
 		(hostname, _, hostip) = socket.gethostbyaddr(hostname)
 
 		self.passivemode = True
-		self.passivesocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		self.passivesocket.bind((hostname, self.dataport))
-		self.passivesocket.listen(5)
+		with lock:
+			self.passivesocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			self.passivesocket.bind((hostname, 0))
+			self.passivesocket.listen(5)
+
+		self.dataport = self.passivesocket.getsockname()[1]
+
 
 		command = "229 Entering Passive Mode (|||%s)." %(self.dataport)
 		self.send(command)
@@ -317,13 +331,17 @@ class FTPServer(threading.Thread):
 			p2 = int(pasv[-1])
 
 			port = (p1 * 256) + p2
+
+			if port < 0 or port > 65535:
+				raise Exception("Recieved port out of range " + port)
+
 			self.dataport = port
 
 			#Turn off passive mode
 			self.passivemode = False
 
 		except Exception as error:
-			log.error("port" + str(error), self.client)
+			log.error(str(error), self.client)
 			command = "501 Syntax error in parameters or arguments."
 
 		self.send(command)
@@ -333,7 +351,6 @@ class FTPServer(threading.Thread):
 	def eprt(self, cmd):
 		command = "200 Port okay."
 		try:
-			#EPRT |1|127.0.0.1|52540|
 			eprtdata = cmd[1]
 			eprtdata = eprtdata[1:-1] #remove pipe from front and back
 			af, network, port = eprtdata.split("|")
@@ -344,7 +361,7 @@ class FTPServer(threading.Thread):
 			self.passivemode = False
 
 		except Exception as error:
-			log.error("EPRT " + str(error), self.client)
+			log.error(str(error), self.client)
 			command = "501 Syntax error in parameters or arguments."
 
 		self.send(command)
@@ -416,7 +433,7 @@ class FTPServer(threading.Thread):
 		command = "215 UNIX Type: %s" % system
 		self.send(command)
 
-
+	@_noarguments
 	@_authentication
 	def list(self, cmd):
 
@@ -481,6 +498,9 @@ class ServerSocket:
 	def close(self):
 		self.serversocket.close()
 
+	def shutdown(self):
+		self.serversocket.shutdown(1)
+
 
 
 def main():
@@ -505,6 +525,7 @@ def main():
 			exit(1)
 
 		serversocket = ServerSocket(filename, port)
+		ftpserver = None
 
 	else:
 		print "Usage: server.py <hostname> <filename> <port>"
@@ -512,12 +533,19 @@ def main():
 
 	while True:
 
-		(clientsocket, address) = serversocket.accept()
-		msg = "Client Connected at %s:%s" %(address[0], address[1])
-		log.debug(msg)
-		ftpserver = FTPServer(clientsocket, address)
-		ftpserver.doProtocol()
-
+		try:
+			(clientsocket, address) = serversocket.accept()
+			msg = "Client Connected at %s:%s" %(address[0], address[1])
+			log.debug(msg)
+			ftpserver = FTPServer(clientsocket, address)
+			ftpserver.doProtocol()
+		except KeyboardInterrupt as error:
+			log.debug("Shutting down server")
+			serversocket.close()
+			print "got here"
+			ftpserver.close()
+			print "got here2"
+			sys.exit()
 
 	
 if __name__ == "__main__" :
