@@ -1,0 +1,21 @@
+What is this Warning?
+	ftp> get server.log
+	200 Port okay.
+	150 File status okay; about to open data connection.
+	WARNING! 5305 bare linefeeds received in ASCII mode
+	File may not have transferred correctly.
+	226 Closing data connection. Requested file action successful
+	388520 bytes received in 0.0403 seconds (9.19 Mbytes/s)
+
+
+As a server what encoding am i using
+If there a default encoding
+same thing with stor, as a server do i check the encoding and then stor?
+	do i need to check if i can even write to that location {are we going that far with permissions}
+
+
+does list command allow arguments such as a directory?
+ls <folder>?
+
+actually stopping the server?
+ctl-c and then handle that or is that expected
