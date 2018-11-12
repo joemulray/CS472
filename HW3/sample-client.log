@@ -1,0 +1,148 @@
+➜  ~ ftp n3-13-217.dhcp.drexel.edu 2121
+Connected to n3-13-217.dhcp.drexel.edu.
+220 Service ready for new user.
+Name (n3-13-217.dhcp.drexel.edu:josephmulray): 
+331 Please specify the password.
+Password: 
+230 Login successful
+ftp> ls
+200 Port okay.
+150 File status okay; about to open data connection.
+logging.py
+server.py
+Makefile
+tests
+users.ini
+README
+logging.pyc
+server.log
+226 Closing data connection. Requested file action successful
+ftp> passive on
+Passive mode on.
+ftp> ls
+227 Entering Passive Mode (10,250,13,217,248,69).
+150 File status okay; about to open data connection.
+logging.py
+server.py
+Makefile
+tests
+users.ini
+README
+logging.pyc
+server.log
+226 Closing data connection. Requested file action successful
+ftp> ls
+227 Entering Passive Mode (10,250,13,217,248,80).
+150 File status okay; about to open data connection.
+logging.py
+server.py
+Makefile
+tests
+users.ini
+README
+logging.pyc
+server.log
+226 Closing data connection. Requested file action successful
+ftp> passive off
+Passive mode off.
+ftp> ls
+200 Port okay.
+150 File status okay; about to open data connection.
+logging.py
+server.py
+Makefile
+tests
+users.ini
+README
+logging.pyc
+server.log
+226 Closing data connection. Requested file action successful
+ftp> send lrrid
+200 Port okay.
+150 File status okay; about to open data connection.
+226 Closing data connection. Requested file action successful
+68 bytes sent in 0.00121 seconds (54.9 kbytes/s)
+ftp> quit
+221 Goodbye.
+➜  ~ ftp n3-13-217.dhcp.drexel.edu 2121
+Connected to n3-13-217.dhcp.drexel.edu.
+220 Service ready for new user.
+Name (n3-13-217.dhcp.drexel.edu:josephmulray): root
+331 Please specify the password.
+Password: 
+230 Login successful
+ftp> ls
+200 Port okay.
+150 File status okay; about to open data connection.
+logging.py
+server.py
+Makefile
+tests
+users.ini
+README
+logging.pyc
+server.log
+226 Closing data connection. Requested file action successful
+ftp> epsv4
+Use of EPRT/EPSV for IPv4: on.
+ftp> ls
+200 Port okay.
+150 File status okay; about to open data connection.
+logging.py
+server.py
+Makefile
+tests
+users.ini
+README
+logging.pyc
+server.log
+226 Closing data connection. Requested file action successful
+ftp> cdup
+250 Requested file action okay, completed.
+ftp> ls
+200 Port okay.
+150 File status okay; about to open data connection.
+HW2
+HW3
+James Kurose, Keith Ross-Computer Networking_ A Top-Down Approach (7th Edition)-Pearson (2016).pdf
+README.md
+HW1
+.gitignore
+LECTURES
+.git
+226 Closing data connection. Requested file action successful
+ftp> ls
+200 Port okay.
+150 File status okay; about to open data connection.
+HW2
+HW3
+James Kurose, Keith Ross-Computer Networking_ A Top-Down Approach (7th Edition)-Pearson (2016).pdf
+README.md
+HW1
+.gitignore
+LECTURES
+.git
+226 Closing data connection. Requested file action successful
+ftp> get .gitignore
+200 Port okay.
+150 File status okay; about to open data connection.
+WARNING! 5 bare linefeeds received in ASCII mode
+File may not have transferred correctly.
+226 Closing data connection. Requested file action successful
+44 bytes received in 0.000191 seconds (225 kbytes/s)
+ftp> ls
+200 Port okay.
+150 File status okay; about to open data connection.
+HW2
+HW3
+James Kurose, Keith Ross-Computer Networking_ A Top-Down Approach (7th Edition)-Pearson (2016).pdf
+README.md
+HW1
+.gitignore
+LECTURES
+.git
+226 Closing data connection. Requested file action successful
+ftp> system
+215 UNIX Type: darwin
+ftp> quit
+221 Goodbye.

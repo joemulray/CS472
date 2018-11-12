@@ -1,0 +1,58 @@
+Joseph Mulray
+CS472
+Homework 3 : FTP Server
+11/12/18
+
+Makefile commands:
+	run: runs server on port 2121
+	view: view the server source code
+	docs: view pydocs comments
+	test: run simple ftp test using the ftp client
+	clean: remove pyc files
+
+
+Running: 
+	You can use the makefile to run this command or run it manaully
+	python server.py <log file> <port>
+
+Files:
+	server.py : main FTP server
+	logging.pg : logger class
+	Makefile :	makefile to run program
+	sample-server.log : sample server log
+	sample-client.log : sample ftp client interaction with server
+	users.ini : user config file
+	tests/test.sh : sample test script to run with ftp server
+	HW3-DFA.png : the DFA image
+
+
+QUESTIONS:
+
+Question 1:
+1a. Consider the security of the data of FTP and the commands. Good or bad?
+Not good at all, all the contents of the data can be seen in wireshark, someone can easily grab your password and information. The data is not encrypted for both the data socket and connection socket
+
+1b. Is BitTorrent better or worse? Why? 
+BitTorrent has the same issue of security, in a Peer to Peer network you would not want to be pulling files and transferring important data that is also not encrypted, in this situation BitTorrent is worse than FTP
+
+1c. What about SFTP?
+SFTP is far better with the security of the data, the contents are encrypted through SSH connection that does not allow someone to sniff the contents of your password and data which can happen in FTP and BitTorrent. It uses one channel to send and receive data, having the ability to verify who is sending and receiving the data from your server.
+
+1d. Is it the way that it is implemented or are there considerations because of how the protocol works? (Look up the basics of SFTP and BitTorrent) 
+It is the way the protocol was designed, was designed to have one channel for sending and receiving requests and the other for the transfer of data. SFTP is a completely different prototcol not a different implementation.
+
+2a. Do you think that someone could hack into your FTP server? Why or why not? 
+Yes absolutely, there's no way for me to tell as a server that there is not a man in the middle or if someone actually thinks they are connected to my server, and are not at all it is just someone relaying the information on. All the information is open so that is absolutely possible. 
+
+2b. Through what methods? 
+Through the passive methods, epsv, pasv, I listen for a connection, I do not verify who is actually connecting, no cert or mac address or any material that would verify the client who i was talking to actually connected to my program, anyone could connect and get that data from the ftp server.
+
+3a. Critique how FTP solves the problem of file transfer – what is good?
+It provides an easy, reliable way to transfer files between a client and a server. 
+
+3b. What is bad? What is weird? 
+The security is bad on FTP everything is open, that is one thing that solved with SFTP that adds that extra layer of security. It is weird how data is opened on another connection, this is good because you aren't sending and receiving data on the same socket, at the same time its not secure because anyone can try to connect to a port and receive that data. 
+
+4a. How hard would it be to make FTP use one channel instead of two? 
+It would require changing the protocol. You would have write a new protocol like SFTP that uses a single channel instead of one, and handle all requests and transfers on that single connection. Would require a different approach not just a modification of the program.
+

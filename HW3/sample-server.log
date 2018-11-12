@@ -1,0 +1,79 @@
+2018-11-12 15:20 : [server] [debug] : Starting server on n3-13-217.dhcp.drexel.edu:2121
+2018-11-12 15:20 : [server] [debug] : Client Connected at 10.250.13.217:63553
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 220 Service ready for new user.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Received: USER josephmulray
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 331 Please specify the password.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Received: PASS root
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 230 Login successful
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Received: PORT 10,250,13,217,248,66
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 200 Port okay.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Received: LIST
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 150 File status okay; about to open data connection.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Received: PASV
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 227 Entering Passive Mode (10,250,13,217,248,69).
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Received: LIST
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 150 File status okay; about to open data connection.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-12 15:20 : [server] [debug] : Client Connected at 10.250.13.217:63559
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 220 Service ready for new user.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: USER root
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 331 Please specify the password.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: PASS root
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 230 Login successful
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: PORT 10,250,13,217,248,72
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 200 Port okay.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: LIST
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 150 File status okay; about to open data connection.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: EPRT |1|10.250.13.217|63562|
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 200 Port okay.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: LIST
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 150 File status okay; about to open data connection.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: CDUP
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 250 Requested file action okay, completed.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: EPRT |1|10.250.13.217|63566|
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 200 Port okay.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: LIST
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 150 File status okay; about to open data connection.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Received: PASV
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 227 Entering Passive Mode (10,250,13,217,248,80).
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Received: LIST
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 150 File status okay; about to open data connection.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Received: PORT 10,250,13,217,248,82
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 200 Port okay.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Received: LIST
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 150 File status okay; about to open data connection.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: EPRT |1|10.250.13.217|63572|
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 200 Port okay.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: LIST
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 150 File status okay; about to open data connection.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: EPRT |1|10.250.13.217|63574|
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 200 Port okay.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: RETR .gitignore
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 150 File status okay; about to open data connection.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: EPRT |1|10.250.13.217|63576|
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 200 Port okay.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: LIST
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 150 File status okay; about to open data connection.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: CWD ls
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 550 Requested action not taken. File unavailable
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: SYST
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 215 UNIX Type: darwin
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Received: PORT 10,250,13,217,248,92
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 200 Port okay.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Received: STOR lrrid
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 150 File status okay; about to open data connection.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Received: QUIT
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63553] : Sent: 221 Goodbye.
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Received: QUIT
+2018-11-12 15:20 : [server] [debug] : [10.250.13.217:63559] : Sent: 221 Goodbye.
+2018-11-12 15:20 : [server] [debug] : Shutting down server
