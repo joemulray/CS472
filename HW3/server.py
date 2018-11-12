@@ -24,7 +24,6 @@ connected = True
 
 """
 TODO:
-	pydoc comments
 	fix ls command
 """
 
@@ -34,15 +33,15 @@ class FTPServer(threading.Thread):
 	FTPServer handles managing the connections and status response from the clients
 
 	Attributes:
-		socket
-		address
-		path
-		username
-		password
-		__authenticated
-		dataport
-		passivemode
-		passivesocket
+		socket: clientsocket
+		address: clientsocket address
+		path: the current os path of the server
+		username: the username of the client
+		password: the password of the client
+		__authenticated: boolean to check if the user is authenticated or not
+		dataport: the port of the datasocket
+		passivemode: boolean to check if in passive mode or not
+		passivesocket: the passivesocket if in passive mode
 
 	"""
 
@@ -50,6 +49,7 @@ class FTPServer(threading.Thread):
 		self.socket = socket
 		self.address = address
 		self.path = os.getcwd()
+		self.connect = True
 		self.username = None
 		self.password = None
 		self.__authenticated = False
@@ -57,12 +57,15 @@ class FTPServer(threading.Thread):
 		self.passivemode = False
 		self.passivesocket = None
 		self.client="[%s:%s]" %(address[0], address[1])
-		# threading.Thread.__init__(self)
 
-	"""
-	Decorator function to handle if user is authenticated or not
-	"""
+
 	def _authentication(function):
+		"""
+		Decorator function to handle if user is authenticated or not
+
+		:param function: the function that requires authentication
+		:return: returns the function or returns nothing
+		"""
 		def authwrapper(self, *args):
 			if not self.__authenticated:
 				command = "530 Login incorrect."
@@ -72,7 +75,14 @@ class FTPServer(threading.Thread):
 		return authwrapper
 
 
+
 	def _argumentrequired(function):
+		"""
+		Decorator function to handle if an argument is required for that function
+
+		:param function: the function that requires an argument eg {CD <argument>}
+		:return: returns the function or returns nothing
+		"""
 		def argumentwrapper(self, *args):
 			#If I am exptecting an argument dont waste my time if not just return invalid syntax
 			if len(*args) != 2:
@@ -84,6 +94,12 @@ class FTPServer(threading.Thread):
 
 
 	def _noarguments(function):
+		"""
+		Decorator function to handle a function that has no arguments
+
+		:param function: the function that requires no arguments eg if you send me {QUIT asdasd}, returning a 501
+		:return: returns the function or returns nothing
+		"""
 		def noargswrapper(self, *args):
 			#I am expecting only one argument if you send me other info, getting a 501
 			if len(*args) != 1:
@@ -95,6 +111,12 @@ class FTPServer(threading.Thread):
 
 
 	def _thread(function):
+		"""
+		Decorator function to handle if an argument is required for that function
+
+		:param function: the function that requires an argument eg {CD <argument>}
+		:return: returns the function or returns nothing
+		"""
 		def threadwrapper(self, *args):
 			thread = threading.Thread(target=function, args=(self, ))
 			thread.start()
@@ -104,8 +126,13 @@ class FTPServer(threading.Thread):
 
 	@_thread
 	def doProtocol(self):
+		"""
+		Function that will run the FTP protocol threaded and continuously
+
+		:return: returns nothing
+		"""
 		self.welcome()
-		while connected:
+		while self.connect:
 			try:
 				message = self.receive()
 				if message:
@@ -113,6 +140,8 @@ class FTPServer(threading.Thread):
 					parsedmessage = message.split()
 					(function, cmd) = self.evaluation(parsedmessage[0], parsedmessage)
 					function(cmd)
+				elif not connected:
+					break
 			except socket.error as error:
 				msg = "Client Disconneted %s" %self.client
 				log.debug(msg)
@@ -120,6 +149,11 @@ class FTPServer(threading.Thread):
 
 
 	def receive(self):
+		"""
+		Function that will receive messages from the client socket and return the message
+
+		:return: returns the messages received from the socket
+		"""
 		response = ""
 		while True:
 			try:
@@ -144,6 +178,12 @@ class FTPServer(threading.Thread):
 
 
 	def send(self, command=None):
+		"""
+		Send function that will send the command to the client socket
+
+		:param command: the command from the server to send to the client
+		:return: returns nothing
+		"""
 		try:
 			command+="\r\n"
 			log.sending(command, self.client)
@@ -154,6 +194,12 @@ class FTPServer(threading.Thread):
 
 
 	def datasocket(self, command=None):
+		"""
+		Function that handles sending data on the datasocket for active and passive mode
+
+		:param command: the command from the server to send to the client
+		:return: returns the response of the status of the data transfer
+		"""
 		response = "425 Can't open dataconnection"
 		try:
 			dsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -183,6 +229,11 @@ class FTPServer(threading.Thread):
 
 
 	def datasocketrecv(self):
+		"""
+		Function that handles receiving data on the datasocket for active and passive mode
+
+		:return: returns the response of the status of the data transfer, and the data received from the datasocket
+		"""
 		response = "425 Can't open dataconnection"
 		recvdata = ""
 		try:
@@ -211,20 +262,40 @@ class FTPServer(threading.Thread):
 
 
 	def welcome(self):
+		"""
+		Welcome function that sends the welcome message to the clientsocket
+
+		:return: returns nothing
+		"""
 		command = "220 Service ready for new user."
 		self.send(command)
 
 
 	def close(self):
-		command = "421 Service not available, remote server has closed connection"
-		self.send(command)
+		"""
+		Close function is called when the server is shutting down, changes connect variables to stop threads
+
+		:return: returns nothing
+		"""
 		global connected
 		connected = False
-		self.socket.shutdown(socket.SHUT_WR)
+		self.connect = False
+		#if socket still exists
+		if self.socket:
+			command = "421 Service not available, remote server has closed connection"
+			self.send(command)
+			self.socket.shutdown(socket.SHUT_WR)
 
 
 	@_argumentrequired
 	def user(self, cmd):
+		"""
+		User function to handle request made with user command
+
+		:decorator _argumentrequired: argument is required for this function
+		:param cmd: array of the full request made from the client
+		:return: returns nothing
+		"""
 		self.username = cmd[1]
 		command = "331 Please specify the password."
 
@@ -232,7 +303,13 @@ class FTPServer(threading.Thread):
 
 	@_argumentrequired
 	def passwd(self, cmd):
+		"""
+		Password function to handle request made with the pass command
 
+		:decorator _argumentrequired: argument is required for this function
+		:param cmd: array of the full request made from the client
+		:return: returns nothing
+		"""
 		password = cmd[1]
 		self.password = password
 		self.__authenticated = self.verifyauthentication()
@@ -246,6 +323,11 @@ class FTPServer(threading.Thread):
 
 
 	def verifyauthentication(self):
+		"""
+		Helper function to help verify authentication for a clientsocket
+
+		:return boolean: returns a boolean {True/False} if user is authenticated or not
+		"""
 		if self.username in AUTHORIZED_USERS:
 			if AUTHORIZED_USERS[self.username] == self.password:
 				return True
@@ -256,6 +338,14 @@ class FTPServer(threading.Thread):
 	@_argumentrequired
 	@_authentication
 	def chdir(self, cmd):
+		"""
+		Change directory function to handle chdir requests
+
+		:decorator _authentication: authentication is required for this function
+		:decorator _argumentrequired: argument is required for this function
+		:param cmd: array of the full request made from the client
+		:return: returns nothing
+		"""
 		command = "250 Requested file action okay, completed"
 		newcd = cmd[1]
 		#if not given a full path
@@ -274,6 +364,14 @@ class FTPServer(threading.Thread):
 	@_noarguments
 	@_authentication
 	def cdup(self, cmd):
+		"""
+		Change directory up function to handle cdup requests
+
+		:decorator _authentication: authentication is required for this function
+		:decorator _noarguments: no arguments are required for this request
+		:param cmd: array of the full request made from the client
+		:return: returns nothing
+		"""
 		command = "250 Requested file action okay, completed."
 
 		newcd = self.path + "/.."
@@ -284,14 +382,32 @@ class FTPServer(threading.Thread):
 
 
 	def quit(self, cmd):
+		"""
+		Quit function to handle quit requests from the client socket
+
+		:decorator _noarguments: no arguments are required for this request
+		:param cmd: array of the full request made from the client
+		:return: returns nothing
+		"""
 		command = "221 Goodbye."
 		self.send(command)
-		self.socket.close()
+		self.connect = False
+		self.socket.shutdown(socket.SHUT_WR)
+		self.socket = None
 
 	@_noarguments
 	@_authentication
 	def pasv(self, cmd):
+		"""
+		Passive function to handle pasv requests from the client socket
 
+		:decorator _noarguments: no arguments are required for this request
+		:decorator _authentication: authentication is required for this function
+		:param cmd: array of the full request made from the client
+		:return: returns nothing
+		"""
+
+		#get the hostname information
 		hostname = socket.gethostname()
 		(hostname, _, hostip) = socket.gethostbyaddr(hostname)
 		host = hostip[0].replace(".", ",")
@@ -316,11 +432,24 @@ class FTPServer(threading.Thread):
 	@_noarguments
 	@_authentication
 	def epsv(self, cmd):
+		"""
+		Extended passive function to handle epsv requests from the client socket
+
+		:decorator _noarguments: no arguments are required for this request
+		:decorator _authentication: authentication is required for this function
+		:param cmd: array of the full request made from the client
+		:return: returns nothing
+		"""
+
+		#get hostname information
 		hostname = socket.gethostname()
 		(hostname, _, hostip) = socket.gethostbyaddr(hostname)
 
 		self.passivemode = True
+
+		#stop threads from getting the same port
 		with lock:
+			#bind and listen on the passive socket
 			self.passivesocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			self.passivesocket.bind((hostname, 0))
 			self.passivesocket.listen(5)
@@ -335,6 +464,14 @@ class FTPServer(threading.Thread):
 	@_argumentrequired
 	@_authentication
 	def port(self, cmd):
+		"""
+		Port function to handle port requests from the client socket, requires a valid port in request
+
+		:decorator _argumentrequired: argument is required for this function
+		:decorator _authentication: authentication is required for this function
+		:param cmd: array of the full request made from the client
+		:return: returns nothing
+		"""
 		command = "200 Port okay."
 		try:
 			msg = ''.join(cmd)
@@ -344,8 +481,9 @@ class FTPServer(threading.Thread):
 
 			port = (p1 * 256) + p2
 
+			#if port out of range throw exception
 			if port < 0 or port > 65535:
-				raise Exception("Recieved port out of range " + port)
+				raise Exception("Received port out of range " + port)
 
 			self.dataport = port
 
@@ -361,6 +499,14 @@ class FTPServer(threading.Thread):
 	@_argumentrequired
 	@_authentication
 	def eprt(self, cmd):
+		"""
+		Extended port function to handle eprt requests from the client socket
+
+		:decorator _argumentrequired: argument is required for this function
+		:decorator _authentication: authentication is required for this function
+		:param cmd: array of the full request made from the client
+		:return: returns nothing
+		"""
 		command = "200 Port okay."
 		try:
 			eprtdata = cmd[1]
@@ -381,7 +527,15 @@ class FTPServer(threading.Thread):
 	@_argumentrequired
 	@_authentication
 	def retr(self, cmd):
+		"""
+		Retrieve function to handle retr requests from the client socket
+		requires valid file in argument request
 
+		:decorator _argumentrequired: argument is required for this function
+		:decorator _authentication: authentication is required for this function
+		:param cmd: array of the full request made from the client
+		:return: returns nothing
+		"""
 		filepath = cmd[1]
 		content = ""
 		try:
@@ -407,6 +561,15 @@ class FTPServer(threading.Thread):
 	@_argumentrequired
 	@_authentication
 	def stor(self, cmd):
+		"""
+		Stor function to handle stor requests from the client socket
+		requires valid file in argument request
+
+		:decorator _argumentrequired: argument is required for this function
+		:decorator _authentication: authentication is required for this function
+		:param cmd: array of the full request made from the client
+		:return: returns nothing
+		"""
 		filepath = cmd[1]
 
 		try:
@@ -430,17 +593,28 @@ class FTPServer(threading.Thread):
 	@_noarguments
 	@_authentication
 	def pwd(self, cmd):
+		"""
+		Print working directory function to print the current dir, calls self.path
+
+		:decorator _noarguments: no arguments are required for this request
+		:decorator _authentication: authentication is required for this function
+		:param cmd: array of the full request made from the client
+		:return: returns nothing
+		"""
 		command = "257 %s" % (self.path)
 		self.send(command)
 
 	@_noarguments
 	@_authentication
 	def syst(self, cmd):
-		#authentication
-		if len(cmd) != 1:
-			command = "501 Syntax error in parameters or arguments."
-			self.send(command)
+		"""
+		System function to print the current system the ftp server is running on
 
+		:decorator _noarguments: no arguments are required for this request
+		:decorator _authentication: authentication is required for this function
+		:param cmd: array of the full request made from the client
+		:return: returns nothing
+		"""
 		system = sys.platform
 		command = "215 UNIX Type: %s" % system
 		self.send(command)
@@ -448,16 +622,32 @@ class FTPServer(threading.Thread):
 	@_noarguments
 	@_authentication
 	def list(self, cmd):
+		"""
+		List function handle ls requests from client socket
 
+		:decorator _noarguments: no arguments are required for this request
+		:decorator _authentication: authentication is required for this function
+		:param cmd: array of the full request made from the client
+		:return: returns nothing
+		"""
+
+		#get the directory listing from the current path
 		arraylist = os.listdir(self.path)
 		command = "150 File status okay; about to open data connection."
 		self.send(command)
 
+		#send the listing to the datasocket
 		command = self.datasocket(arraylist)
 		self.send(command)
 
 
 	def help(self, cmd):
+		"""
+		Help function that returns the availabe commands by the ftpserver
+
+		:param cmd: array of the full request made from the client
+		:return: returns nothing
+		"""
 		command = "214 The following commands are recognized."
 		self.send(command)
 		commands = ["USER PASS CWD CDUP QUIT PASV EPSV PORT EPRT RETR STOR PWD \
@@ -466,11 +656,25 @@ class FTPServer(threading.Thread):
 
 
 	def invalid(self, cmd):
+		"""
+		Function that handles invalid requests made by the client socket
+
+		:param cmd: array of the full request made from the client
+		:return: returns nothing
+		"""
 		command = "400 %s command was not accepted and the requested action did not take place" %(cmd[0])
 		self.send(command)
 
 	def evaluation(self, command, parsedmessage):
-			return {
+		"""
+		Evaluation function that evaluates the request made by the user and
+		returns that specific function
+
+		:param command: the command user wants to run
+		:param parsedmessage: an array of the full command received by the ftp server
+		:return: returns the function based on the given command
+		"""
+		return {
 			"USER" : (self.user, parsedmessage),
 			"PASS" : (self.passwd, parsedmessage),
 			"CWD" : (self.chdir, parsedmessage),
@@ -491,6 +695,14 @@ class FTPServer(threading.Thread):
 
 
 class ServerSocket:
+	"""
+	ServerSocket establishes and opens up connections on a given port
+
+	Attributes:
+		port: the port to open the ServerSocket
+		backlog: the backlog for the ServerSocket
+		host: the hostname of the ServerSocket
+	"""
 
 	def __init__(self, filename="server.log", port=2121, backlog = 5):
 		self.port = int(port)
@@ -506,23 +718,36 @@ class ServerSocket:
 		log.debug(msg)
 
 	def accept(self):
+		"""
+		Function to accept requests on the ServerSocket
+
+		:return: returns the clientsocket and address of the connections
+		"""
 		return self.serversocket.accept()
 
 	def close(self):
+		"""
+		Function to close the connection of the ServerSocket
+
+		:return: returns nothing
+		"""
 		self.serversocket.close()
-
-	def shutdown(self):
-		self.serversocket.shutdown(1)
-
 
 
 def main():
+	"""
+	MAIN function, passes command line arguments into the ServerSocket, calls FTPServer to run protocol
 
+	:return: returns nothing:
+	"""
+
+	#handle commandline arguments
 	if len(sys.argv) == 3:
 
 		filename = sys.argv[1]
 		port = sys.argv[2]
 
+		#establish init variables {LOG, AuthorizedUsers}
 		global log
 		log = logger(filename, "[server]")
 
@@ -530,13 +755,14 @@ def main():
 			config.read(authorized_users_file)
 			for key in config["Authorized Users"]:
 				AUTHORIZED_USERS[key] = config["Authorized Users"][key]
-
+		#handle invalid config file
 		except (DuplicateOptionError, Error) as error:
 			log.error("Error " + str(error.message), "[main]")
 			msg = "Error in %s file, Fix before proceeding" %(authorized_users_file)
 			log.error(msg, "[main]")
 			exit(1)
 
+		#Create a serversocket
 		serversocket = ServerSocket(filename, port)
 		ftpserver = None
 
@@ -544,21 +770,21 @@ def main():
 		log.usage("server.py <filename> <port>")
 		exit(0)
 
+	#Run the protocol for each clients
 	while True:
-
 		try:
 			(clientsocket, address) = serversocket.accept()
 			msg = "Client Connected at %s:%s" %(address[0], address[1])
 			log.debug(msg)
 			ftpserver = FTPServer(clientsocket, address)
 			ftpserver.doProtocol()
+		#Handle CTL-C make sure threads are done running
 		except KeyboardInterrupt as error:
 			log.debug("Shutting down server")
 			#if we have client running
 			if ftpserver:
 				ftpserver.close()
 			serversocket.close()
-			log.close()
 			exit()
 
 	
