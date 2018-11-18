@@ -127,12 +127,14 @@ class FTPServer(threading.Thread):
 
 
 	def _check_mode(function):
+		"""
+		Decorator function to handle if an argument is required for that function
+
+		:param function: the function that requires an argument eg {CD <argument>}
+		:return: returns the function or returns nothing
+		"""
 		def checkmode_wrapper(self, *args):
 			name = function.__name__ 
-			print name
-
-			print PASV_MODE
-			print PORT_MODE
 
 			if name == "pasv" or name == "epsv":
 				if PASV_MODE == "yes":
@@ -769,6 +771,11 @@ class ServerSocket:
 
 
 def config_init():
+	"""
+	Config function to read from the config file, set Authorized user and passive and active modes
+
+	:return: returns nothing:
+	"""
 
 	try:
 		config.read(ftp_server_config)
