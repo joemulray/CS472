@@ -3,3 +3,4 @@
 *.pdf
 !HW1/HW1.pdf
 LECTURES/*
+!HW3/HW3-DFA.png
