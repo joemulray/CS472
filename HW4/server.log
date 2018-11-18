@@ -1,0 +1,236 @@
+2018-11-16 13:13 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-16 13:13 : [server] [debug] : Shutting down server
+2018-11-17 17:15 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-17 17:15 : [server] [debug] : Shutting down server
+2018-11-17 17:16 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-17 17:16 : [server] [debug] : Shutting down server
+2018-11-17 17:33 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-17 17:33 : [server] [debug] : Shutting down server
+2018-11-17 17:34 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-17 17:34 : [server] [debug] : Client Connected at 127.0.0.1:53266
+2018-11-17 17:34 : [server] [debug] : [127.0.0.1:53266] : Sent: 220 Service ready for new user.
+2018-11-17 17:34 : [server] [debug] : [127.0.0.1:53266] : Received: USER josephmulray
+2018-11-17 17:34 : [server] [debug] : [127.0.0.1:53266] : Sent: 331 Please specify the password.
+2018-11-17 17:34 : [server] [debug] : [127.0.0.1:53266] : Received: PASS root
+2018-11-17 17:34 : [server] [debug] : [127.0.0.1:53266] : Sent: 230 Login successful
+2018-11-17 17:34 : [server] [debug] : [127.0.0.1:53266] : Received: PORT 127,0,0,1,208,19
+2018-11-17 17:34 : [server] [debug] : Shutting down server
+2018-11-17 17:34 : [server] [debug] : [127.0.0.1:53266] : Sent: 421 Service not available, remote server has closed connection
+2018-11-17 17:35 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-17 17:35 : [server] [debug] : Client Connected at 127.0.0.1:53277
+2018-11-17 17:35 : [server] [debug] : [127.0.0.1:53277] : Sent: 220 Service ready for new user.
+2018-11-17 17:35 : [server] [debug] : [127.0.0.1:53277] : Received: USER josephmulray
+2018-11-17 17:35 : [server] [debug] : [127.0.0.1:53277] : Sent: 331 Please specify the password.
+2018-11-17 17:35 : [server] [debug] : [127.0.0.1:53277] : Received: PASS root
+2018-11-17 17:35 : [server] [debug] : [127.0.0.1:53277] : Sent: 230 Login successful
+2018-11-17 17:35 : [server] [debug] : [127.0.0.1:53277] : Received: PORT 127,0,0,1,208,30
+2018-11-17 17:35 : [server] [debug] : Shutting down server
+2018-11-17 17:35 : [server] [debug] : [127.0.0.1:53277] : Sent: 421 Service not available, remote server has closed connection
+2018-11-17 18:40 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-17 18:40 : [server] [debug] : Client Connected at 127.0.0.1:53365
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 220 Service ready for new user.
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: USER josephmulray
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 331 Please specify the password.
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: PASS root
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 230 Login successful
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: PORT 127,0,0,1,208,118
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 The command was not accepted, port not enabled
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: LPRT 4,4,127,0,0,1,2,208,118
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 LPRT command was not accepted and the requested action did not take place
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: PASV
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 The command was not accepted, pasv not enabled
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: LPSV
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 LPSV command was not accepted and the requested action did not take place
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: PASV
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 The command was not accepted, pasv not enabled
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: LPSV
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 LPSV command was not accepted and the requested action did not take place
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: PASV
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 The command was not accepted, pasv not enabled
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: LPSV
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 LPSV command was not accepted and the requested action did not take place
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: PASV
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 The command was not accepted, pasv not enabled
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: LPSV
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 LPSV command was not accepted and the requested action did not take place
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: PASV
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 The command was not accepted, pasv not enabled
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: LPSV
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 LPSV command was not accepted and the requested action did not take place
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: PORT 127,0,0,1,208,120
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 The command was not accepted, port not enabled
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: LPRT 4,4,127,0,0,1,2,208,120
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 LPRT command was not accepted and the requested action did not take place
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: PORT 127,0,0,1,208,121
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 The command was not accepted, port not enabled
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: LPRT 4,4,127,0,0,1,2,208,121
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 LPRT command was not accepted and the requested action did not take place
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: PORT 127,0,0,1,208,122
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 The command was not accepted, port not enabled
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: LPRT 4,4,127,0,0,1,2,208,122
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 LPRT command was not accepted and the requested action did not take place
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: PORT 127,0,0,1,208,123
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 The command was not accepted, port not enabled
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Received: LPRT 4,4,127,0,0,1,2,208,123
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 400 LPRT command was not accepted and the requested action did not take place
+2018-11-17 18:40 : [server] [debug] : Shutting down server
+2018-11-17 18:40 : [server] [debug] : [127.0.0.1:53365] : Sent: 421 Service not available, remote server has closed connection
+2018-11-17 18:42 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-17 18:42 : [server] [debug] : Client Connected at 127.0.0.1:53384
+2018-11-17 18:42 : [server] [debug] : [127.0.0.1:53384] : Sent: 220 Service ready for new user.
+2018-11-17 18:42 : [server] [debug] : [127.0.0.1:53384] : Received: USER josephmulray
+2018-11-17 18:42 : [server] [debug] : [127.0.0.1:53384] : Sent: 331 Please specify the password.
+2018-11-17 18:42 : [server] [debug] : [127.0.0.1:53384] : Received: PASS root
+2018-11-17 18:42 : [server] [debug] : [127.0.0.1:53384] : Sent: 230 Login successful
+2018-11-17 18:42 : [server] [debug] : [127.0.0.1:53384] : Received: PORT 127,0,0,1,208,137
+2018-11-17 18:42 : [server] [debug] : [127.0.0.1:53384] : Sent: 400 The command was not accepted, port not enabled
+2018-11-17 18:42 : [server] [debug] : [127.0.0.1:53384] : Received: LPRT 4,4,127,0,0,1,2,208,137
+2018-11-17 18:42 : [server] [debug] : [127.0.0.1:53384] : Sent: 400 LPRT command was not accepted and the requested action did not take place
+2018-11-17 18:42 : [server] [debug] : [127.0.0.1:53384] : Received: PASV
+2018-11-17 18:42 : [server] [debug] : [127.0.0.1:53384] : Sent: 400 The command was not accepted, pasv not enabled
+2018-11-17 18:42 : [server] [debug] : [127.0.0.1:53384] : Received: LPSV
+2018-11-17 18:42 : [server] [debug] : [127.0.0.1:53384] : Sent: 400 LPSV command was not accepted and the requested action did not take place
+2018-11-17 18:42 : [server] [debug] : [127.0.0.1:53384] : Received: QUIT
+2018-11-17 18:42 : [server] [debug] : [127.0.0.1:53384] : Sent: 221 Goodbye.
+2018-11-17 18:42 : [server] [debug] : Shutting down server
+2018-11-17 18:44 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-17 18:44 : [server] [debug] : Client Connected at 127.0.0.1:53401
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53401] : Sent: 220 Service ready for new user.
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53401] : Received: USER josephmulray
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53401] : Sent: 331 Please specify the password.
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53401] : Received: PASS root
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53401] : Sent: 230 Login successful
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53401] : Received: PORT 127,0,0,1,208,154
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53401] : Sent: 400 The command was not accepted, port not enabled
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53401] : Received: LPRT 4,4,127,0,0,1,2,208,154
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53401] : Sent: 400 LPRT command was not accepted and the requested action did not take place
+2018-11-17 18:44 : [server] [debug] : Shutting down server
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53401] : Sent: 421 Service not available, remote server has closed connection
+2018-11-17 18:44 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-17 18:44 : [server] [debug] : Client Connected at 127.0.0.1:53411
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 220 Service ready for new user.
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Received: USER josephmulray
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 331 Please specify the password.
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Received: PASS root
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 230 Login successful
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Received: PORT 127,0,0,1,208,164
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 400 The command was not accepted, port not enabled
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Received: LPRT 4,4,127,0,0,1,2,208,164
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 400 LPRT command was not accepted and the requested action did not take place
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Received: PASV
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 227 Entering Passive Mode (127,0,0,1,208,165).
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Received: LIST
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 150 File status okay; about to open data connection.
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Received: PASV
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 227 Entering Passive Mode (127,0,0,1,208,167).
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Received: LIST
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 150 File status okay; about to open data connection.
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Received: PASV
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 227 Entering Passive Mode (127,0,0,1,208,169).
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Received: LIST
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 150 File status okay; about to open data connection.
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Received: PASV
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 227 Entering Passive Mode (127,0,0,1,208,171).
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Received: LIST
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 150 File status okay; about to open data connection.
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Received: PASV
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 227 Entering Passive Mode (127,0,0,1,208,173).
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Received: LIST
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 150 File status okay; about to open data connection.
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-17 18:44 : [server] [debug] : Shutting down server
+2018-11-17 18:44 : [server] [debug] : [127.0.0.1:53411] : Sent: 421 Service not available, remote server has closed connection
+2018-11-17 18:45 : [server] [main] [ERROR] : Error One MODE must be enabled {port_mode/pasv_mode}
+2018-11-17 18:45 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-17 18:45 : [server] [debug] : Shutting down server
+2018-11-17 18:45 : [server] [main] [ERROR] : Error One MODE must be enabled {port_mode/pasv_mode}
+2018-11-17 18:45 : [server] [main] [ERROR] : Error One MODE must be enabled {port_mode/pasv_mode}
+2018-11-17 18:47 : [server] [main] [ERROR] : Error One MODE must be enabled {port_mode/pasv_mode}
+2018-11-17 18:48 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-17 18:48 : [server] [debug] : Shutting down server
+2018-11-17 18:53 : [server] [main] [ERROR] : Error invalid port_mode setting {yes/no} required
+2018-11-17 18:53 : [server] [main] [ERROR] : Error invalid port_mode setting {yes/no} required
+2018-11-17 18:53 : [server] [main] [ERROR] : Error invalid port_mode setting {yes/no} required
+2018-11-17 18:53 : [server] [main] [ERROR] : Error invalid port_mode setting {yes/no} required
+2018-11-17 18:58 : [server] [main] [ERROR] : Error invalid port_mode setting {yes/no} required
+2018-11-17 18:58 : [server] [main] [ERROR] : Error invalid port_mode setting {yes/no} required
+2018-11-17 18:58 : [server] [main] [ERROR] : Error invalid port_mode setting {yes/no} required
+2018-11-17 18:58 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-17 18:58 : [server] [debug] : Shutting down server
+2018-11-17 18:59 : [server] [main] [ERROR] : Error invalid pasv_mode setting {yes/no} required
+2018-11-17 18:59 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-17 18:59 : [server] [debug] : Client Connected at 127.0.0.1:53698
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 220 Service ready for new user.
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: USER josephmulray
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 331 Please specify the password.
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: PASS root
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 230 Login successful
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: PORT 127,0,0,1,209,195
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 400 The command was not accepted, port not enabled
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: LPRT 4,4,127,0,0,1,2,209,195
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 400 LPRT command was not accepted and the requested action did not take place
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: PORT 127,0,0,1,209,196
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 400 The command was not accepted, port not enabled
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: LPRT 4,4,127,0,0,1,2,209,196
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 400 LPRT command was not accepted and the requested action did not take place
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: PORT 127,0,0,1,209,197
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 400 The command was not accepted, port not enabled
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: LPRT 4,4,127,0,0,1,2,209,197
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 400 LPRT command was not accepted and the requested action did not take place
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: PORT 127,0,0,1,209,198
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 400 The command was not accepted, port not enabled
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: LPRT 4,4,127,0,0,1,2,209,198
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 400 LPRT command was not accepted and the requested action did not take place
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: PASV
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 227 Entering Passive Mode (127,0,0,1,209,199).
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: LIST
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 150 File status okay; about to open data connection.
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: PASV
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 227 Entering Passive Mode (127,0,0,1,209,201).
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: LIST
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 150 File status okay; about to open data connection.
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: PASV
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 227 Entering Passive Mode (127,0,0,1,209,203).
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: LIST
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 150 File status okay; about to open data connection.
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: PASV
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 227 Entering Passive Mode (127,0,0,1,209,205).
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: LIST
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 150 File status okay; about to open data connection.
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: PASV
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 227 Entering Passive Mode (127,0,0,1,209,207).
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: LIST
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 150 File status okay; about to open data connection.
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: PWD
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: CWD ..
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 250 Requested file action okay, completed
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: PASV
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 227 Entering Passive Mode (127,0,0,1,209,209).
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: LIST
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 150 File status okay; about to open data connection.
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: CWD LECTURES
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 250 Requested file action okay, completed
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: PASV
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 227 Entering Passive Mode (127,0,0,1,209,212).
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: LIST
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 150 File status okay; about to open data connection.
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: PASV
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 227 Entering Passive Mode (127,0,0,1,209,214).
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: RETR class2.pdf
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 150 File status okay; about to open data connection.
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Received: QUIT
+2018-11-17 18:59 : [server] [debug] : [127.0.0.1:53698] : Sent: 221 Goodbye.
+2018-11-17 18:59 : [server] [debug] : Shutting down server
