@@ -5,3 +5,4 @@
 LECTURES/*
 !HW3/HW3-DFA.png
 *.zip
+.DS_Store
