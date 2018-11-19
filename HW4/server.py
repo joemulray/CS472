@@ -3,12 +3,14 @@ import socket
 import sys
 import threading
 import os
+import ssl
 
 #import configparser to read from config file
 from configparser import ConfigParser, DuplicateOptionError, Error
 
 #logger class
 from logging import logger
+# from tls import *
 
 
 #read from config file
@@ -23,6 +25,8 @@ lock = threading.Lock()
 connected = True
 PASV_MODE = None
 PORT_MODE = None
+FTPS_MODE = None
+
 
 """
 TODO:
@@ -59,6 +63,7 @@ class FTPServer(threading.Thread):
 		self.passivemode = False
 		self.passivesocket = None
 		self.client="[%s:%s]" %(address[0], address[1])
+
 
 
 	def _authentication(function):
@@ -741,6 +746,7 @@ class ServerSocket:
 	"""
 
 	def __init__(self, filename="server.log", port=2121, backlog = 5):
+
 		self.port = int(port)
 		self.backlog = backlog
 		self.host = socket.gethostname()
@@ -748,6 +754,7 @@ class ServerSocket:
 		self.serversocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 		self.serversocket.bind((self.host, self.port))
 		self.serversocket.listen(self.backlog)
+
 
 		#log init
 		msg = "Starting server on %s:%s" %(self.host, self.port)
@@ -770,6 +777,159 @@ class ServerSocket:
 		self.serversocket.close()
 
 
+
+class Secure(FTPServer):
+	def __init__(self, clientsocket, address, certfile, keyfile):
+		self.cf = os.getcwd()
+		self.certfile = self.cf + "/" + certfile
+		self.keyfile = self.cf + "/" + keyfile
+		self.version = ssl.PROTOCOL_TLSv1_2
+		self.csocket = ssl.wrap_socket(clientsocket, server_side=True, certfile=certfile,
+			keyfile=keyfile,
+			ssl_version=self.version)
+
+		FTPServer.__init__(self, clientsocket, address)
+
+
+	def welcome(self):
+		msg = "234 AUTH TLS sucessful."
+		self.send(msg)
+
+
+	def doProtocol(self):
+		return super(Secure, self).doProtocol()
+
+
+	def receive(self):
+		"""
+		Function that will receive messages from the client socket and return the message
+
+		:return: returns the messages received from the socket
+		"""
+		response = ""
+		while True:
+			try:
+				if connected:
+					self.csocket.settimeout(1)
+					message = self.csocket.recv(BUFFER)
+					response += message
+					if '\n' in message:
+						break
+				else:
+					break
+
+			except ssl.SSLError:
+				#catch SSL error now
+				continue #continue reading from the socket until we get something
+
+			except Exception as error:
+				log.error("RECV " + str(error))
+				break
+
+		return response
+
+
+	def send(self, command=None):
+		"""
+		Send function that will send the command to the client socket
+
+		:param command: the command from the server to send to the client
+		:return: returns nothing
+		"""
+		try:
+			command+="\r\n"
+			log.sending(command, self.client)
+			self.csocket.sendall(command)
+
+		except socket.error as error:
+			log.error(str(error), self.client)
+
+
+	def datasocket(self, command=None):
+		"""
+		Function that handles sending data on the datasocket for active and passive mode
+
+		:param command: the command from the server to send to the client
+		:return: returns the response of the status of the data transfer
+		"""
+		response = "425 Can't open dataconnection"
+		try:
+			dcsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			if self.passivemode:
+				(dcsocket, self.address) = self.passivesocket.accept()
+			else:
+				dcsocket.connect((socket.gethostname(), self.dataport))
+
+
+			dcsocket = ssl.wrap_socket(dcsocket, server_side=True, certfile=self.certfile,
+			keyfile=self.keyfile,
+			ssl_version=self.version)
+
+			for value in command:
+				dcsocket.send(str(value) + "\r\n")
+
+			#close the datasocket
+			dcsocket.close()
+
+			#if we were in passive mode close the passive socket
+			if self.passivemode:
+				self.passivesocket.close()
+
+			response = "226 Closing data connection. Requested file action successful"
+
+		except socket.error as error:
+			log.error("datasocket " + str(error), self.client)
+			print "port: %s host: %s" %(self.dataport, socket.gethostname())
+
+		return response
+
+
+	def datasocketrecv(self):
+		"""
+		Function that handles receiving data on the datasocket for active and passive mode
+
+		:return: returns the response of the status of the data transfer, and the data received from the datasocket
+		"""
+		response = "425 Can't open dataconnection"
+		recvdata = ""
+		try:
+			dcsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			if self.passivemode:
+				(dcsocket, self.address) = self.passivesocket.accept()
+			else:
+				dcsocket.connect((socket.gethostname(), self.dataport))
+
+			dcsocket = ssl.wrap_socket(dcsocket, server_side=True, certfile=self.certfile,
+			keyfile=self.keyfile,
+			ssl_version=self.version)
+
+			while True:
+				message = dcsocket.recv(BUFFER)
+				recvdata += message
+				if '\n' in message:
+					break
+
+			if self.passivemode:
+				self.passivesocket.close()
+
+			response = "226 Closing data connection. Requested file action successful"
+
+		except socket.error as error:
+			pass
+
+		return (response, recvdata)
+
+
+	def close(self):
+		"""
+		Function to close the connection of the ServerSocket
+
+		:return: returns nothing
+		"""
+		self.csocket.close()
+
+
+
 def config_init():
 	"""
 	Config function to read from the config file, set Authorized user and passive and active modes
@@ -782,9 +942,12 @@ def config_init():
 
 		global PORT_MODE
 		global PASV_MODE
+		global FTPS_MODE
 
 		PORT_MODE = config["FTP Server Config"]["port_mode"]
 		PASV_MODE = config["FTP Server Config"]["pasv_mode"]
+		FTPS_MODE = config["FTP Server Config"]["ftps_mode"]
+
 
 		if PORT_MODE != "yes" and PORT_MODE != "no":
 			log.error("Error " + "invalid port_mode setting {yes/no} required", "[main]")
@@ -797,6 +960,11 @@ def config_init():
 		if PORT_MODE == "no" and PASV_MODE == "no":
 			log.error("Error " + "One MODE must be enabled {port_mode/pasv_mode}", "[main]")
 			exit(1)
+
+		if FTPS_MODE != "yes" and FTPS_MODE != "no":
+			log.error("Error " + "invalid ftps_mode setting {yes/no} required", "[main]")
+			exit(1)	
+
 
 		for key in config["Authorized Users"]:
 			AUTHORIZED_USERS[key] = config["Authorized Users"][key]
@@ -842,10 +1010,18 @@ def main():
 	while True:
 		try:
 			(clientsocket, address) = serversocket.accept()
+
+
 			msg = "Client Connected at %s:%s" %(address[0], address[1])
 			log.debug(msg)
 			ftpserver = FTPServer(clientsocket, address)
-			ftpserver.doProtocol()
+			if FTPS_MODE == "yes":
+				secure = Secure(clientsocket, address, "server.crt", "server.key")
+				secure.doProtocol()
+			else:
+				ftpserver.doProtocol()
+
+
 		#Handle CTL-C make sure threads are done running
 		except KeyboardInterrupt as error:
 			log.debug("Shutting down server")

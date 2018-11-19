@@ -289,3 +289,1479 @@
 2018-11-17 19:05 : [server] [debug] : [127.0.0.1:53808] : Received: QUIT
 2018-11-17 19:05 : [server] [debug] : [127.0.0.1:53808] : Sent: 221 Goodbye.
 2018-11-17 19:05 : [server] [debug] : Shutting down server
+2018-11-18 12:31 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 13:53 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 13:53 : [server] [debug] : Shutting down server
+2018-11-18 14:02 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:02 : [server] [debug] : Shutting down server
+2018-11-18 14:04 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:04 : [server] [debug] : Client Connected at 127.0.0.1:60315
+2018-11-18 14:06 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:06 : [server] [debug] : Client Connected at 127.0.0.1:60334
+2018-11-18 14:06 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:06 : [server] [debug] : Client Connected at 127.0.0.1:60363
+2018-11-18 14:07 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:07 : [server] [debug] : Client Connected at 127.0.0.1:60379
+2018-11-18 14:08 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:08 : [server] [debug] : Client Connected at 127.0.0.1:60408
+2018-11-18 14:10 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:10 : [server] [debug] : Shutting down server
+2018-11-18 14:10 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:10 : [server] [debug] : Client Connected at 127.0.0.1:60473
+2018-11-18 14:11 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:11 : [server] [debug] : Client Connected at 127.0.0.1:60490
+2018-11-18 14:12 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:12 : [server] [debug] : Client Connected at 127.0.0.1:60518
+2018-11-18 14:13 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:13 : [server] [debug] : Client Connected at 127.0.0.1:60544
+2018-11-18 14:14 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:14 : [server] [debug] : Client Connected at 127.0.0.1:60579
+2018-11-18 14:27 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:27 : [server] [debug] : Client Connected at 127.0.0.1:60689
+2018-11-18 14:29 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:29 : [server] [debug] : Client Connected at 127.0.0.1:60722
+2018-11-18 14:30 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:30 : [server] [debug] : Client Connected at 127.0.0.1:60743
+2018-11-18 14:30 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:30 : [server] [debug] : Client Connected at 127.0.0.1:60760
+2018-11-18 14:33 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:33 : [server] [debug] : Client Connected at 127.0.0.1:60808
+2018-11-18 14:33 : [server] [debug] : Shutting down server
+2018-11-18 14:33 : [server] [debug] : [127.0.0.1:60808] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 14:35 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:35 : [server] [debug] : Client Connected at 127.0.0.1:60826
+2018-11-18 14:36 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:36 : [server] [debug] : Client Connected at 127.0.0.1:60841
+2018-11-18 14:37 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:37 : [server] [debug] : Client Connected at 127.0.0.1:60869
+2018-11-18 14:38 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:38 : [server] [debug] : Client Connected at 127.0.0.1:60967
+2018-11-18 14:42 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:42 : [server] [debug] : Client Connected at 127.0.0.1:61074
+2018-11-18 14:42 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:42 : [server] [debug] : Client Connected at 127.0.0.1:61087
+2018-11-18 14:43 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:43 : [server] [debug] : Client Connected at 127.0.0.1:61103
+2018-11-18 14:43 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:43 : [server] [debug] : Client Connected at 127.0.0.1:61126
+2018-11-18 14:44 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:44 : [server] [debug] : Client Connected at 127.0.0.1:61143
+2018-11-18 14:46 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:46 : [server] [debug] : Client Connected at 127.0.0.1:61177
+2018-11-18 14:46 : [server] [debug] : Shutting down server
+2018-11-18 14:46 : [server] [debug] : [127.0.0.1:61177] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 14:47 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:47 : [server] [debug] : Client Connected at 127.0.0.1:61187
+2018-11-18 14:47 : [server] [debug] : Shutting down server
+2018-11-18 14:47 : [server] [debug] : [127.0.0.1:61187] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 14:47 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:47 : [server] [debug] : Client Connected at 127.0.0.1:61202
+2018-11-18 14:47 : [server] [debug] : Shutting down server
+2018-11-18 14:47 : [server] [debug] : [127.0.0.1:61202] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 14:48 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:48 : [server] [debug] : Client Connected at 127.0.0.1:61219
+2018-11-18 14:48 : [server] [debug] : Shutting down server
+2018-11-18 14:48 : [server] [debug] : [127.0.0.1:61219] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 14:49 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:49 : [server] [debug] : Client Connected at 127.0.0.1:61228
+2018-11-18 14:49 : [server] [debug] : Shutting down server
+2018-11-18 14:49 : [server] [debug] : [127.0.0.1:61228] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 14:49 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:49 : [server] [debug] : Client Connected at 127.0.0.1:61235
+2018-11-18 14:49 : [server] [debug] : Shutting down server
+2018-11-18 14:49 : [server] [debug] : [127.0.0.1:61235] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 14:49 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:49 : [server] [debug] : Client Connected at 127.0.0.1:61243
+2018-11-18 14:49 : [server] [debug] : Shutting down server
+2018-11-18 14:49 : [server] [debug] : [127.0.0.1:61243] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 14:50 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:50 : [server] [debug] : Client Connected at 127.0.0.1:61258
+2018-11-18 14:50 : [server] [debug] : Shutting down server
+2018-11-18 14:50 : [server] [debug] : [127.0.0.1:61258] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 14:51 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:51 : [server] [debug] : Client Connected at 127.0.0.1:61276
+2018-11-18 14:51 : [server] [debug] : Shutting down server
+2018-11-18 14:51 : [server] [debug] : [127.0.0.1:61276] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 14:51 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:51 : [server] [debug] : Client Connected at 127.0.0.1:61300
+2018-11-18 14:51 : [server] [debug] : Shutting down server
+2018-11-18 14:51 : [server] [debug] : [127.0.0.1:61300] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 14:53 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:53 : [server] [debug] : Client Connected at 127.0.0.1:61329
+2018-11-18 14:53 : [server] [debug] : Shutting down server
+2018-11-18 14:53 : [server] [debug] : [127.0.0.1:61329] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 14:54 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:54 : [server] [debug] : Client Connected at 127.0.0.1:61340
+2018-11-18 14:54 : [server] [debug] : Shutting down server
+2018-11-18 14:54 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:54 : [server] [debug] : Client Connected at 127.0.0.1:61355
+2018-11-18 14:54 : [server] [debug] : Shutting down server
+2018-11-18 14:56 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:56 : [server] [debug] : Client Connected at 127.0.0.1:61395
+2018-11-18 14:57 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:57 : [server] [debug] : Client Connected at 127.0.0.1:61407
+2018-11-18 14:57 : [server] [debug] : Shutting down server
+2018-11-18 14:57 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 14:57 : [server] [debug] : Client Connected at 127.0.0.1:61415
+2018-11-18 14:57 : [server] [debug] : Shutting down server
+2018-11-18 15:01 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 15:01 : [server] [debug] : Client Connected at 127.0.0.1:61474
+2018-11-18 15:01 : [server] [debug] : [127.0.0.1:61474] : Received: USER josephmulray
+2018-11-18 15:01 : [server] [debug] : [127.0.0.1:61474] : Received: PASS
+2018-11-18 15:01 : [server] [debug] : Shutting down server
+2018-11-18 15:02 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 15:02 : [server] [debug] : Client Connected at 127.0.0.1:61489
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: USER josephmulray
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: PASS
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: PORT 127,0,0,1,240,50
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: LPRT 4,4,127,0,0,1,2,240,50
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: PASV
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: LPSV
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: PASV
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: LPSV
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: USER josephmulray
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: PASS root
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: PASV
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: LIST
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: PASV
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: LIST
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: PASV
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: LIST
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: PASV
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: LIST
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: PASV
+2018-11-18 15:02 : [server] [debug] : [127.0.0.1:61489] : Received: LIST
+2018-11-18 15:02 : [server] [debug] : Shutting down server
+2018-11-18 15:04 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 15:04 : [server] [debug] : Client Connected at 127.0.0.1:61522
+2018-11-18 15:04 : [server] [debug] : [127.0.0.1:61522] : Received: USER josephmulray
+2018-11-18 15:04 : [server] [debug] : Shutting down server
+2018-11-18 15:04 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 15:04 : [server] [debug] : Client Connected at 127.0.0.1:61527
+2018-11-18 15:04 : [server] [debug] : [127.0.0.1:61527] : Received: USER josephmulray
+2018-11-18 15:04 : [server] [debug] : Shutting down server
+2018-11-18 15:05 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 15:05 : [server] [debug] : Client Connected at 127.0.0.1:61549
+2018-11-18 15:05 : [server] [debug] : [127.0.0.1:61549] : Received: USER josephmulray
+2018-11-18 15:05 : [server] [debug] : Shutting down server
+2018-11-18 15:09 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 15:09 : [server] [debug] : Client Connected at 127.0.0.1:61602
+2018-11-18 15:09 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 15:09 : [server] [debug] : Client Connected at 127.0.0.1:61611
+2018-11-18 15:12 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 15:12 : [server] [debug] : Client Connected at 127.0.0.1:61647
+2018-11-18 15:12 : [server] [debug] : [127.0.0.1:61647] : Received: USER josephmulray
+2018-11-18 15:12 : [server] [debug] : Shutting down server
+2018-11-18 15:13 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 15:13 : [server] [debug] : Client Connected at 127.0.0.1:61689
+2018-11-18 15:13 : [server] [debug] : [127.0.0.1:61689] : Received: USER josephmulray
+2018-11-18 15:13 : [server] [debug] : Shutting down server
+2018-11-18 15:14 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 15:14 : [server] [debug] : Client Connected at 127.0.0.1:61707
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: USER josephmulray
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: PASS root
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: PORT 127,0,0,1,241,12
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: LIST
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: PASV
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: LIST
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: EPSV
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: LIST
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: PWD
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: CDUP
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: PWD
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: CWD HW3
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: EPRT |1|127.0.0.1|61714|
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: LIST
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: get Makefile
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: SYST
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: send storfile
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: PORT 127,0,0,1,241,20
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: LIST
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: PWD
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: PORT 127,0,0,1,241,22
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: RETR README
+2018-11-18 15:14 : [server] [debug] : [127.0.0.1:61707] : Received: QUIT
+2018-11-18 15:14 : [server] [debug] : Shutting down server
+2018-11-18 15:14 : [server] [127.0.0.1:61707] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 15:21 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 15:21 : [server] [debug] : Client Connected at 127.0.0.1:62774
+2018-11-18 15:21 : [server] [debug] : [127.0.0.1:62774] : Received: USER josephmulray
+2018-11-18 15:21 : [server] [debug] : Shutting down server
+2018-11-18 16:21 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 16:21 : [server] [debug] : Client Connected at 127.0.0.1:62818
+2018-11-18 16:21 : [server] [debug] : [127.0.0.1:62818] : Received: USER josephmulray
+2018-11-18 16:21 : [server] [debug] : Shutting down server
+2018-11-18 16:23 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 16:23 : [server] [debug] : Client Connected at 127.0.0.1:62862
+2018-11-18 16:23 : [server] [debug] : [127.0.0.1:62862] : Received: USER josephmulray
+2018-11-18 16:23 : [server] [debug] : Shutting down server
+2018-11-18 16:28 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 16:28 : [server] [debug] : Client Connected at 127.0.0.1:63006
+2018-11-18 16:28 : [server] [debug] : [127.0.0.1:63006] : Received:   üVžîØÙ®#8Î…÷èÇ×úÐ—ÖÚç‹3±®K}ž›‡Ó+  ªÀ0À,À(À$ÀÀ
+ ¥ £ ¡ Ÿ k j i h 9 8 7 6 ˆ ‡ † …À2À.À*À&ÀÀ  = 5 „À/À+À'À#ÀÀ	 ¤ ¢   ž g @ ? > 3 2 1 0 š ™ ˜ — E D C BÀ1À-À)À%ÀÀ œ < / – A ÀÀÀÀ ÀÀ    ÀÀ 
+ ÿ )      	localhost    
+              	 
+        Â                                                                                                                                                                                                  
+2018-11-18 16:28 : [server] [debug] : Shutting down server
+2018-11-18 16:28 : [server] [127.0.0.1:63006] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 16:41 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 16:41 : [server] [debug] : Client Connected at 127.0.0.1:63323
+2018-11-18 16:41 : [server] [debug] : [127.0.0.1:63323] : Received:   üí6*âØìúÿÖ¤k.pz×Áœ8¬‘¯·{'¢  ªÀ0À,À(À$ÀÀ
+ ¥ £ ¡ Ÿ k j i h 9 8 7 6 ˆ ‡ † …À2À.À*À&ÀÀ  = 5 „À/À+À'À#ÀÀ	 ¤ ¢   ž g @ ? > 3 2 1 0 š ™ ˜ — E D C BÀ1À-À)À%ÀÀ œ < / – A ÀÀÀÀ ÀÀ    ÀÀ 
+ ÿ )      	localhost    
+              	 
+        Â                                                                                                                                                                                                  
+2018-11-18 16:41 : [server] [debug] : Shutting down server
+2018-11-18 16:41 : [server] [127.0.0.1:63323] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 16:43 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 16:43 : [server] [debug] : Client Connected at 127.0.0.1:63351
+2018-11-18 16:43 : [server] [debug] : [127.0.0.1:63351] : Received:   üpÜÈ»Û×2dÕ"ÍU±µGÆÖ<‘+ut  ªÀ0À,À(À$ÀÀ
+ ¥ £ ¡ Ÿ k j i h 9 8 7 6 ˆ ‡ † …À2À.À*À&ÀÀ  = 5 „À/À+À'À#ÀÀ	 ¤ ¢   ž g @ ? > 3 2 1 0 š ™ ˜ — E D C BÀ1À-À)À%ÀÀ œ < / – A ÀÀÀÀ ÀÀ    ÀÀ 
+ ÿ )      	localhost    
+              	 
+        Â                                                                                                                                                                                                  
+2018-11-18 16:43 : [server] [debug] : Client Disconneted [127.0.0.1:63351]
+2018-11-18 16:43 : [server] [debug] : Shutting down server
+2018-11-18 16:43 : [server] [127.0.0.1:63351] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 16:44 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 16:44 : [server] [debug] : Client Connected at 127.0.0.1:63362
+2018-11-18 16:44 : [server] [debug] : [] : Sent: 234 AUTH TLS
+2018-11-18 16:44 : [server] [debug] : [127.0.0.1:63362] : Sent: 234 AUTH TLS
+2018-11-18 16:44 : [server] [debug] : [127.0.0.1:63362] : Received:   üý«Œ®’BÙÿÊ¸[-*®}úÝ§Ò4UE©û³  ªÀ0À,À(À$ÀÀ
+ ¥ £ ¡ Ÿ k j i h 9 8 7 6 ˆ ‡ † …À2À.À*À&ÀÀ  = 5 „À/À+À'À#ÀÀ	 ¤ ¢   ž g @ ? > 3 2 1 0 š ™ ˜ — E D C BÀ1À-À)À%ÀÀ œ < / – A ÀÀÀÀ ÀÀ    ÀÀ 
+ ÿ )      	localhost    
+              	 
+        Â                                                                                                                                                                                                  
+2018-11-18 16:44 : [server] [debug] : Client Disconneted [127.0.0.1:63362]
+2018-11-18 16:44 : [server] [debug] : Shutting down server
+2018-11-18 16:44 : [server] [debug] : [127.0.0.1:63362] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 16:44 : [server] [127.0.0.1:63362] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 16:45 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 16:45 : [server] [debug] : Client Connected at 127.0.0.1:63369
+2018-11-18 16:45 : [server] [debug] : [127.0.0.1:63369] : Sent: 234 AUTH TLS
+2018-11-18 16:45 : [server] [debug] : [127.0.0.1:63369] : Received:   ü1ÞcD„ß"¬” ïD»§˜
+J‰íù¨.ÀL¡_P  ªÀ0À,À(À$ÀÀ
+ ¥ £ ¡ Ÿ k j i h 9 8 7 6 ˆ ‡ † …À2À.À*À&ÀÀ  = 5 „À/À+À'À#ÀÀ	 ¤ ¢   ž g @ ? > 3 2 1 0 š ™ ˜ — E D C BÀ1À-À)À%ÀÀ œ < / – A ÀÀÀÀ ÀÀ    ÀÀ 
+ ÿ )      	localhost    
+              	 
+        Â                                                                                                                                                                                                  
+2018-11-18 16:45 : [server] [debug] : Client Disconneted [127.0.0.1:63369]
+2018-11-18 16:45 : [server] [debug] : Shutting down server
+2018-11-18 16:45 : [server] [debug] : [127.0.0.1:63369] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 16:45 : [server] [127.0.0.1:63369] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 17:00 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 17:00 : [server] [debug] : Client Connected at 127.0.0.1:63645
+2018-11-18 17:01 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 17:01 : [server] [debug] : Client Connected at 127.0.0.1:63665
+2018-11-18 17:03 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 17:03 : [server] [debug] : Client Connected at 127.0.0.1:63703
+2018-11-18 17:06 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 17:06 : [server] [debug] : Client Connected at 127.0.0.1:63732
+2018-11-18 17:10 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 17:10 : [server] [debug] : Client Connected at 127.0.0.1:63787
+2018-11-18 17:11 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 17:11 : [server] [debug] : Client Connected at 127.0.0.1:63821
+2018-11-18 17:11 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 17:11 : [server] [debug] : Client Connected at 127.0.0.1:63832
+2018-11-18 17:12 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 17:12 : [server] [debug] : Client Connected at 127.0.0.1:63840
+2018-11-18 17:12 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 17:12 : [server] [debug] : Client Connected at 127.0.0.1:63850
+2018-11-18 17:13 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 17:13 : [server] [debug] : Client Connected at 127.0.0.1:63872
+2018-11-18 17:13 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 17:13 : [server] [debug] : Client Connected at 127.0.0.1:63892
+2018-11-18 17:13 : [server] [debug] : [127.0.0.1:63892] : Sent: 234 AUTH TLS
+2018-11-18 17:13 : [server] [debug] : [127.0.0.1:63892] : Received:   ü½ˆyæ<Ý
+úüµdl,H›æèUÅ€†}N;V×NÓ}  ªÀ0À,À(À$ÀÀ
+ ¥ £ ¡ Ÿ k j i h 9 8 7 6 ˆ ‡ † …À2À.À*À&ÀÀ  = 5 „À/À+À'À#ÀÀ	 ¤ ¢   ž g @ ? > 3 2 1 0 š ™ ˜ — E D C BÀ1À-À)À%ÀÀ œ < / – A ÀÀÀÀ ÀÀ    ÀÀ 
+ ÿ )      	localhost    
+              	 
+        Â                                                                                                                                                                                                  
+2018-11-18 17:13 : [server] [debug] : Shutting down server
+2018-11-18 17:13 : [server] [debug] : [127.0.0.1:63892] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 17:13 : [server] [127.0.0.1:63892] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 17:15 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 17:15 : [server] [debug] : Client Connected at 127.0.0.1:63948
+2018-11-18 17:15 : [server] [debug] : [127.0.0.1:63948] : Sent: 234 AUTH TLS
+2018-11-18 17:15 : [server] [debug] : [127.0.0.1:63948] : Received:   ü,Çûqÿ¦†­B¶Ìcn…xÕDmJ“wnÖgT³Àù  ªÀ0À,À(À$ÀÀ
+ ¥ £ ¡ Ÿ k j i h 9 8 7 6 ˆ ‡ † …À2À.À*À&ÀÀ  = 5 „À/À+À'À#ÀÀ	 ¤ ¢   ž g @ ? > 3 2 1 0 š ™ ˜ — E D C BÀ1À-À)À%ÀÀ œ < / – A ÀÀÀÀ ÀÀ    ÀÀ 
+ ÿ )      	localhost    
+              	 
+        Â                                                                                                                                                                                                  
+2018-11-18 17:15 : [server] [] [ERROR] : RECV [Errno 54] Connection reset by peer
+2018-11-18 17:15 : [server] [debug] : Shutting down server
+2018-11-18 17:15 : [server] [debug] : [127.0.0.1:63948] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 17:15 : [server] [127.0.0.1:63948] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 17:16 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 17:16 : [server] [debug] : Client Connected at 127.0.0.1:63962
+2018-11-18 17:17 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 17:17 : [server] [debug] : Client Connected at 127.0.0.1:64016
+2018-11-18 17:18 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 17:18 : [server] [debug] : Client Connected at 127.0.0.1:64027
+2018-11-18 17:18 : [server] [debug] : [127.0.0.1:64027] : Sent: 234 AUTH TLS
+2018-11-18 17:18 : [server] [127.0.0.1:64027] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 17:18 : [server] [] [ERROR] : RECV [Errno 54] Connection reset by peer
+2018-11-18 17:18 : [server] [debug] : Client Connected at 127.0.0.1:64058
+2018-11-18 18:03 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 18:03 : [server] [debug] : Client Connected at 127.0.0.1:64614
+2018-11-18 18:03 : [server] [debug] : [127.0.0.1:64614] : Sent: 234 AUTH TLS
+2018-11-18 18:03 : [server] [127.0.0.1:64614] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 18:03 : [server] [] [ERROR] : RECV [Errno 54] Connection reset by peer
+2018-11-18 18:03 : [server] [debug] : Client Connected at 127.0.0.1:64651
+2018-11-18 18:03 : [server] [debug] : [127.0.0.1:64651] : Sent: 234 AUTH TLS
+2018-11-18 18:03 : [server] [127.0.0.1:64651] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 18:03 : [server] [] [ERROR] : RECV [Errno 54] Connection reset by peer
+2018-11-18 18:03 : [server] [debug] : Client Connected at 127.0.0.1:64656
+2018-11-18 18:03 : [server] [debug] : [127.0.0.1:64656] : Sent: 234 AUTH TLS
+2018-11-18 18:03 : [server] [] [ERROR] : RECV [Errno 54] Connection reset by peer
+2018-11-18 18:03 : [server] [debug] : [127.0.0.1:64656] : Received:  ±ó*ëmÝ!LWQDv,÷påc$ã1™f”®
+2018-11-18 18:03 : [server] [debug] : Shutting down server
+2018-11-18 18:03 : [server] [debug] : [127.0.0.1:64656] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 18:03 : [server] [127.0.0.1:64656] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 18:16 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 18:16 : [server] [debug] : Shutting down server
+2018-11-18 18:17 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 18:17 : [server] [debug] : Client Connected at 127.0.0.1:64868
+2018-11-18 18:17 : [server] [debug] : [127.0.0.1:64868] : Sent: 234 AUTH TLS
+2018-11-18 18:17 : [server] [] [ERROR] : RECV [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1941)
+2018-11-18 18:17 : [server] [debug] : Shutting down server
+2018-11-18 18:17 : [server] [debug] : [127.0.0.1:64868] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 18:17 : [server] [127.0.0.1:64868] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 18:17 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 18:17 : [server] [debug] : Client Connected at 127.0.0.1:64900
+2018-11-18 18:17 : [server] [debug] : [127.0.0.1:64900] : Sent: 234 AUTH TLS
+2018-11-18 18:17 : [server] [] [ERROR] : RECV [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1941)
+2018-11-18 18:17 : [server] [debug] : Shutting down server
+2018-11-18 18:17 : [server] [debug] : [127.0.0.1:64900] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 18:17 : [server] [127.0.0.1:64900] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 18:19 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 18:19 : [server] [debug] : Client Connected at 127.0.0.1:64943
+2018-11-18 18:19 : [server] [debug] : [127.0.0.1:64943] : Sent: 234 AUTH TLS
+2018-11-18 18:19 : [server] [] [ERROR] : RECV [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1941)
+2018-11-18 18:19 : [server] [debug] : Shutting down server
+2018-11-18 18:19 : [server] [debug] : [127.0.0.1:64943] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 18:19 : [server] [127.0.0.1:64943] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 18:20 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 18:20 : [server] [debug] : Client Connected at 127.0.0.1:64970
+2018-11-18 18:20 : [server] [debug] : [127.0.0.1:64970] : Sent: 234 AUTH TLS
+2018-11-18 18:20 : [server] [127.0.0.1:64970] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 18:20 : [server] [] [ERROR] : RECV [Errno 54] Connection reset by peer
+2018-11-18 18:20 : [server] [debug] : Client Connected at 127.0.0.1:64973
+2018-11-18 18:20 : [server] [debug] : [127.0.0.1:64973] : Sent: 234 AUTH TLS
+2018-11-18 18:20 : [server] [] [ERROR] : RECV [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1941)
+2018-11-18 18:20 : [server] [debug] : Shutting down server
+2018-11-18 18:20 : [server] [debug] : [127.0.0.1:64973] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 18:20 : [server] [127.0.0.1:64973] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 18:21 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 18:21 : [server] [debug] : Client Connected at 127.0.0.1:64986
+2018-11-18 18:22 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 18:22 : [server] [debug] : Client Connected at 127.0.0.1:64994
+2018-11-18 18:22 : [server] [debug] : [127.0.0.1:64994] : Sent: 234 AUTH TLS
+2018-11-18 18:22 : [server] [] [ERROR] : RECV [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1941)
+2018-11-18 18:22 : [server] [debug] : Client Connected at 127.0.0.1:65031
+2018-11-18 18:22 : [server] [debug] : [127.0.0.1:65031] : Sent: 234 AUTH TLS
+2018-11-18 18:22 : [server] [127.0.0.1:65031] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 18:22 : [server] [] [ERROR] : RECV [Errno 54] Connection reset by peer
+2018-11-18 18:22 : [server] [debug] : Shutting down server
+2018-11-18 18:22 : [server] [debug] : [127.0.0.1:65031] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 18:22 : [server] [127.0.0.1:65031] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 18:24 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 18:24 : [server] [debug] : Client Connected at 127.0.0.1:65094
+2018-11-18 18:24 : [server] [debug] : Shutting down server
+2018-11-18 18:24 : [server] [debug] : [127.0.0.1:65094] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 18:25 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 18:25 : [server] [debug] : Client Connected at 127.0.0.1:65106
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65106] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65106] : Received: FEAT
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65106] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65106] : Received: USER anonymous
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65106] : Sent: 331 Please specify the password.
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65106] : Received: PASS lftp@
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65106] : Sent: 530 Authentication Failed
+2018-11-18 18:25 : [server] [debug] : Client Connected at 127.0.0.1:65114
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65114] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65114] : Received: FEAT
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65114] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65114] : Received: USER anonymous
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65114] : Sent: 331 Please specify the password.
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65114] : Received: PASS lftp@
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65114] : Sent: 530 Authentication Failed
+2018-11-18 18:25 : [server] [debug] : Client Connected at 127.0.0.1:65147
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Received: FEAT
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Received: USER josephmulray
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 331 Please specify the password.
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Received: PASS root
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 230 Login successful
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Received: PWD
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Received: PBSZ 0
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Received: PROT P
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Received: PASV
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 227 Entering Passive Mode (127,0,0,1,254,124).
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Received: LIST
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 18:25 : [server] [127.0.0.1:65147] [ERROR] : datasocket [Errno 32] Broken pipe
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 425 Can't open dataconnection
+2018-11-18 18:25 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Received: PASV
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 227 Entering Passive Mode (127,0,0,1,254,126).
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Received: LIST
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 18:25 : [server] [127.0.0.1:65147] [ERROR] : datasocket [Errno 32] Broken pipe
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 425 Can't open dataconnection
+2018-11-18 18:25 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Received: PASV
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 227 Entering Passive Mode (127,0,0,1,254,128).
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Received: LIST
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 18:25 : [server] [127.0.0.1:65147] [ERROR] : datasocket [Errno 32] Broken pipe
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 425 Can't open dataconnection
+2018-11-18 18:25 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Received: PASV
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 227 Entering Passive Mode (127,0,0,1,254,130).
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Received: LIST
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 18:25 : [server] [127.0.0.1:65147] [ERROR] : datasocket [Errno 32] Broken pipe
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 425 Can't open dataconnection
+2018-11-18 18:25 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:25 : [server] [debug] : Shutting down server
+2018-11-18 18:25 : [server] [debug] : [127.0.0.1:65147] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 18:25 : [server] [] [ERROR] : RECV [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1941)
+2018-11-18 18:37 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 18:37 : [server] [debug] : Client Connected at 127.0.0.1:65356
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Received: FEAT
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Received: USER josephmulray
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Sent: 331 Please specify the password.
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Received: PASS root
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Sent: 230 Login successful
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Received: PWD
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Received: PBSZ 0
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Received: PROT P
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Received: PASV
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Sent: 227 Entering Passive Mode (127,0,0,1,255,77).
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Received: LIST
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 18:37 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:37 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:37 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:37 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:37 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:37 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:37 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:37 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:37 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:37 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:37 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:37 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:37 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Received: QUIT
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Sent: 221 Goodbye.
+2018-11-18 18:37 : [server] [debug] : Shutting down server
+2018-11-18 18:37 : [server] [debug] : [127.0.0.1:65356] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 18:37 : [server] [127.0.0.1:65356] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 18:38 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 18:38 : [server] [debug] : Client Connected at 127.0.0.1:65364
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65364] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65364] : Received: FEAT
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65364] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65364] : Received: USER anonymous
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65364] : Sent: 331 Please specify the password.
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65364] : Received: PASS lftp@
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65364] : Sent: 530 Authentication Failed
+2018-11-18 18:38 : [server] [debug] : Client Connected at 127.0.0.1:65366
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Received: FEAT
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Received: USER josephmulray
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Sent: 331 Please specify the password.
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Received: PASS root
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Sent: 230 Login successful
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Received: PWD
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Received: PBSZ 0
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Received: PROT P
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Received: PASV
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Sent: 227 Entering Passive Mode (127,0,0,1,255,87).
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Received: LIST
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 18:38 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:38 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:38 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:38 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:38 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:38 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:38 : [server] [] [ERROR] : RECV ('The read operation timed out',)
+2018-11-18 18:38 : [server] [debug] : Shutting down server
+2018-11-18 18:38 : [server] [debug] : [127.0.0.1:65366] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 18:38 : [server] [] [ERROR] : RECV [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1941)
+2018-11-18 18:40 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 18:40 : [server] [debug] : Client Connected at 127.0.0.1:65487
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Received: FEAT
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Received: USER josephmulray
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Sent: 331 Please specify the password.
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Received: PASS root
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Sent: 230 Login successful
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Received: PWD
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Received: PBSZ 0
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Received: PROT P
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Received: PASV
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Sent: 227 Entering Passive Mode (127,0,0,1,255,208).
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Received: LIST
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 18:40 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:40 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:40 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:40 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:40 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:40 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:40 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:40 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:40 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:40 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:40 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:40 : [server] [debug] : Shutting down server
+2018-11-18 18:40 : [server] [debug] : [127.0.0.1:65487] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 18:40 : [server] [] [ERROR] : fpts RECV [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1941)
+2018-11-18 18:53 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 18:53 : [server] [debug] : Client Connected at 127.0.0.1:49243
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Received: FEAT
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Received: USER josephmulray
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Sent: 331 Please specify the password.
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Received: PASS root
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Sent: 230 Login successful
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Received: PWD
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Received: PBSZ 0
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Received: PROT P
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Received: PASV
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Sent: 227 Entering Passive Mode (127,0,0,1,192,92).
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Received: LIST
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:53 : [server] [debug] : Shutting down server
+2018-11-18 18:53 : [server] [debug] : [127.0.0.1:49243] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 18:53 : [server] [] [ERROR] : fpts RECV [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1941)
+2018-11-18 18:54 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 18:54 : [server] [debug] : Client Connected at 127.0.0.1:49280
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Received: FEAT
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Received: USER josephmulray
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Sent: 331 Please specify the password.
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Received: PASS root
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Sent: 230 Login successful
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Received: PWD
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Received: PBSZ 0
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Received: PROT P
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Received: PASV
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Sent: 227 Entering Passive Mode (127,0,0,1,192,129).
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Received: LIST
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 18:54 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:54 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:54 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:54 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:54 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:54 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:54 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:54 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:54 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:54 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:54 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:54 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:54 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:54 : [server] [debug] : Shutting down server
+2018-11-18 18:54 : [server] [debug] : [127.0.0.1:49280] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 18:54 : [server] [] [ERROR] : fpts RECV [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1941)
+2018-11-18 18:56 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 18:56 : [server] [debug] : Client Connected at 127.0.0.1:49336
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Received: FEAT
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Received: USER josephmulray
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Sent: 331 Please specify the password.
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Received: PASS root
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Sent: 230 Login successful
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Received: PWD
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Received: PBSZ 0
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Received: PROT P
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Received: PASV
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Sent: 227 Entering Passive Mode (127,0,0,1,192,185).
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Received: LIST
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 18:56 : [server] [debug] : Shutting down server
+2018-11-18 18:56 : [server] [debug] : [127.0.0.1:49336] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 18:56 : [server] [] [ERROR] : fpts RECV [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1941)
+2018-11-18 18:57 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 18:57 : [server] [debug] : Shutting down server
+2018-11-18 19:00 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:00 : [server] [debug] : Client Connected at 127.0.0.1:49431
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Received: FEAT
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Received: USER josephmulray
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Sent: 331 Please specify the password.
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Received: PASS root
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Sent: 230 Login successful
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Received: PWD
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Received: PBSZ 0
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Received: PROT P
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Received: PASV
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Sent: 227 Entering Passive Mode (127,0,0,1,193,24).
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Received: LIST
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:00 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:00 : [server] [debug] : Client Disconneted [127.0.0.1:49431]
+2018-11-18 19:00 : [server] [debug] : Shutting down server
+2018-11-18 19:00 : [server] [debug] : [127.0.0.1:49431] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 19:01 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:01 : [server] [debug] : Client Connected at 127.0.0.1:49472
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Received: FEAT
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Received: USER josephmulray
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Sent: 331 Please specify the password.
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Received: PASS root
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Sent: 230 Login successful
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Received: PWD
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Received: PBSZ 0
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Received: PROT P
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Received: PASV
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Sent: 227 Entering Passive Mode (127,0,0,1,193,65).
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Received: LIST
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:01 : [server] [debug] : Shutting down server
+2018-11-18 19:01 : [server] [debug] : [127.0.0.1:49472] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 19:01 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:01 : [server] [debug] : Shutting down server
+2018-11-18 19:12 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:12 : [server] [debug] : Client Connected at 127.0.0.1:49600
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Received: FEAT
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Received: USER josephmulray
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Sent: 331 Please specify the password.
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Received: PASS root
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Sent: 230 Login successful
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Received: PWD
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Received: PBSZ 0
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Received: PROT P
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Received: PASV
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Sent: 227 Entering Passive Mode (127,0,0,1,193,193).
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Received: LIST
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV ('The read operation timed out',)
+2018-11-18 19:12 : [server] [debug] : Shutting down server
+2018-11-18 19:12 : [server] [debug] : [127.0.0.1:49600] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 19:12 : [server] [] [ERROR] : fpts RECV [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1941)
+2018-11-18 19:13 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:13 : [server] [debug] : Client Connected at 127.0.0.1:49643
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Received: FEAT
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Received: USER josephmulray
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Sent: 331 Please specify the password.
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Received: PASS root
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Sent: 230 Login successful
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Received: PWD
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Received: PBSZ 0
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Received: PROT P
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Received: PASV
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Sent: 227 Entering Passive Mode (127,0,0,1,193,236).
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Received: LIST
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:13 : [server] [debug] : Shutting down server
+2018-11-18 19:13 : [server] [debug] : [127.0.0.1:49643] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 19:14 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:14 : [server] [debug] : Client Connected at 127.0.0.1:49676
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Received: FEAT
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Received: USER josephmulray
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 331 Please specify the password.
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Received: PASS root
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 230 Login successful
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Received: PWD
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Received: PBSZ 0
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Received: PROT C
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Received: TYPE I
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 400 TYPE command was not accepted and the requested action did not take place
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Received: SIZE server.log
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 400 SIZE command was not accepted and the requested action did not take place
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Received: MDTM server.log
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 400 MDTM command was not accepted and the requested action did not take place
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Received: PASV
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 227 Entering Passive Mode (127,0,0,1,194,13).
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Received: RETR server.log
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Received: ÿôÿòABOR
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 400 ÿôÿòABOR command was not accepted and the requested action did not take place
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Received: CWD ..
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 250 Requested file action okay, completed
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Received: PASV
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 227 Entering Passive Mode (127,0,0,1,194,15).
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Received: LIST
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:14 : [server] [debug] : Shutting down server
+2018-11-18 19:14 : [server] [debug] : [127.0.0.1:49676] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 19:15 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:15 : [server] [debug] : Client Connected at 127.0.0.1:49699
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Received: FEAT
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Received: USER josephmulray
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Sent: 331 Please specify the password.
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Received: PASS root
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Sent: 230 Login successful
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Received: PWD
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Received: PBSZ 0
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Received: PROT P
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Received: PASV
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Sent: 227 Entering Passive Mode (127,0,0,1,194,36).
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Received: LIST
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Received: CWD ..
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Sent: 250 Requested file action okay, completed
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Received: PASV
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Sent: 227 Entering Passive Mode (127,0,0,1,194,38).
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Received: LIST
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:15 : [server] [debug] : Shutting down server
+2018-11-18 19:15 : [server] [debug] : [127.0.0.1:49699] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 19:17 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:17 : [server] [debug] : Client Connected at 127.0.0.1:49759
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: FEAT
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: USER josephmulray
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 331 Please specify the password.
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: PASS root
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 230 Login successful
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: PWD
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: PBSZ 0
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: PROT P
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: PASV
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 227 Entering Passive Mode (127,0,0,1,194,96).
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: LIST
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: PASV
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 227 Entering Passive Mode (127,0,0,1,194,132).
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: NLST
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 400 NLST command was not accepted and the requested action did not take place
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: PASV
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 227 Entering Passive Mode (127,0,0,1,194,134).
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: NLST
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 400 NLST command was not accepted and the requested action did not take place
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: PASV
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 227 Entering Passive Mode (127,0,0,1,194,136).
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: NLST
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 400 NLST command was not accepted and the requested action did not take place
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: PASV
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 227 Entering Passive Mode (127,0,0,1,194,138).
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: NLST
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 400 NLST command was not accepted and the requested action did not take place
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: PASV
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 227 Entering Passive Mode (127,0,0,1,194,140).
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: NLST
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 400 NLST command was not accepted and the requested action did not take place
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: PASV
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 227 Entering Passive Mode (127,0,0,1,194,142).
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: NLST
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 400 NLST command was not accepted and the requested action did not take place
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: CWD test
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 250 Requested file action okay, completed
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: PASV
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 227 Entering Passive Mode (127,0,0,1,194,144).
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Received: LIST
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:17 : [server] [debug] : Shutting down server
+2018-11-18 19:17 : [server] [debug] : [127.0.0.1:49759] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 19:20 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:20 : [server] [debug] : Client Connected at 127.0.0.1:49838
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: FEAT
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: USER josephmulray
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 331 Please specify the password.
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: PASS root
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 230 Login successful
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: PWD
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: PBSZ 0
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: PROT P
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: PASV
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 227 Entering Passive Mode (127,0,0,1,194,175).
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: LIST
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: PROT C
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: TYPE I
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 400 TYPE command was not accepted and the requested action did not take place
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: SIZE test
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 400 SIZE command was not accepted and the requested action did not take place
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: MDTM test
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 400 MDTM command was not accepted and the requested action did not take place
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: PASV
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 227 Entering Passive Mode (127,0,0,1,194,177).
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: RETR test
+2018-11-18 19:20 : [server] [127.0.0.1:49838] [ERROR] : RETR [Errno 21] Is a directory: 'test'
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 550 Requested action not taken. File unavailable
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: PROT C
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: TYPE I
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 400 TYPE command was not accepted and the requested action did not take place
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: SIZE tls.pyc
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 400 SIZE command was not accepted and the requested action did not take place
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: MDTM tls.pyc
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 400 MDTM command was not accepted and the requested action did not take place
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: PASV
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 227 Entering Passive Mode (127,0,0,1,194,179).
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: RETR tls.pyc
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: CWD test
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 250 Requested file action okay, completed
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: PASV
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 227 Entering Passive Mode (127,0,0,1,194,182).
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Received: LIST
+2018-11-18 19:20 : [server] [debug] : [127.0.0.1:49838] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:22 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:22 : [server] [debug] : Client Connected at 127.0.0.1:49894
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Received: FEAT
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Received: USER josephmulray
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Sent: 331 Please specify the password.
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Received: PASS root
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Sent: 230 Login successful
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Received: PWD
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Received: PBSZ 0
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Received: PROT P
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Received: PASV
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Sent: 227 Entering Passive Mode (127,0,0,1,194,231).
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Received: LIST
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Received: CWD test
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Sent: 250 Requested file action okay, completed
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Received: PASV
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Sent: 227 Entering Passive Mode (127,0,0,1,194,235).
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Received: LIST
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:22 : [server] [debug] : Shutting down server
+2018-11-18 19:22 : [server] [debug] : [127.0.0.1:49894] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 19:23 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:23 : [server] [debug] : Client Connected at 127.0.0.1:49921
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Received: FEAT
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Received: USER josephmulray
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Sent: 331 Please specify the password.
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Received: PASS root
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Sent: 230 Login successful
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Received: PWD
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Received: PBSZ 0
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Received: PROT P
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Received: PASV
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Sent: 227 Entering Passive Mode (127,0,0,1,195,2).
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Received: LIST
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Received: CWD test
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Sent: 250 Requested file action okay, completed
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Received: PASV
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Sent: 227 Entering Passive Mode (127,0,0,1,195,4).
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Received: LIST
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:23 : [server] [debug] : Shutting down server
+2018-11-18 19:23 : [server] [debug] : [127.0.0.1:49921] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 19:24 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:24 : [server] [debug] : Client Connected at 127.0.0.1:49943
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Received: FEAT
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Received: USER josephmulray
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Sent: 331 Please specify the password.
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Received: PASS root
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Sent: 230 Login successful
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Received: PWD
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Received: PBSZ 0
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Received: PROT P
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Received: PASV
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Sent: 227 Entering Passive Mode (127,0,0,1,195,24).
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Received: LIST
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Received: CWD test
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Sent: 250 Requested file action okay, completed
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Received: PASV
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Sent: 227 Entering Passive Mode (127,0,0,1,195,26).
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Received: LIST
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:24 : [server] [debug] : Shutting down server
+2018-11-18 19:24 : [server] [debug] : [127.0.0.1:49943] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 19:27 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:27 : [server] [debug] : Client Connected at 127.0.0.1:50022
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Received: FEAT
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Received: USER josephmulray
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Sent: 331 Please specify the password.
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Received: PASS root
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Sent: 230 Login successful
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Received: PWD
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Received: PBSZ 0
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Received: PROT P
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Received: PASV
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Sent: 227 Entering Passive Mode (127,0,0,1,195,103).
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Received: LIST
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Received: QUIT
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Sent: 221 Goodbye.
+2018-11-18 19:27 : [server] [debug] : Shutting down server
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50022] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 19:27 : [server] [127.0.0.1:50022] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 19:27 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:27 : [server] [debug] : Client Connected at 127.0.0.1:50050
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Received: FEAT
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Received: USER josephmulray
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Sent: 331 Please specify the password.
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Received: PASS root
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Sent: 230 Login successful
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Received: PWD
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Received: PBSZ 0
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Received: PROT P
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Received: PASV
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Sent: 227 Entering Passive Mode (127,0,0,1,195,131).
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Received: LIST
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Received: CWD test
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Sent: 250 Requested file action okay, completed
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Received: PASV
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Sent: 227 Entering Passive Mode (127,0,0,1,195,133).
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Received: LIST
+2018-11-18 19:27 : [server] [debug] : [127.0.0.1:50050] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:27 : [server] [debug] : Client Connected at 127.0.0.1:50143
+2018-11-18 19:35 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:35 : [server] [debug] : Client Connected at 127.0.0.1:50237
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Received: FEAT
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Received: USER josephmulray
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Sent: 331 Please specify the password.
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Received: PASS root
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Sent: 230 Login successful
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Received: PWD
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Received: PBSZ 0
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Received: CWD test
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Sent: 250 Requested file action okay, completed
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Received: PROT P
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Received: PASV
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Sent: 227 Entering Passive Mode (127,0,0,1,196,62).
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Received: LIST
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Received: CWD
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Sent: 501 Syntax error in parameters or arguments. Need an argument
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Received: CWD ..
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Sent: 250 Requested file action okay, completed
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Received: QUIT
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50237] : Sent: 221 Goodbye.
+2018-11-18 19:35 : [server] [debug] : Client Connected at 127.0.0.1:50241
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Received: FEAT
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Received: USER josephmulray
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 331 Please specify the password.
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Received: PASS root
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 230 Login successful
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Received: PWD
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Received: PBSZ 0
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Received: CWD ..
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 250 Requested file action okay, completed
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Received: PROT P
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Received: PASV
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 227 Entering Passive Mode (127,0,0,1,196,66).
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Received: LIST
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Received: PROT C
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Received: TYPE I
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 400 TYPE command was not accepted and the requested action did not take place
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Received: SIZE README.md
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 400 SIZE command was not accepted and the requested action did not take place
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Received: MDTM README.md
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 400 MDTM command was not accepted and the requested action did not take place
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Received: PASV
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 227 Entering Passive Mode (127,0,0,1,196,68).
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Received: RETR README.md
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Received: QUIT
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 221 Goodbye.
+2018-11-18 19:35 : [server] [debug] : Shutting down server
+2018-11-18 19:35 : [server] [debug] : [127.0.0.1:50241] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 19:35 : [server] [127.0.0.1:50241] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 19:46 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:46 : [server] [debug] : Shutting down server
+2018-11-18 19:47 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:47 : [server] [debug] : Shutting down server
+2018-11-18 19:47 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:47 : [server] [debug] : Client Connected at 127.0.0.1:50575
+2018-11-18 19:47 : [server] [debug] : [127.0.0.1:50575] : Sent: 220 Service ready for new user.
+2018-11-18 19:47 : [server] [] [ERROR] : RECV [Errno 54] Connection reset by peer
+2018-11-18 19:47 : [server] [debug] : [127.0.0.1:50575] : Received:  zjÆxÙ*5Ñåù#æ2j=;„h2çÒ±”
+2018-11-18 19:47 : [server] [debug] : [127.0.0.1:50575] : Sent: 400  zjÆxÙ*5Ñåù#æ2j=;„h2çÒ±” command was not accepted and the requested action did not take place
+2018-11-18 19:47 : [server] [127.0.0.1:50575] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 19:48 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:48 : [server] [debug] : Client Connected at 127.0.0.1:50587
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Received: FEAT
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Received: USER josephmulray
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Sent: 331 Please specify the password.
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Received: PASS root
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Sent: 230 Login successful
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Received: PWD
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Received: PBSZ 0
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Received: PROT P
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Received: PASV
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Sent: 227 Entering Passive Mode (127,0,0,1,197,156).
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Received: LIST
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Received: PROT C
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Received: TYPE I
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Sent: 400 TYPE command was not accepted and the requested action did not take place
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Received: PASV
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Sent: 227 Entering Passive Mode (127,0,0,1,197,181).
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Received: ALLO 20
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Sent: 400 ALLO command was not accepted and the requested action did not take place
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Received: STOR storfile
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50587] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:48 : [server] [] [ERROR] : RECV [Errno 54] Connection reset by peer
+2018-11-18 19:48 : [server] [debug] : Client Connected at 127.0.0.1:50621
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50621] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50621] : Received: FEAT
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50621] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50621] : Received: USER josephmulray
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50621] : Sent: 331 Please specify the password.
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50621] : Received: PASS root
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50621] : Sent: 230 Login successful
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50621] : Received: PWD
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50621] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50621] : Received: PBSZ 0
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50621] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50621] : Received: TYPE I
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50621] : Sent: 400 TYPE command was not accepted and the requested action did not take place
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50621] : Received: SIZE storfile
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50621] : Sent: 400 SIZE command was not accepted and the requested action did not take place
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50621] : Received: QUIT
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50621] : Sent: 221 Goodbye.
+2018-11-18 19:48 : [server] [debug] : Client Connected at 127.0.0.1:50637
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50637] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50637] : Received: FEAT
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50637] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50637] : Received: USER josephmulray
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50637] : Sent: 331 Please specify the password.
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50637] : Received: PASS root
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50637] : Sent: 230 Login successful
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50637] : Received: PWD
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50637] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50637] : Received: PBSZ 0
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50637] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50637] : Received: TYPE I
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50637] : Sent: 400 TYPE command was not accepted and the requested action did not take place
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50637] : Received: SIZE storfile
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50637] : Sent: 400 SIZE command was not accepted and the requested action did not take place
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50637] : Received: QUIT
+2018-11-18 19:48 : [server] [debug] : [127.0.0.1:50637] : Sent: 221 Goodbye.
+2018-11-18 19:51 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:51 : [server] [debug] : Client Connected at 127.0.0.1:50676
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Received: FEAT
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Received: USER josephmulray
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 331 Please specify the password.
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Received: PASS root
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 230 Login successful
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Received: PWD
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Received: PBSZ 0
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Received: PROT P
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Received: PASV
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 227 Entering Passive Mode (127,0,0,1,197,245).
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Received: LIST
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Received: PROT C
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Received: TYPE I
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 400 TYPE command was not accepted and the requested action did not take place
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Received: PASV
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 227 Entering Passive Mode (127,0,0,1,198,33).
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Received: ALLO 20
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 400 ALLO command was not accepted and the requested action did not take place
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Received: STOR storfile
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Received: SITE UTIME 20181119004943 storfile
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 400 SITE command was not accepted and the requested action did not take place
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Received: QUIT
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 221 Goodbye.
+2018-11-18 19:51 : [server] [debug] : Shutting down server
+2018-11-18 19:51 : [server] [debug] : [127.0.0.1:50676] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 19:51 : [server] [127.0.0.1:50676] [ERROR] : [Errno 32] Broken pipe
+2018-11-18 19:54 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:54 : [server] [debug] : Client Connected at 127.0.0.1:50749
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 234 AUTH TLS sucessful.
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: FEAT
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: USER josephmulray
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 331 Please specify the password.
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: PASS root
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 230 Login successful
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: PWD
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: PBSZ 0
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: PROT P
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: PASV
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 227 Entering Passive Mode (127,0,0,1,198,62).
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: LIST
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: PROT C
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: TYPE I
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 TYPE command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: SIZE server.log
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 SIZE command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: MDTM server.log
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 MDTM command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: PASV
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 227 Entering Passive Mode (127,0,0,1,198,64).
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: RETR server.log
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: ÿôÿòABOR
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 ÿôÿòABOR command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: PROT C
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: TYPE I
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 TYPE command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: SIZE tls.pyc
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 SIZE command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: MDTM tls.pyc
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 MDTM command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: PASV
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 227 Entering Passive Mode (127,0,0,1,198,67).
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: RETR tls.pyc
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: PROT C
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: TYPE I
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 TYPE command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: SIZE server.py
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 SIZE command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: MDTM server.py
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 MDTM command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: PASV
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 227 Entering Passive Mode (127,0,0,1,198,69).
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: RETR server.py
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: PROT C
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: TYPE I
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 TYPE command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: PASV
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 227 Entering Passive Mode (127,0,0,1,198,73).
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: ALLO 20
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 ALLO command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: STOR storfile
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Received: SITE UTIME 20181119004943 storfile
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 400 SITE command was not accepted and the requested action did not take place
+2018-11-18 19:54 : [server] [debug] : Shutting down server
+2018-11-18 19:54 : [server] [debug] : [127.0.0.1:50749] : Sent: 421 Service not available, remote server has closed connection
+2018-11-18 19:58 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 19:58 : [server] [debug] : Client Connected at 127.0.0.1:50833
+2018-11-18 20:00 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-18 20:00 : [server] [debug] : Client Connected at 127.0.0.1:50854
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 220 Service ready for new user.
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Received: USER josephmulray
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 331 Please specify the password.
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Received: PASS root
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 230 Login successful
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Received: PORT 127,0,0,1,198,167
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 200 Port okay.
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Received: LIST
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Received: PORT 127,0,0,1,198,169
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 200 Port okay.
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Received: LIST
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Received: PORT 127,0,0,1,198,171
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 200 Port okay.
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Received: LIST
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Received: PASV
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 227 Entering Passive Mode (127,0,0,1,198,173).
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Received: LIST
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Received: PASV
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 227 Entering Passive Mode (127,0,0,1,198,175).
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Received: LIST
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Received: PASV
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 227 Entering Passive Mode (127,0,0,1,198,177).
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Received: LIST
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 150 File status okay; about to open data connection.
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Received: QUIT
+2018-11-18 20:00 : [server] [debug] : [127.0.0.1:50854] : Sent: 221 Goodbye.
+2018-11-18 20:00 : [server] [debug] : Shutting down server
