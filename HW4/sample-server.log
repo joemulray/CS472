@@ -1,0 +1,206 @@
+2018-11-19 17:20 : [server] [debug] : PORT_MODE: no
+2018-11-19 17:20 : [server] [debug] : PASV_MODE: yes
+2018-11-19 17:20 : [server] [debug] : FTPS_MODE: no
+2018-11-19 17:20 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-19 17:20 : [server] [debug] : Client Connected at 127.0.0.1:57262
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Sent: 220 Service ready for new user.
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Received: USER josephmulray
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Sent: 331 Please specify the password.
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Received: PASS root
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Sent: 230 Login successful
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Received: PORT 127,0,0,1,223,175
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Sent: 502 The command was not accepted, port mode not enabled
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Received: LPRT 4,4,127,0,0,1,2,223,175
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Sent: 400 LPRT command was not accepted and the requested action did not take place
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Received: PORT 127,0,0,1,223,180
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Sent: 502 The command was not accepted, port mode not enabled
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Received: LPRT 4,4,127,0,0,1,2,223,180
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Sent: 400 LPRT command was not accepted and the requested action did not take place
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Received: PASV
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Sent: 227 Entering Passive Mode (127,0,0,1,223,181).
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Received: LIST
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Received: PASV
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Sent: 227 Entering Passive Mode (127,0,0,1,223,183).
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Received: RETR README
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Received: QUIT
+2018-11-19 17:20 : [server] [debug] : [127.0.0.1:57262] : Sent: 221 Goodbye.
+2018-11-19 17:20 : [server] [debug] : Shutting down server
+2018-11-19 17:21 : [server] [debug] : PORT_MODE: yes
+2018-11-19 17:21 : [server] [debug] : PASV_MODE: no
+2018-11-19 17:21 : [server] [debug] : FTPS_MODE: no
+2018-11-19 17:21 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-19 17:21 : [server] [debug] : Client Connected at 127.0.0.1:57289
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 220 Service ready for new user.
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: USER josephmulray
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 331 Please specify the password.
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: PASS root
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 230 Login successful
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: PORT 127,0,0,1,223,202
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 200 Port okay.
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: LIST
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: PORT 127,0,0,1,223,204
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 200 Port okay.
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: LIST
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: EPRT |1|127.0.0.1|57294|
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 200 Port okay.
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: LIST
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: EPSV
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 502 The command was not accepted, epsv mode not enabled
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: PASV
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 502 The command was not accepted, pasv mode not enabled
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: LPSV
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 400 LPSV command was not accepted and the requested action did not take place
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: PORT 127,0,0,1,223,220
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 200 Port okay.
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: LIST
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: PWD
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: CDUP
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 250 Requested file action okay, completed.
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: PORT 127,0,0,1,223,226
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 200 Port okay.
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: LIST
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Received: QUIT
+2018-11-19 17:21 : [server] [debug] : [127.0.0.1:57289] : Sent: 221 Goodbye.
+2018-11-19 17:21 : [server] [debug] : Shutting down server
+2018-11-19 17:24 : [server] [main] [ERROR] : Error One MODE must be enabled {port_mode/pasv_mode}
+2018-11-19 17:24 : [server] [debug] : PORT_MODE: yes
+2018-11-19 17:24 : [server] [debug] : PASV_MODE: yes
+2018-11-19 17:24 : [server] [debug] : FTPS_MODE: no
+2018-11-19 17:24 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-19 17:24 : [server] [debug] : Client Connected at 127.0.0.1:57350
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 220 Service ready for new user.
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: USER root
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 331 Please specify the password.
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: PASS root
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 230 Login successful
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: PORT 127,0,0,1,224,7
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 200 Port okay.
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: LIST
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: PASV
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 227 Entering Passive Mode (127,0,0,1,224,9).
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: LIST
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: PASV
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 227 Entering Passive Mode (127,0,0,1,224,11).
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: RETR Makefile
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: PASV
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 227 Entering Passive Mode (127,0,0,1,224,18).
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: STOR storfile
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: EPSV
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 229 Entering Passive Mode (|||57367).
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: LIST
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: EPSV
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 229 Entering Passive Mode (|||57371).
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: LIST
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: EPRT |1|127.0.0.1|57373|
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 200 Port okay.
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: LIST
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: PWD
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: CWD ..
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 250 Requested file action okay, completed
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: EPRT |1|127.0.0.1|57375|
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 200 Port okay.
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: LIST
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: EPRT |1|127.0.0.1|57378|
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 200 Port okay.
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: RETR lrrid
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Received: QUIT
+2018-11-19 17:24 : [server] [debug] : [127.0.0.1:57350] : Sent: 221 Goodbye.
+2018-11-19 17:24 : [server] [debug] : Shutting down server
+2018-11-19 17:26 : [server] [debug] : PORT_MODE: yes
+2018-11-19 17:26 : [server] [debug] : PASV_MODE: yes
+2018-11-19 17:26 : [server] [debug] : FTPS_MODE: yes
+2018-11-19 17:26 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-19 17:26 : [server] [debug] : Shutting down server
+2018-11-19 17:27 : [server] [debug] : PORT_MODE: yes
+2018-11-19 17:27 : [server] [debug] : PASV_MODE: yes
+2018-11-19 17:27 : [server] [debug] : FTPS_MODE: yes
+2018-11-19 17:27 : [server] [debug] : Starting server on REX2.local:2121
+2018-11-19 17:27 : [server] [debug] : Client Connected at 127.0.0.1:57442
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 234 AUTH TLS sucessful.
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: FEAT
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 400 FEAT command was not accepted and the requested action did not take place
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: USER josephmulray
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 331 Please specify the password.
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: PASS root
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 230 Login successful
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: PWD
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: PBSZ 0
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 400 PBSZ command was not accepted and the requested action did not take place
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: PROT P
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: PASV
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 227 Entering Passive Mode (127,0,0,1,224,99).
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: LIST
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: PROT C
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: TYPE I
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 400 TYPE command was not accepted and the requested action did not take place
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: SIZE README
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 400 SIZE command was not accepted and the requested action did not take place
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: MDTM README
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 400 MDTM command was not accepted and the requested action did not take place
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: PASV
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 227 Entering Passive Mode (127,0,0,1,224,102).
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: RETR README
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: PROT C
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 400 PROT command was not accepted and the requested action did not take place
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: TYPE I
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 400 TYPE command was not accepted and the requested action did not take place
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: PASV
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 227 Entering Passive Mode (127,0,0,1,224,106).
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: ALLO 15
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 400 ALLO command was not accepted and the requested action did not take place
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: STOR storfile
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: SITE UTIME 20181119222450 storfile
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 400 SITE command was not accepted and the requested action did not take place
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: CWD ..
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 250 Requested file action okay, completed
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: PASV
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 227 Entering Passive Mode (127,0,0,1,224,112).
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: LIST
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 150 File status okay; about to open data connection.
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 226 Closing data connection. Requested file action successful
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Received: QUIT
+2018-11-19 17:27 : [server] [debug] : [127.0.0.1:57442] : Sent: 221 Goodbye.
+2018-11-19 17:27 : [server] [debug] : Shutting down server

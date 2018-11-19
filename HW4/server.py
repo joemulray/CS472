@@ -10,7 +10,6 @@ from configparser import ConfigParser, DuplicateOptionError, Error
 
 #logger class
 from logging import logger
-# from tls import *
 
 
 #read from config file
@@ -145,14 +144,14 @@ class FTPServer(threading.Thread):
 				if PASV_MODE == "yes":
 					return function(self, *args)
 				else:
-						command = "400 The command was not accepted, %s mode not enabled" %(name)
+						command = "502 The command was not accepted, %s mode not enabled" %(name)
 						self.send(command)
 						return
 			elif name == "port" or name == "eprt":
 				if PORT_MODE == "yes":
 					return function(self, *args)
 				else:
-					command = "400 The command was not accepted, %s mode not enabled" %(name)
+					command = "502 The command was not accepted, %s mode not enabled" %(name)
 					self.send(command)
 					return
 			pass
@@ -706,6 +705,12 @@ class FTPServer(threading.Thread):
 		command = "400 %s command was not accepted and the requested action did not take place" %(cmd[0])
 		self.send(command)
 
+	@_argumentrequired
+	@_authentication
+	def prot(self, cmd):
+		command = "200 Protection level set to P"
+		self.send(command)
+
 	def evaluation(self, command, parsedmessage):
 		"""
 		Evaluation function that evaluates the request made by the user and
@@ -735,58 +740,21 @@ class FTPServer(threading.Thread):
 
 
 
-class ServerSocket:
-	"""
-	ServerSocket establishes and opens up connections on a given port
-
-	Attributes:
-		port: the port to open the ServerSocket
-		backlog: the backlog for the ServerSocket
-		host: the hostname of the ServerSocket
-	"""
-
-	def __init__(self, filename="server.log", port=2121, backlog = 5):
-
-		self.port = int(port)
-		self.backlog = backlog
-		self.host = socket.gethostname()
-		self.serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		self.serversocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-		self.serversocket.bind((self.host, self.port))
-		self.serversocket.listen(self.backlog)
-
-
-		#log init
-		msg = "Starting server on %s:%s" %(self.host, self.port)
-		log.debug(msg)
-
-	def accept(self):
-		"""
-		Function to accept requests on the ServerSocket
-
-		:return: returns the clientsocket and address of the connections
-		"""
-		return self.serversocket.accept()
-
-	def close(self):
-		"""
-		Function to close the connection of the ServerSocket
-
-		:return: returns nothing
-		"""
-		self.serversocket.close()
-
-
-
 class Secure(FTPServer):
 	def __init__(self, clientsocket, address, certfile, keyfile):
 		self.cf = os.getcwd()
 		self.certfile = self.cf + "/" + certfile
 		self.keyfile = self.cf + "/" + keyfile
 		self.version = ssl.PROTOCOL_TLSv1_2
-		self.csocket = ssl.wrap_socket(clientsocket, server_side=True, certfile=certfile,
-			keyfile=keyfile,
-			ssl_version=self.version)
+		try:
+
+			self.csocket = ssl.wrap_socket(clientsocket, server_side=True, certfile=certfile,
+				keyfile=keyfile,
+				ssl_version=self.version)
+
+		except IOError as error:
+			log.error("ERROR" + str(error))
+			exit(1)
 
 		FTPServer.__init__(self, clientsocket, address)
 
@@ -831,7 +799,7 @@ class Secure(FTPServer):
 
 	def send(self, command=None):
 		"""
-		Send function that will send the command to the client socket
+		Send function that will send the command to the ftps client socket
 
 		:param command: the command from the server to send to the client
 		:return: returns nothing
@@ -847,7 +815,7 @@ class Secure(FTPServer):
 
 	def datasocket(self, command=None):
 		"""
-		Function that handles sending data on the datasocket for active and passive mode
+		Function that handles sending data on the ftps datasocket for active and passive mode
 
 		:param command: the command from the server to send to the client
 		:return: returns the response of the status of the data transfer
@@ -886,7 +854,7 @@ class Secure(FTPServer):
 
 	def datasocketrecv(self):
 		"""
-		Function that handles receiving data on the datasocket for active and passive mode
+		Function that handles receiving data on the ftps datasocket for active and passive mode
 
 		:return: returns the response of the status of the data transfer, and the data received from the datasocket
 		"""
@@ -922,11 +890,62 @@ class Secure(FTPServer):
 
 	def close(self):
 		"""
-		Function to close the connection of the ServerSocket
+		Function to close the connection of the FTPS socket
 
 		:return: returns nothing
 		"""
 		self.csocket.close()
+
+
+
+
+class ServerSocket:
+	"""
+	ServerSocket establishes and opens up connections on a given port
+
+	Attributes:
+		port: the port to open the ServerSocket
+		backlog: the backlog for the ServerSocket
+		host: the hostname of the ServerSocket
+	"""
+
+	def __init__(self, filename="server.log", port=2121, backlog = 5):
+
+		self.port = int(port)
+		self.backlog = backlog
+		self.host = socket.gethostname()
+		self.serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+		self.serversocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+		self.serversocket.bind((self.host, self.port))
+		self.serversocket.listen(self.backlog)
+
+
+		#log init
+		msg = "PORT_MODE: %s" %PORT_MODE
+		log.debug(msg)
+		msg = "PASV_MODE: %s" %PASV_MODE
+		log.debug(msg)
+		msg = "FTPS_MODE: %s" %FTPS_MODE
+		log.debug(msg)
+
+		msg = "Starting server on %s:%s" %(self.host, self.port)
+		log.debug(msg)
+
+	def accept(self):
+		"""
+		Function to accept requests on the ServerSocket
+
+		:return: returns the clientsocket and address of the connections
+		"""
+		return self.serversocket.accept()
+
+	def close(self):
+		"""
+		Function to close the connection of the ServerSocket
+
+		:return: returns nothing
+		"""
+		self.serversocket.close()
 
 
 
@@ -940,15 +959,18 @@ def config_init():
 	try:
 		config.read(ftp_server_config)
 
+		#global config modes
 		global PORT_MODE
 		global PASV_MODE
 		global FTPS_MODE
 
+		#read values from config file
 		PORT_MODE = config["FTP Server Config"]["port_mode"]
 		PASV_MODE = config["FTP Server Config"]["pasv_mode"]
 		FTPS_MODE = config["FTP Server Config"]["ftps_mode"]
 
 
+		#simple error checking
 		if PORT_MODE != "yes" and PORT_MODE != "no":
 			log.error("Error " + "invalid port_mode setting {yes/no} required", "[main]")
 			exit(1)
@@ -965,7 +987,7 @@ def config_init():
 			log.error("Error " + "invalid ftps_mode setting {yes/no} required", "[main]")
 			exit(1)	
 
-
+		#add authorized users
 		for key in config["Authorized Users"]:
 			AUTHORIZED_USERS[key] = config["Authorized Users"][key]
 
@@ -1027,7 +1049,11 @@ def main():
 			log.debug("Shutting down server")
 			#if we have client running
 			if ftpserver:
-				ftpserver.close()
+				try:
+					ftpserver.close()
+				except socket.error as error:
+					pass
+
 			serversocket.close()
 			exit()
 

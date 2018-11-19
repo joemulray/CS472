@@ -1,0 +1,225 @@
+➜  ~ ftp localhost 2121
+ftp: connect to address ::1: Connection refused
+ftp: Trying 127.0.0.1 ...
+Connected to localhost.
+220 Service ready for new user.
+Name (localhost:josephmulray): 
+331 Please specify the password.
+Password: 
+230 Login successful
+ftp> ls
+502 The command was not accepted, port mode not enabled
+400 LPRT command was not accepted and the requested action did not take place
+ftp> ls
+502 The command was not accepted, port mode not enabled
+400 LPRT command was not accepted and the requested action did not take place
+ftp> passive on
+Passive mode on.
+ftp> ls
+227 Entering Passive Mode (127,0,0,1,223,181).
+150 File status okay; about to open data connection.
+logging.py
+server.py
+server.key
+Makefile
+server.csr
+README
+config.ini
+server.crt
+logging.pyc
+server.log
+226 Closing data connection. Requested file action successful
+ftp> get README
+227 Entering Passive Mode (127,0,0,1,223,183).
+150 File status okay; about to open data connection.
+WARNING! 84 bare linefeeds received in ASCII mode
+File may not have transferred correctly.
+226 Closing data connection. Requested file action successful
+9145 bytes received in 0.00141 seconds (6.18 Mbytes/s)
+ftp> quit
+221 Goodbye.
+
+➜  ~ ftp localhost 2121
+ftp: connect to address ::1: Connection refused
+ftp: Trying 127.0.0.1 ...
+Connected to localhost.
+220 Service ready for new user.
+Name (localhost:josephmulray): root
+331 Please specify the password.
+Password: 
+230 Login successful
+ftp> ls
+200 Port okay.
+150 File status okay; about to open data connection.
+logging.py
+server.py
+server.key
+Makefile
+server.csr
+README
+config.ini
+server.crt
+sample-client.log
+logging.pyc
+server.log
+226 Closing data connection. Requested file action successful
+ftp> passive on
+Passive mode on.
+ftp> ls
+227 Entering Passive Mode (127,0,0,1,224,9).
+150 File status okay; about to open data connection.
+logging.py
+server.py
+server.key
+Makefile
+server.csr
+README
+config.ini
+server.crt
+sample-client.log
+logging.pyc
+server.log
+226 Closing data connection. Requested file action successful
+ftp> get Makefile
+227 Entering Passive Mode (127,0,0,1,224,11).
+150 File status okay; about to open data connection.
+WARNING! 27 bare linefeeds received in ASCII mode
+File may not have transferred correctly.
+226 Closing data connection. Requested file action successful
+356 bytes received in 0.000228 seconds (1.49 Mbytes/s)
+ftp> put storfile
+227 Entering Passive Mode (127,0,0,1,224,18).
+150 File status okay; about to open data connection.
+226 Closing data connection. Requested file action successful
+16 bytes sent in 6e-05 seconds (260 kbytes/s)
+ftp> epsv4
+Use of EPRT/EPSV for IPv4: on.
+ftp> ls
+229 Entering Passive Mode (|||57367).
+150 File status okay; about to open data connection.
+logging.py
+server.py
+server.key
+Makefile
+storfile
+server.csr
+README
+config.ini
+server.crt
+sample-client.log
+logging.pyc
+server.log
+226 Closing data connection. Requested file action successful
+ftp> pasive off
+?Invalid command
+ftp> ls
+229 Entering Passive Mode (|||57371).
+150 File status okay; about to open data connection.
+logging.py
+server.py
+server.key
+Makefile
+storfile
+server.csr
+README
+config.ini
+server.crt
+sample-client.log
+logging.pyc
+server.log
+226 Closing data connection. Requested file action successful
+ftp> passive off
+Passive mode off.
+ftp> ls
+200 Port okay.
+150 File status okay; about to open data connection.
+logging.py
+server.py
+server.key
+Makefile
+storfile
+server.csr
+README
+config.ini
+server.crt
+sample-client.log
+logging.pyc
+server.log
+226 Closing data connection. Requested file action successful
+ftp> pwd
+257 /Users/josephmulray/Documents/REPOS/CS472/HW4
+ftp> cd ..
+250 Requested file action okay, completed
+ftp> ls
+200 Port okay.
+150 File status okay; about to open data connection.
+HW2
+HW4
+HW3
+.DS_Store
+lrrid
+James Kurose, Keith Ross-Computer Networking_ A Top-Down Approach (7th Edition)-Pearson (2016).pdf
+README.md
+HW1
+.gitignore
+LECTURES
+.git
+226 Closing data connection. Requested file action successful
+ftp> get lrrid
+200 Port okay.
+150 File status okay; about to open data connection.
+226 Closing data connection. Requested file action successful
+70 bytes received in 0.000273 seconds (250 kbytes/s)
+ftp> quit
+221 Goodbye.
+
+➜  ~ lftp          
+lftp :~> open ftps://localhost:2121 -e "set ssl:verify-certificate false" -u josephmulray
+Password: 
+lftp josephmulray@localhost:~> ls             
+logging.py                           
+server.py
+server.key
+Makefile
+storfile
+server.csr
+README
+config.ini
+server.crt
+sample-client.log
+logging.pyc
+server.log
+lftp josephmulray@localhost:~> get README
+9145 bytes transferred
+lftp josephmulray@localhost:~> ls
+logging.py
+server.py
+server.key
+Makefile
+storfile
+server.csr
+README
+config.ini
+server.crt
+sample-client.log
+logging.pyc
+server.log
+lftp josephmulray@localhost:~> put storfile
+15 bytes transferred
+lftp josephmulray@localhost:~> pwd
+ftps://josephmulray@localhost:2121
+lftp josephmulray@localhost:~> cd ..
+cd ok, cwd=~/..
+lftp josephmulray@localhost:~/..> ls
+HW2
+HW4
+HW3
+.DS_Store
+lrrid
+James Kurose, Keith Ross-Computer Networking_ A Top-Down Approach (7th Edition)-Pearson (2016).pdf
+README.md
+HW1
+.gitignore
+LECTURES
+.git
+lftp josephmulray@localhost:~/..> quit

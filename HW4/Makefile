@@ -16,9 +16,6 @@ view:
 	$(VIEWER) $(SERVER) $(SERVER) README
 docs:
 	$(PYDOC)
-test:
-	$(SH) $(TESTSCRIPT)
-
 clean:
 	@echo "Removing .pyc files"
 	@rm *.pyc

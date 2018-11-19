@@ -7,18 +7,33 @@ Makefile commands:
 	run: runs server on port 2121
 	view: view the server source code
 	docs: view pydocs comments
-	test: run simple ftp test using the ftp client
 	clean: remove pyc files
 
-Running: 
-	You can use the makefile to run this command or run it manaully
+Running:
+	You can use the makefile to run this command or run it manually
 	python server.py <log file> <port>
+
+Development Info:
+	python2.7
+	Requirements maybe configparser already installed on tux (used to parse config file):
+		pip install configparser==3.5.0
 
 Files:
 	server.py : main FTP server
 	logging.pg : logger class
 	Makefile : makefile to run program
 	config.ini : config file for server settings and authorized users
+	server.key : generated server key for SSL implicit mode
+	server.crt : generated server certificate for SSL implicit mode
+	sample-client.log : sample client log of passing requirements
+	sameple-server.log : sample server log of those requests
+
+
+Config File {config.ini}
+	[FTP Server Config]
+	port_mode : yes ;disable port mode
+	pasv_mode : no ;disable passive mode
+	ftps_mode : no ;enable implicit mode
 
 
 QUESTIONS:
@@ -35,19 +50,53 @@ If your server has a limited range of ports or a strict firewall, better to use 
 
 PART B:
 2a) Why is logging an important part of security?
-It is an important part of security because it leaves a digital figerprint of a given state of the system. The key here is the information getting logged. It is extremely important the the logs pertain relevant, important information about what the user or client is requesting on the system so in the event there is a malicious, system error, query needed, that is needed the logs are there to supply that information.
+It is an important part of security because it leaves a digital fingerprint of a given state of the system. The key here is the information getting logged. It is extremely important the the logs pertain relevant, important information about what the user or client is requesting on the system so in the event there is a malicious, system error, query needed, that is needed the logs are there to supply that information.
 
 3a) Do you see any problems with concurrent servers and log files? (dealing with multiple
 processes or threads writing to the log file at the same time)? Brainstorm how to solve this problem.
-Yes this was an exact problem that I was dealing with when developing my ftpserver. Constantly each thread, and each time a new client was connected it was replacing the logs of the old client with the new values. To solve this I made the log class instantiated at the start of the server and a globally accessable so that any class can simply log to the file without creating a new logger object. This solved the clearing of the logs issue and combining that with a lock on the writing to the file so that each thread waits for the other one to complete solved the concurrent issue of having threads overwrite each other or both writing to the log file at the same time.
+Yes this was an exact problem that I was dealing with when developing my ftp server. Constantly each thread, and each time a new client was connected it was replacing the logs of the old client with the new values. To solve this I made the log class instantiated at the start of the server and a globally accessible so that any class can simply log to the file without creating a new logger object. This solved the clearing of the logs issue and combining that with a lock on the writing to the file so that each thread waits for the other one to complete solved the concurrent issue of having threads overwrite each other or both writing to the log file at the same time.
 
 
 PART C:
 4a) What are the different issues with securing the connections with IMPLICIT mode (which
 is a separate server listening with TLS always at port 990 by default) and EXPLICIT
 mode (which is the same server waiting on port 21 for special commands to turn TLS on
-and off)? xx1
-4b) What are the “it depends” part of the tradeoffs? 
+and off)?
+
+IMPLICIT mode assumes that the server is expecting everything to be encrypted through TLS/SSL, and as soon as the client connects that encryption is initiated without any client control.An issue with this is that the client has no control over what to be encrypted or even the option of turning of the TLS/SSL. On the other hand EXPLICIT mode, the client has control over when to turn off and on the TLS/SSL connection with a ftp PROT C and PBSZ 0 requests that will turn off and on that encryption. In this case it is a security risk because your relying on the client to actually to know when to encrypt the traffic or not. 
 
 
+4b) What are the “it depends” part of the tradeoffs?
+The IT depends really depends on your type of environment, and type of system. If you are on a Government server or some sever that has high authentication IMPLICIT mode is a must, you do not want to give that dependency to the user, otherwise let the user choose what information they want encrypted. 
+
+
+EXTRA CREDIT:
+	For this approach I implemented the IMPLICIT mode in the server application. In the config file I added the ftps flag to be set to yes or no that will send all traffic through an ssl socket with a generated certificate and key. I used to test this application lftp and had to ignore my certificate because it was a self signed certificate and something that is not valid. But I was able to encrypt and decrypt over the SSL socket. I had architected my program to use the FTP Server as the parent class and created a childclass that overrides the parent functions for the data transfer so I was able to keep my underlying FTP server the same and only have to modify the sending and receiving of data. Check the sample-client.log I included an example where I was making FTP requests across the ftps SSL connection. 
+
+
+5. Why is the 3 person method of FTP (as originally defined in the RFC) really insecure?
+The 3 person method of FTP is really insecure because everything is sent in plain text. Someone can very easily sniff the traffic and there goes your username, password, data, open ports. Everything is there for someone to jump right in and take. Also the two channels allows someone to very easily see the port you received and are sending, and send receive data with a man in the middle attack. There could be someone in the middle transferring and sending your data that you have know idea the entire time and with a program like Wireshark it would not be a hard task to do.
+
+
+Think of what you could do to cause trouble with the approach and what you can do in
+your clients and servers to stop that from happening. Do you have to do any checking in
+your program(s) with PORT/PASV to make sure that it isn’t happening (that YOU ARE
+talking to the same host)? Think about the data channel as well as the control channel. 
+First we need to encrypt the data so that the data is not visible in plain text and anyone sniffing the traffic can not just pull out our username and password. Second I think that moving to a single channel approach is needed and eliminating the need to open a new connection on another port for someone to connect and receive the data. There is no validation in the PORT/PASV functions that the client you are connecting with is the one that is sending or receiving the data. If we move to a single channel approach we are able to validate that we are sending data to who we are communicating with. To solve the man in the middle issue that would still be possible with a single channel and encrypted data we can use SSH or some certificate signing that would validate the data is coming from who we requested. 
+
+EXTRA CREDIT
+	A) SFTP – offers the service on port 22 and data and commands share the same channel
+	You are now running your SFTP service on top of SSH connections, which can be more difficult to map requests and traffic to when with both services running on that same port. Good note is that no more plain text and data is encrypted through ssh connection and the data is secure being on the same channel. 
+
+	What are the good points and bad points of each approach (FTP, SFTP, BitTorrent)? 
+	FTP - Easy to use and setup, horrible with security
+	SFTP - limits users ability everyone is required with an account now, no anonymous users, requires more setup
+	BitTorrent - increases anonymity, transfers will take longer pulling from multiple sources, and no gaurentee each is sending you correct information, now have to worry about 20 peers intercepting your connection instead of just one sever.
+
+
+6. Do you think there are events that you’ve logged which show that someone is trying to break into your server? 
+Most of my development was done on localhost, but I think for sure if I was running on an open network I would see plenty of attempts, unauthorized logins, someone sending repeated requests to the server to overload the traffic, someone trying to open the connections that were intended for someone else. I have no doubt that this would happen with the knowledge of how insecure FTP is. 
+
+Do you have to add other log entries and checking to make sure that attacks aren’t happening? Brainstorm some attacks against your FTP server. For at least one of them, implement additional code to check for them and log appropriate entries. 
+Yes with the implementation of keeping track of the IP of the client in the logs, I am able to see a red flag if a see the PASV connection accepted from another address other than the client I was talking to. Scenarios like can easily happen in FTP with the data being in plain text. A good FTP server will take note of who that the client connected is the one requesting or accepting the data transfer, otherwise note as a possible attack. In my case I implemented the tracking of the IP from each of the clients so I can monitor each request to a specific client, and note any red flags in the logs. 
 
