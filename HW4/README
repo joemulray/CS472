@@ -3,3 +3,51 @@ CS472 : Computer Networks
 Homework Assignment #4
 11/19/18
 
+Makefile commands:
+	run: runs server on port 2121
+	view: view the server source code
+	docs: view pydocs comments
+	test: run simple ftp test using the ftp client
+	clean: remove pyc files
+
+Running: 
+	You can use the makefile to run this command or run it manaully
+	python server.py <log file> <port>
+
+Files:
+	server.py : main FTP server
+	logging.pg : logger class
+	Makefile : makefile to run program
+	config.ini : config file for server settings and authorized users
+
+
+QUESTIONS:
+PART A:
+1a) What are the security considerations with port_mode
+The security considerations with port_mode is that the client is requesting a random port that can still be sniffed and subject to account. It also runs into issues where the client is requesting ports of defined services {80, 22, 8080} and now there is a collision between the services. This also brings into the account the firewall where the server could be restricted on port access, which this is something that the client would be unaware of, and not cannot access that connection because port 62321 does not have an outbound rule.
+
+1b) With pasv_mode?
+Passive mode is dangerous because it opens a random port on the server and accepts a connection from a client, but there is no verification of that client. There can be someone sniffing the traffic just waiting for the server to send the port back, or a man in the middle just forwarding your data that could very easily open that connection and receive the data. And this is true for all further requests made by the client to the server. Being in passive mode continuously leaves a trail between the client and the server that can easily be hacked.
+
+1c) Why would I want one or the other (think about some of the problems that you had with the client and the server – and who calls who)? 
+If your server has a limited range of ports or a strict firewall, better to use passive mode and limit the waste of time for the clients that send ports that are invalid. Otherwise leave it up to the clients to manage the ports, reduce the load on the server. 
+
+
+PART B:
+2a) Why is logging an important part of security?
+It is an important part of security because it leaves a digital figerprint of a given state of the system. The key here is the information getting logged. It is extremely important the the logs pertain relevant, important information about what the user or client is requesting on the system so in the event there is a malicious, system error, query needed, that is needed the logs are there to supply that information.
+
+3a) Do you see any problems with concurrent servers and log files? (dealing with multiple
+processes or threads writing to the log file at the same time)? Brainstorm how to solve this problem.
+Yes this was an exact problem that I was dealing with when developing my ftpserver. Constantly each thread, and each time a new client was connected it was replacing the logs of the old client with the new values. To solve this I made the log class instantiated at the start of the server and a globally accessable so that any class can simply log to the file without creating a new logger object. This solved the clearing of the logs issue and combining that with a lock on the writing to the file so that each thread waits for the other one to complete solved the concurrent issue of having threads overwrite each other or both writing to the log file at the same time.
+
+
+PART C:
+4a) What are the different issues with securing the connections with IMPLICIT mode (which
+is a separate server listening with TLS always at port 990 by default) and EXPLICIT
+mode (which is the same server waiting on port 21 for special commands to turn TLS on
+and off)? xx1
+4b) What are the “it depends” part of the tradeoffs? 
+
+
+
