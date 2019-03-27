@@ -55,7 +55,7 @@ Files:
 	HW3-DFA.png : the DFA image
 ```
 
-### HW4 : SFTP 
+### HW4 : FTPS 
 
 ```
 Makefile commands:
