@@ -1,6 +1,6 @@
 # CS472
 
-### HW1 : Computer Network Problems
+### HW1 : Computer Network
 
 ### HW2 : FTP Client
 
